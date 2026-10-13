@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>特定商取引法に基づく表記 — Tabajoy</title>
+<!-- Google Fonts: Zen Maru Gothic, Zen Kaku Gothic New -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Zen+Maru+Gothic:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-bright": "#f9f9f8",
+            "secondary-container": "#ff8797",
+            "outline-variant": "#cbc6bd",
+            "error-container": "#ffdad6",
+            "on-secondary": "#ffffff",
+            "surface-container-highest": "#e1e3e2",
+            "on-secondary-container": "#771d30",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed-dim": "#ffb2ba",
+            "surface-container-high": "#e7e8e7",
+            "inverse-surface": "#2e3131",
+            "surface-container-low": "#f3f4f3",
+            "on-background": "#191c1c",
+            "secondary-fixed": "#ffd9dc",
+            "tertiary-fixed-dim": "#cbc5c2",
+            "primary-container": "#292827",
+            "surface": "#f9f9f8",
+            "primary-fixed": "#e6e2e0",
+            "on-primary-fixed": "#1c1b1a",
+            "surface-container": "#edeeed",
+            "background": "#f9f9f8",
+            "surface-dim": "#d9dad9",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed": "#e8e1dd",
+            "error": "#ba1a1a",
+            "primary": "#141413",
+            "tertiary-container": "#2a2826",
+            "on-error-container": "#93000a",
+            "surface-tint": "#605e5d",
+            "on-primary-fixed-variant": "#484645",
+            "on-tertiary-container": "#938e8b",
+            "primary-fixed-dim": "#c9c6c4",
+            "on-secondary-fixed-variant": "#812537",
+            "surface-variant": "#e1e3e2",
+            "on-tertiary-fixed": "#1d1b19",
+            "inverse-primary": "#c9c6c4",
+            "on-tertiary-fixed-variant": "#494643",
+            "inverse-on-surface": "#f0f1f0",
+            "outline": "#7a776f",
+            "on-secondary-fixed": "#400011",
+            "on-surface": "#191c1c",
+            "tertiary": "#161411",
+            "on-error": "#ffffff",
+            "secondary": "#a03c4e",
+            "on-primary": "#ffffff",
+            "on-surface-variant": "#494740",
+            "on-primary-container": "#918f8d"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-lg": "1.5rem",
+            "gutter": "1.5rem",
+            "gutter-desktop": "2.5rem",
+            "space-xl": "3rem",
+            "space-sm": "0.5rem",
+            "margin-desktop": "4rem",
+            "space-xs": "0.25rem",
+            "space-md": "1rem",
+            "margin": "1.25rem"
+          },
+          "fontFamily": {
+            "sans": ["Zen Kaku Gothic New", "sans-serif"],
+            "headline-md": ["Zen Maru Gothic", "Zen Kaku Gothic New", "sans-serif"],
+            "headline-lg": ["Zen Maru Gothic", "Zen Kaku Gothic New", "sans-serif"],
+            "headline-lg-mobile": ["Zen Maru Gothic", "Zen Kaku Gothic New", "sans-serif"],
+            "display-lg": ["Zen Maru Gothic", "Zen Kaku Gothic New", "sans-serif"],
+            "display-lg-mobile": ["Zen Maru Gothic", "Zen Kaku Gothic New", "sans-serif"],
+            "body-lg": ["Zen Kaku Gothic New", "sans-serif"],
+            "body-md": ["Zen Kaku Gothic New", "sans-serif"],
+            "title-md": ["Zen Maru Gothic", "Zen Kaku Gothic New", "sans-serif"],
+            "label-md": ["Zen Kaku Gothic New", "sans-serif"],
+            "label-sm": ["Zen Kaku Gothic New", "sans-serif"],
+            "zen-maru": ["Zen Maru Gothic", "sans-serif"],
+            "zen-kaku": ["Zen Kaku Gothic New", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }],
+            "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+            "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.005em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface text-on-surface font-zen-kaku antialiased min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Desktop Header -->
+<header class="sticky top-0 z-50 bg-surface/90 backdrop-blur-md border-b border-surface-container-high transition-colors">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop h-16 flex items-center justify-between">
+<!-- Wordmark / Brand -->
+<a class="flex items-center gap-2 group text-primary transition-transform duration-150 active:scale-[0.985]" href="/home/desktop/">
+<span class="font-zen-maru font-bold text-headline-md tracking-wider text-primary group-hover:text-secondary transition-colors">
+          Tabajoy
+        </span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant hover:text-secondary font-zen-kaku font-medium text-body-md transition-colors duration-200" href="/collection/desktop/">
+          コレクション
+        </a>
+<a class="text-on-surface-variant hover:text-secondary font-zen-kaku font-medium text-body-md transition-colors duration-200" href="#">
+          お問い合わせ
+        </a>
+<a class="flex items-center gap-1.5 text-on-surface-variant hover:text-secondary font-zen-kaku font-medium text-body-md transition-colors duration-200" href="#">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>カート</span>
+<span class="ml-1 text-[11px] font-label-sm px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">0</span>
+</a>
+</nav>
+<!-- Search & Status Actions -->
+<div class="flex items-center gap-3">
+<button aria-label="Search" class="p-2 text-on-surface-variant hover:text-secondary transition-colors duration-150 active:scale-[0.985]" type="button">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+<span class="hidden md:inline-block h-3.5 w-px bg-surface-container-highest"></span>
+<span class="hidden md:inline-block font-label-sm text-label-sm text-on-primary-container tracking-widest uppercase">
+          LEGAL • JA
+        </span>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-5xl mx-auto px-margin md:px-margin-desktop py-space-xl">
+<!-- Breadcrumbs -->
+<nav aria-label="パンくずリスト" class="mb-8">
+<ol class="flex items-center gap-2 text-label-sm font-label-sm text-on-primary-container">
+<li>
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="/home/desktop/">
+<span class="font-zen-kaku">ホーム</span>
+</a>
+</li>
+<li class="flex items-center">
+<span class="material-symbols-outlined text-[13px] text-outline">chevron_right</span>
+</li>
+<li aria-current="page" class="text-on-surface font-zen-kaku font-medium">
+          特定商取引法に基づく表記
+        </li>
+</ol>
+</nav>
+<!-- Page Title & Atmosphere Intro -->
+<header class="mb-12 border-b border-surface-container-high pb-8">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 mb-4 rounded-lg bg-surface-container-low border border-surface-container-high">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">STATUTORY DISCLOSURE</span>
+</div>
+<h1 class="font-zen-maru text-headline-lg font-bold text-primary tracking-tight mb-4">
+        特定商取引法に基づく表記
+      </h1>
+<p class="font-zen-kaku text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+        当サイトにおける通信販売の取引条件および販売事業者の情報は以下の通りです。
+      </p>
+</header>
+<!-- Disclosure Card / Architectural Two-Column Definition Table -->
+<section class="bg-surface-container-lowest border border-surface-container-high rounded-lg overflow-hidden shadow-[0_12px_32px_-8px_rgba(41,40,39,0.04)] mb-8">
+<div class="px-6 py-4 bg-surface-container-low/60 border-b border-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span class="font-zen-kaku font-medium text-body-md text-primary">法定記載事項一覧</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary-container">全12項目</span>
+</div>
+<dl class="divide-y divide-surface-container-high">
+<!-- 1. 販売事業者 -->
+<div class="grid grid-cols-1 md:grid-cols-12 px-6 py-5 transition-colors hover:bg-surface-container-low/30">
+<dt class="md:col-span-4 font-zen-kaku font-medium text-body-md text-primary flex items-center">
+            販売事業者
+          </dt>
+<dd class="md:col-span-8 mt-1 md:mt-0 font-zen-kaku text-body-md text-on-surface-variant">
+            【事業者情報確認後に記載】
+          </dd>
+</div>
+<!-- 2. 運営統括責任者 -->
+<div class="grid grid-cols-1 md:grid-cols-12 px-6 py-5 transition-colors hover:bg-surface-container-low/30">
+<dt class="md:col-span-4 font-zen-kaku font-medium text-body-md text-primary flex items-center">
+            運営統括責任者
+          </dt>
+<dd class="md:col-span-8 mt-1 md:mt-0 font-zen-kaku text-body-md text-on-surface-variant">
+            【事業者情報確認後に記載】
+          </dd>
+</div>
+<!-- 3. 所在地 -->
+<div class="grid grid-cols-1 md:grid-cols-12 px-6 py-5 transition-colors hover:bg-surface-container-low/30">
+<dt class="md:col-span-4 font-zen-kaku font-medium text-body-md text-primary flex items-center">
+            所在地
+          </dt>
+<dd class="md:col-span-8 mt-1 md:mt-0 font-zen-kaku text-body-md text-on-surface-variant">
+            【事業者情報確認後に記載】
+          </dd>
+</div>
+<!-- 4. 電話番号 -->
+<div class="grid grid-cols-1 md:grid-cols-12 px-6 py-5 transition-colors hover:bg-surface-container-low/30">
+<dt class="md:col-span-4 font-zen-kaku font-medium text-body-md text-primary flex items-center">
+            電話番号
+          </dt>
+<dd class="md:col-span-8 mt-1 md:mt-0 font-zen-kaku text-body-md text-on-surface-variant">
+            【事業者情報確認後に記載】
+          </dd>
+</div>
+<!-- 5. メールアドレス -->
+<div class="grid grid-cols-1 md:grid-cols-12 px-6 py-5 transition-colors hover:bg-surface-container-low/30">
+<dt class="md:col-span-4 font-zen-kaku font-medium text-body-md text-primary flex items-center">
+            メールアドレス
+          </dt>
+<dd class="md:col-span-8 mt-1 md:mt-0 font-zen-kaku text-body-md text-on-surface-variant">
+            【事業者情報確認後に記載】
+          </dd>
+</div>
+<!-- 6. 販売価格 -->
+<div class="grid grid-cols-1 md:grid-cols-12 px-6 py-5 transition-colors hover:bg-surface-container-low/30">
+<dt class="md:col-span-4 font-zen-kaku font-medium text-body-md text-primary flex items-center">
+            販売価格
+          </dt>
+<dd class="md:col-span-8 mt-1 md:mt-0 font-zen-kaku text-body-md text-on-surface-variant">
+            【販売条件確認後に記載】
+          </dd>
+</div>
+<!-- 7. 商品代金以外の必要料金 -->
+<div class="grid grid-cols-1 md:grid-cols-12 px-6 py-5 transition-colors hover:bg-surface-container-low/30">
+<dt class="md:col-span-4 font-zen-kaku font-medium text-body-md text-primary flex items-center">
+            商品代金以外の必要料金
+          </dt>
+<dd class="md:col-span-8 mt-1 md:mt-0 font-zen-kaku text-body-md text-on-surface-variant">
+            【販売条件確認後に記載】
+          </dd>
+</div>
+<!-- 8. お支払い方法 -->
+<div class="grid grid-cols-1 md:grid-cols-12 px-6 py-5 transition-colors hover:bg-surface-container-low/30">
+<dt class="md:col-span-4 font-zen-kaku font-medium text-body-md text-primary flex items-center">
+            お支払い方法
+          </dt>
+<dd class="md:col-span-8 mt-1 md:mt-0 font-zen-kaku text-body-md text-on-surface-variant">
+            【販売条件確認後に記載】
+          </dd>
+</div>
+<!-- 9. お支払い時期 -->
+<div class="grid grid-cols-1 md:grid-cols-12 px-6 py-5 transition-colors hover:bg-surface-container-low/30">
+<dt class="md:col-span-4 font-zen-kaku font-medium text-body-md text-primary flex items-center">
+            お支払い時期
+          </dt>
+<dd class="md:col-span-8 mt-1 md:mt-0 font-zen-kaku text-body-md text-on-surface-variant">
+            【販売条件確認後に記載】
+          </dd>
+</div>
+<!-- 10. 商品の引渡時期 -->
+<div class="grid grid-cols-1 md:grid-cols-12 px-6 py-5 transition-colors hover:bg-surface-container-low/30">
+<dt class="md:col-span-4 font-zen-kaku font-medium text-body-md text-primary flex items-center">
+            商品の引渡時期
+          </dt>
+<dd class="md:col-span-8 mt-1 md:mt-0 font-zen-kaku text-body-md text-on-surface-variant">
+            【販売条件確認後に記載】
+          </dd>
+</div>
+<!-- 11. 申込みの有効期限 -->
+<div class="grid grid-cols-1 md:grid-cols-12 px-6 py-5 transition-colors hover:bg-surface-container-low/30">
+<dt class="md:col-span-4 font-zen-kaku font-medium text-body-md text-primary flex items-center">
+            申込みの有効期限
+          </dt>
+<dd class="md:col-span-8 mt-1 md:mt-0 font-zen-kaku text-body-md text-on-surface-variant">
+            【販売条件確認後に記載】
+          </dd>
+</div>
+<!-- 12. 返品・交換・キャンセルについて -->
+<div class="grid grid-cols-1 md:grid-cols-12 px-6 py-5 transition-colors hover:bg-surface-container-low/30">
+<dt class="md:col-span-4 font-zen-kaku font-medium text-body-md text-primary flex items-center">
+            返品・交換・キャンセルについて
+          </dt>
+<dd class="md:col-span-8 mt-1 md:mt-0 font-zen-kaku text-body-md text-on-surface-variant">
+            【販売条件確認後に記載】
+          </dd>
+</div>
+</dl>
+</section>
+<!-- Calming Advisory Note -->
+<div class="mb-6 px-1">
+<p class="font-zen-kaku text-body-md text-on-surface-variant leading-relaxed">
+        ※ 掲載内容は、販売事業者および販売条件の確認後に確定してください。
+      </p>
+</div>
+<!-- Prototype Disclaimer Box -->
+<aside class="bg-surface-container-low border border-surface-container-high rounded-lg p-5 flex items-start gap-3.5">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5 shrink-0">info</span>
+<div class="font-zen-kaku text-body-md text-on-surface-variant leading-relaxed">
+        本画面はデザインおよび構成確認用のプロトタイプです。正式運用開始前に各項目の正確な記載内容をご確認ください。
+      </div>
+</aside>
+</main>
+<!-- Standard Tabajoy Footer -->
+<footer class="mt-20 border-t border-surface-container-high bg-surface-container-lowest/60">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop py-12">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-surface-container-high">
+<!-- Brand & Concept Note -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-zen-maru font-bold text-headline-md tracking-wider text-primary">
+              Tabajoy
+            </span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<p class="font-zen-kaku text-body-md text-on-surface-variant text-sm">
+            本製品は玩具です。食品ではありません。
+          </p>
+</div>
+<!-- Footer Links -->
+<nav class="flex flex-wrap items-center gap-x-6 gap-y-2">
+<a class="font-zen-kaku text-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/collection/desktop/">
+            コレクションを見る
+          </a>
+<a class="font-zen-kaku text-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/terms/desktop/">
+            利用規約
+          </a>
+<a class="font-zen-kaku text-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="/privacy/desktop/">
+            プライバシーポリシー
+          </a>
+<a class="font-zen-kaku text-body-md text-secondary font-medium" href="/legal/desktop/">
+            特定商取引法に基づく表記
+          </a>
+<a class="font-zen-kaku text-body-md text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">
+            お問い合わせ
+          </a>
+</nav>
+</div>
+<!-- Copyright & Precision Sub-text -->
+<div class="pt-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-label-sm font-label-sm text-on-primary-container">
+<div>
+          © Tabajoy. All rights reserved.
+        </div>
+<div class="tracking-widest uppercase">
+          DESIGNED FOR TACTILE APPRECIATION
+        </div>
+</div>
+</div>
+</footer>
+</body></html>

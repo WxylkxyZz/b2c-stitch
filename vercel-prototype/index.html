@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Tabajoy — Stitch 设计原型</title>
+  <style>
+    :root { color-scheme: light; --mist:#F7F8F7; --white:#fff; --ink:#292827; --stone:#716D6A; --berry:#B84F60; --line:#EBECE8; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--mist); color:var(--ink); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { max-width:1080px; margin:auto; padding:40px 24px 72px; }
+    header { padding:28px; border:1px solid var(--line); border-radius:24px; background:var(--white); }
+    h1,h2,p { margin-top:0; } h1 { margin-bottom:8px; font-size:clamp(26px,4vw,38px); }
+    .lead { color:var(--stone); margin-bottom:0; }
+    .notice { margin-top:18px; padding:14px 16px; border-radius:14px; background:#fbf3f4; color:#6e3440; font-size:14px; }
+    section { margin-top:30px; }
+    h2 { font-size:20px; margin-bottom:12px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; }
+    article { padding:16px; background:var(--white); border:1px solid var(--line); border-radius:16px; }
+    article h3 { font-size:16px; margin:0 0 10px; }
+    .links { display:flex; flex-wrap:wrap; gap:8px; }
+    a { color:var(--berry); text-decoration:none; font-weight:600; }
+    a:hover { text-decoration:underline; }
+    .links a { display:inline-flex; padding:7px 11px; border:1px solid var(--line); border-radius:999px; background:var(--mist); font-size:13px; }
+    .status { color:var(--stone); font-size:13px; }
+    footer { margin-top:28px; color:var(--stone); font-size:13px; }
+    @media(max-width:520px) { main{padding:20px 14px 48px} header{padding:20px} }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Tabajoy 设计原型</h1>
+    <p class="lead">Stitch 导出的静态页面预览。选择页面查看 Desktop / Mobile 设计稿。</p>
+    <div class="notice"><strong>原型用途：</strong>这不是可交易的网店。价格、材质、运费等信息仍待确认；Medusa / Stripe 未接入，购买和订单提交功能不可用。</div>
+  </header>
+  <section>
+    <h2>页面清单</h2>
+    <div class="grid">
+      <article><h3>00 — 网站地图</h3><div class="links"><a href="/sitemap/">打开 Sitemap</a></div></article>
+      <article><h3>01 — 首页</h3><div class="links"><a href="/home/desktop/">Desktop</a><a href="/home/mobile/">Mobile</a></div></article>
+      <article><h3>02 — 商品列表</h3><div class="links"><a href="/collection/desktop/">Desktop</a><a href="/collection/mobile/">Mobile</a></div></article>
+      <article><h3>03 — クロワッサン猫</h3><div class="links"><a href="/products/croissant-cat/desktop/">Desktop</a><a href="/products/croissant-cat/mobile/">Mobile</a></div></article>
+      <article><h3>04 — たまごおにぎり</h3><div class="links"><a href="/products/egg-onigiri/desktop/">Desktop</a><a href="/products/egg-onigiri/mobile/">Mobile</a></div></article>
+      <article><h3>05 — 空购物车状态</h3><div class="links"><a href="/cart/empty/">打开独立状态</a></div></article>
+      <article><h3>06 — 有商品购物车</h3><div class="links"><a href="/cart/filled/desktop/">Desktop</a><a href="/cart/filled/mobile/">Mobile</a></div></article>
+      <article><h3>07 — 结账原型</h3><div class="links"><a href="/checkout/desktop/">Desktop</a><a href="/checkout/mobile/">Mobile</a></div></article>
+      <article><h3>08 — 订单完成画面</h3><div class="links"><a href="/checkout/order-complete/desktop/">Desktop</a><a href="/checkout/order-complete/mobile/">Mobile</a></div><p class="status">仅为独立原型画面，不代表已创建订单。</p></article>
+      <article><h3>09 — 特定商取引法表示</h3><div class="links"><a href="/legal/desktop/">Desktop</a><a href="/legal/mobile/">Mobile</a></div></article>
+      <article><h3>10 — 配送・送料・返品</h3><div class="links"><a href="/shipping-returns/desktop/">Desktop</a><a href="/shipping-returns/mobile/">Mobile</a></div></article>
+      <article><h3>11 — 隐私政策</h3><div class="links"><a href="/privacy/desktop/">Desktop</a><a href="/privacy/mobile/">Mobile</a></div></article>
+      <article><h3>12 — 利用规约</h3><div class="links"><a href="/terms/desktop/">Desktop</a><a href="/terms/mobile/">Mobile</a></div></article>
+      <article><h3>13 — 常见问题</h3><div class="links"><a href="/faq/desktop/">Desktop</a><a href="/faq/mobile/">Mobile</a></div></article>
+    </div>
+  </section>
+  <footer>共 26 个已整理画面：12 组 Desktop / Mobile 配对、1 个 Sitemap、1 个空购物车状态。Contact 页面尚未创建。</footer>
+</main>
+</body>
+</html>

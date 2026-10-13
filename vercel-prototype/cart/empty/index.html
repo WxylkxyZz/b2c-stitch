@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="ja" class="h-full"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabajoy - カート (空の状態)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Zen+Maru+Gothic:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#F7F8F7',
+              surface: '#FFFFFF',
+              primary: '#292827',
+              secondary: '#716D6A',
+              accent: '#B84F60',
+              border: '#E8EAE8',
+              surfaceSubtle: '#F0F2F0'
+            }
+          },
+          fontFamily: {
+            heading: ['"Zen Maru Gothic"', '"Zen Kaku Gothic New"', 'sans-serif'],
+            body: ['"Zen Kaku Gothic New"', 'sans-serif'],
+            'jp-heading': ['"Zen Maru Gothic"', '"Zen Kaku Gothic New"', 'sans-serif'],
+            'jp-body': ['"Zen Kaku Gothic New"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Zen Kaku Gothic New', sans-serif;
+      background-color: #F7F8F7;
+      color: #292827;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, .font-heading {
+      font-family: 'Zen Maru Gothic', 'Zen Kaku Gothic New', sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-full flex flex-col justify-between selection:bg-brand-accent/10 selection:text-brand-accent">
+  <!-- Header -->
+  <header class="bg-brand-surface border-b border-brand-border sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-10">
+        <a href="#home" class="font-heading text-2xl font-bold tracking-tight text-brand-primary">Tabajoy</a>
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-secondary">
+          <a href="#collection" class="hover:text-brand-primary transition-colors">コレクション</a>
+          <a href="#about" class="hover:text-brand-primary transition-colors">私たちについて</a>
+          <a href="#news" class="hover:text-brand-primary transition-colors">お知らせ</a>
+        </nav>
+      </div>
+      <div class="flex items-center space-x-6 text-brand-primary">
+        <div class="flex items-center text-xs text-brand-secondary border border-brand-border rounded-full px-3 py-1 bg-brand-bg">
+          <span class="inline-block w-1.5 h-1.5 rounded-full bg-brand-accent mr-1.5"></span>
+          JPY / 日本円
+        </div>
+        <button type="button" aria-label="検索" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-brand-bg transition-colors text-brand-primary">
+          <span class="material-symbols-outlined text-xl">search</span>
+        </button>
+        <a href="#cart" aria-label="ショッピングカート (空)" class="w-11 h-11 flex items-center justify-center rounded-full bg-brand-bg transition-colors text-brand-primary">
+          <span class="material-symbols-outlined text-xl">shopping_bag</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Empty Cart Main -->
+  <main class="flex-grow max-w-4xl mx-auto px-6 py-16 w-full flex items-center justify-center">
+    <div class="w-full max-w-md bg-brand-surface rounded-2xl border border-brand-border p-10 text-center shadow-sm">
+      <div class="w-16 h-16 mx-auto rounded-full bg-brand-bg border border-brand-border flex items-center justify-center text-brand-secondary mb-6">
+        <span class="material-symbols-outlined text-2xl">shopping_bag</span>
+      </div>
+
+      <h1 class="font-heading text-2xl font-bold text-brand-primary tracking-tight">カートに商品はありません。</h1>
+      <p class="text-sm text-brand-secondary mt-3 leading-relaxed">
+        現在カートの中身は空です。<br>
+        お気に入りの造形を見つけてみてください。
+      </p>
+
+      <div class="mt-8">
+        <a href="#collection" class="inline-flex items-center justify-center w-full min-h-[48px] px-8 rounded-xl bg-brand-primary text-brand-surface font-medium text-sm hover:bg-black active:scale-[0.99] transition-all shadow-sm">
+          <span class="">コレクションを見る</span>
+          <span class="material-symbols-outlined text-base ml-2">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-brand-surface border-t border-brand-border py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-brand-border">
+        <div>
+          <span class="font-heading text-xl font-bold text-brand-primary tracking-tight">Tabajoy</span>
+          <p class="text-xs text-brand-secondary mt-1">静謐な空間で愛でる、触覚の彫刻。</p>
+        </div>
+        <div class="flex flex-wrap gap-6 text-xs text-brand-secondary">
+          <a href="#tokushoho" class="hover:text-brand-primary transition-colors">特定商取引法に基づく表記</a>
+          <a href="#privacy" class="hover:text-brand-primary transition-colors">プライバシーポリシー</a>
+          <a href="#contact" class="hover:text-brand-primary transition-colors">お問い合わせ</a>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-brand-secondary gap-4">
+        <p class="">© Tabajoy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body></html>

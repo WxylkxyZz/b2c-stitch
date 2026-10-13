@@ -1,0 +1,339 @@
+<!DOCTYPE html><html lang="ja" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabajoy - 配送・送料・返品について</title>
+  
+  <!-- Google Fonts: Zen Kaku Gothic New & Zen Maru Gothic Only -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Zen+Maru+Gothic:wght@500;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Material Symbols Outlined (Single Import) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["'Zen Kaku Gothic New'", "sans-serif"],
+            body: ["'Zen Kaku Gothic New'", "sans-serif"],
+            "body-md": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "body-lg": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "label-sm": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "label-md": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "jp-body": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "zen-kaku": ["'Zen Kaku Gothic New'", "sans-serif"],
+            mono: ["monospace"],
+            heading: ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "jp-heading": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "headline-md": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "headline-lg": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "title-md": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "zen-maru": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"]
+          },
+          colors: {
+            surface: {
+              DEFAULT: '#f9f9f8',
+              dim: '#d9dad9',
+              'container-lowest': '#ffffff',
+              'container-low': '#f3f4f3',
+              'container': '#edeeed',
+              'container-high': '#e7e8e7',
+              'container-highest': '#e1e3e2'
+            },
+            primary: {
+              DEFAULT: '#292827'
+            },
+            secondary: {
+              DEFAULT: '#716d6a'
+            },
+            accent: {
+              DEFAULT: '#b84f60'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface text-primary font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-surface-dim">
+
+  <!-- Desktop Header -->
+  <header class="sticky top-0 z-40 bg-surface/90 backdrop-blur-md border-b border-surface-container-highest">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-8">
+        <a href="#" class="font-heading font-bold text-xl tracking-wider text-primary flex items-center gap-2">
+          <span class="">Tabajoy</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-accent inline-block"></span>
+        </a>
+      </div>
+      <nav class="flex items-center gap-6 text-xs text-secondary font-medium">
+        <a href="#" class="hover:text-primary transition-colors">コレクション</a>
+        <a href="#" class="hover:text-primary transition-colors">お問い合わせ</a>
+        <a href="#" class="hover:text-primary transition-colors flex items-center gap-1.5 py-1 px-2.5 rounded-lg bg-surface-container border border-surface-container-high">
+          <span class="material-symbols-outlined text-sm">shopping_bag</span>
+          <span class="">カート</span>
+          <span class="text-[10px] font-mono font-bold text-primary ml-0.5">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-5xl mx-auto w-full px-6 py-10 space-y-8">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="パンくずリスト" class="flex items-center gap-2 text-xs text-secondary">
+      <a href="#" class="hover:text-primary transition-colors">ホーム</a>
+      <span class="text-surface-dim material-symbols-outlined text-xs">chevron_right</span>
+      <span class="text-secondary">ご利用ガイド</span>
+      <span class="text-surface-dim material-symbols-outlined text-xs">chevron_right</span>
+      <span class="text-primary font-medium" aria-current="page">配送・送料・返品について</span>
+    </nav>
+
+    <!-- Page Title & Overview -->
+    <div class="space-y-3 pb-6 border-b border-surface-container-high">
+      <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-[11px] font-mono text-secondary tracking-widest uppercase">
+        <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+        <span class="">Customer Guide</span>
+      </div>
+      <h1 class="font-heading text-2xl md:text-3xl font-bold text-primary tracking-tight">配送・送料・返品について</h1>
+      <p class="text-xs md:text-sm text-secondary leading-relaxed max-w-3xl">
+        Tabajoyにおける商品の配送、送料、お届け時期、返品・交換、およびご注文のキャンセルに関するご案内です。各方針および条件の確定後に正式な内容を掲載いたします。
+      </p>
+    </div>
+
+    <!-- Prototype Disclaimer Banner -->
+    <section class="bg-surface-container-lowest rounded-2xl border border-surface-container-high p-5 shadow-[0_1px_3px_rgba(0,0,0,0.02)] flex items-start gap-3.5">
+      <span class="material-symbols-outlined text-accent text-lg flex-shrink-0 mt-0.5">info</span>
+      <div class="text-xs text-secondary leading-relaxed space-y-1">
+        <strong class="text-primary font-bold block text-sm font-heading">プロトタイプ確認事項</strong>
+        <p class="">
+          本画面はデザインおよび構成確認用のプロトタイプです。現在ストアの正式注文受付および決済機能は準備中であり、記載内容は確定しておりません。正式運用開始前に各項目の条件を確定し、記載内容を更新してください。
+        </p>
+      </div>
+    </section>
+
+    <!-- Two-column Layout: TOC + Content -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pt-2">
+
+      <!-- Table of Contents Sidebar -->
+      <aside class="lg:col-span-4 sticky top-24">
+        <nav aria-label="ページ内目次" class="bg-surface-container-lowest rounded-2xl border border-surface-container-high p-5 space-y-3 shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+          <div class="flex items-center justify-between pb-2 border-b border-surface-container-high">
+            <span class="font-heading text-xs font-bold text-primary flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-sm text-secondary">toc</span>
+              <span class="">目次</span>
+            </span>
+            <span class="text-[10px] font-mono text-secondary">全6項目</span>
+          </div>
+          <ul class="space-y-1 text-xs">
+            <li class="">
+              <a href="#shipping" class="flex items-center justify-between py-2 px-2.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors">
+                <span class="">配送について</span>
+                <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="#fee" class="flex items-center justify-between py-2 px-2.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors">
+                <span class="">送料について</span>
+                <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="#delivery" class="flex items-center justify-between py-2 px-2.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors">
+                <span class="">お届け時期について</span>
+                <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="#returns" class="flex items-center justify-between py-2 px-2.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors">
+                <span class="">返品・交換について</span>
+                <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="#cancellation" class="flex items-center justify-between py-2 px-2.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors">
+                <span class="">キャンセルについて</span>
+                <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="#contact" class="flex items-center justify-between py-2 px-2.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors">
+                <span class="">お問い合わせ</span>
+                <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Policy Sections -->
+      <div class="lg:col-span-8 space-y-6">
+
+        <!-- 1. 配送について -->
+        <section id="shipping" class="bg-surface-container-lowest rounded-2xl border border-surface-container-high p-6 shadow-[0_1px_3px_rgba(0,0,0,0.02)] space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-surface-container-high">
+            <div class="flex items-center gap-2.5">
+              <span class="w-6 h-6 rounded-full bg-surface-container text-secondary text-xs flex items-center justify-center font-mono font-medium">01</span>
+              <h2 class="font-heading text-base font-bold text-primary">配送について</h2>
+            </div>
+            <span class="text-[10px] font-mono text-secondary tracking-widest uppercase">SHIPPING</span>
+          </div>
+          <div class="space-y-3 text-xs md:text-sm text-secondary leading-relaxed">
+            <p class="">
+              商品の配送方法および対応地域に関する規定です。運送会社および配送可能エリアの選定が完了次第、正式な配送規定を掲載いたします。
+            </p>
+            <div class="p-4 rounded-xl bg-surface-container-low border border-surface-container-high space-y-1.5">
+              <span class="text-[11px] font-medium text-secondary block">配送対象地域</span>
+              <p class="font-mono text-primary font-medium text-xs md:text-sm">【配送対象地域の確認後に記載】</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. 送料について -->
+        <section id="fee" class="bg-surface-container-lowest rounded-2xl border border-surface-container-high p-6 shadow-[0_1px_3px_rgba(0,0,0,0.02)] space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-surface-container-high">
+            <div class="flex items-center gap-2.5">
+              <span class="w-6 h-6 rounded-full bg-surface-container text-secondary text-xs flex items-center justify-center font-mono font-medium">02</span>
+              <h2 class="font-heading text-base font-bold text-primary">送料について</h2>
+            </div>
+            <span class="text-[10px] font-mono text-secondary tracking-widest uppercase">SHIPPING FEES</span>
+          </div>
+          <div class="space-y-3 text-xs md:text-sm text-secondary leading-relaxed">
+            <p class="">
+              ご注文時の配送料金および地域別手数料に関するご案内です。配送料金テーブルおよび梱包条件の確定後に正式な金額を明記いたします。
+            </p>
+            <div class="p-4 rounded-xl bg-surface-container-low border border-surface-container-high space-y-1.5">
+              <span class="text-[11px] font-medium text-secondary block">配送料金および追加手数料</span>
+              <p class="font-mono text-primary font-medium text-xs md:text-sm">【送料・追加料金の確認後に記載】</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. お届け時期について -->
+        <section id="delivery" class="bg-surface-container-lowest rounded-2xl border border-surface-container-high p-6 shadow-[0_1px_3px_rgba(0,0,0,0.02)] space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-surface-container-high">
+            <div class="flex items-center gap-2.5">
+              <span class="w-6 h-6 rounded-full bg-surface-container text-secondary text-xs flex items-center justify-center font-mono font-medium">03</span>
+              <h2 class="font-heading text-base font-bold text-primary">お届け時期について</h2>
+            </div>
+            <span class="text-[10px] font-mono text-secondary tracking-widest uppercase">DELIVERY SCHEDULE</span>
+          </div>
+          <div class="space-y-3 text-xs md:text-sm text-secondary leading-relaxed">
+            <p class="">
+              ご注文完了から発送手続き、およびお客様への商品引き渡し時期の目安です。発送フローおよび物流体制の確定後に正式なスケジュールをご案内いたします。
+            </p>
+            <div class="p-4 rounded-xl bg-surface-container-low border border-surface-container-high space-y-1.5">
+              <span class="text-[11px] font-medium text-secondary block">発送時期・お届け目安</span>
+              <p class="font-mono text-primary font-medium text-xs md:text-sm">【発送時期・お届け目安の確認後に記載】</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. 返品・交換について -->
+        <section id="returns" class="bg-surface-container-lowest rounded-2xl border border-surface-container-high p-6 shadow-[0_1px_3px_rgba(0,0,0,0.02)] space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-surface-container-high">
+            <div class="flex items-center gap-2.5">
+              <span class="w-6 h-6 rounded-full bg-surface-container text-secondary text-xs flex items-center justify-center font-mono font-medium">04</span>
+              <h2 class="font-heading text-base font-bold text-primary">返品・交換について</h2>
+            </div>
+            <span class="text-[10px] font-mono text-secondary tracking-widest uppercase">RETURNS &amp; EXCHANGES</span>
+          </div>
+          <div class="space-y-3 text-xs md:text-sm text-secondary leading-relaxed">
+            <p class="">
+              初期不良、商品違い、またはお客様都合による返品・交換条件に関する規定です。返品受付期間および適用条件の確認後に正式な規約を記載いたします。
+            </p>
+            <div class="p-4 rounded-xl bg-surface-container-low border border-surface-container-high space-y-1.5">
+              <span class="text-[11px] font-medium text-secondary block">返品・交換の適用条件</span>
+              <p class="font-mono text-primary font-medium text-xs md:text-sm">【返品・交換条件の確認後に記載】</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. キャンセルについて -->
+        <section id="cancellation" class="bg-surface-container-lowest rounded-2xl border border-surface-container-high p-6 shadow-[0_1px_3px_rgba(0,0,0,0.02)] space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-surface-container-high">
+            <div class="flex items-center gap-2.5">
+              <span class="w-6 h-6 rounded-full bg-surface-container text-secondary text-xs flex items-center justify-center font-mono font-medium">05</span>
+              <h2 class="font-heading text-base font-bold text-primary">キャンセルについて</h2>
+            </div>
+            <span class="text-[10px] font-mono text-secondary tracking-widest uppercase">CANCELLATION</span>
+          </div>
+          <div class="space-y-3 text-xs md:text-sm text-secondary leading-relaxed">
+            <p class="">
+              ご注文完了後から出荷前のキャンセル受付可否および手続きに関する規定です。受託システムおよび運用規程の確認後に確定いたします。
+            </p>
+            <div class="p-4 rounded-xl bg-surface-container-low border border-surface-container-high space-y-1.5">
+              <span class="text-[11px] font-medium text-secondary block">キャンセル受付の条件・期限</span>
+              <p class="font-mono text-primary font-medium text-xs md:text-sm">【キャンセル条件の確認後に記載】</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6. お問い合わせ -->
+        <section id="contact" class="bg-surface-container-lowest rounded-2xl border border-surface-container-high p-6 shadow-[0_1px_3px_rgba(0,0,0,0.02)] space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-surface-container-high">
+            <div class="flex items-center gap-2.5">
+              <span class="w-6 h-6 rounded-full bg-surface-container text-secondary text-xs flex items-center justify-center font-mono font-medium">06</span>
+              <h2 class="font-heading text-base font-bold text-primary">お問い合わせ</h2>
+            </div>
+            <span class="text-[10px] font-mono text-secondary tracking-widest uppercase">CONTACT</span>
+          </div>
+          <div class="space-y-3 text-xs md:text-sm text-secondary leading-relaxed">
+            <p class="">
+              配送、送料、および返品に関するご不明点のお問い合わせ先です。公式カスタマーサポート体制の決定後に窓口詳細を記載いたします。
+            </p>
+            <div class="p-4 rounded-xl bg-surface-container-low border border-surface-container-high space-y-1.5">
+              <span class="text-[11px] font-medium text-secondary block">カスタマーサポート窓口</span>
+              <p class="font-mono text-primary font-medium text-xs md:text-sm">【お問い合わせ窓口の決定後に記載】</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Advisory Note -->
+        <div class="pt-2">
+          <p class="text-xs text-secondary leading-relaxed">
+            ※ 掲載内容は、販売事業者および配送・販売条件の確認後に確定してください。
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Desktop Footer -->
+  <footer class="mt-16 border-t border-surface-container-high bg-surface-container-lowest py-10">
+    <div class="max-w-5xl mx-auto px-6 space-y-6">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+          <span class="font-heading font-bold text-base tracking-wider text-primary">Tabajoy</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-accent inline-block ml-1"></span>
+          <p class="text-xs text-secondary mt-1">本製品は玩具です。食品ではありません。</p>
+        </div>
+        <nav class="flex flex-wrap gap-6 text-xs text-secondary">
+          <a href="#" class="hover:text-primary transition-colors">コレクションを見る</a>
+          <a href="#" class="hover:text-primary transition-colors">利用規約</a>
+          <a href="#" class="hover:text-primary transition-colors">プライバシーポリシー</a>
+          <a href="#" class="hover:text-primary transition-colors">特定商取引法に基づく表記</a>
+          <a href="#" class="text-accent font-medium hover:underline">配送・送料・返品について</a>
+          <a href="#" class="hover:text-primary transition-colors">お問い合わせ</a>
+        </nav>
+      </div>
+      <div class="pt-6 border-t border-surface-container-low flex flex-col md:flex-row justify-between items-center text-[11px] text-secondary/80 gap-2 font-mono">
+        <p class="">© Tabajoy. All rights reserved.</p>
+        <p class="">DESIGNED FOR TACTILE APPRECIATION</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+</body></html>

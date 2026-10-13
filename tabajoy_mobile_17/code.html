@@ -1,0 +1,380 @@
+<!DOCTYPE html><html lang="ja" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>よくあるご質問 | Tabajoy オンラインストア</title>
+  
+  <!-- Google Fonts: Zen Kaku Gothic New & Zen Maru Gothic only -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Zen+Maru+Gothic:wght@500;700&amp;display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols Outlined (Single Link) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mist: '#F7F8F7',
+            charcoal: '#292827',
+            stone: '#716D6A',
+            berry: '#B84F60',
+            subtle: '#E7E8E7'
+          },
+          fontFamily: {
+            'zen-maru': ['"Zen Maru Gothic"', '"Zen Kaku Gothic New"', 'sans-serif'],
+            'zen-kaku': ['"Zen Kaku Gothic New"', 'sans-serif'],
+            sans: ['"Zen Kaku Gothic New"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-mist text-charcoal font-zen-kaku antialiased min-h-screen flex flex-col selection:bg-berry selection:text-white">
+
+  <!-- Sticky Mobile Header -->
+  <header class="sticky top-0 z-40 bg-mist/90 backdrop-blur-md border-b border-subtle">
+    <div class="px-4 h-14 flex items-center justify-between">
+      <a href="#" class="w-10 h-10 flex items-center justify-center -ml-2 text-charcoal active:opacity-60 transition" aria-label="前のページに戻る">
+        <span class="material-symbols-outlined text-[22px]">arrow_back</span>
+      </a>
+      
+      <a href="#" class="font-zen-maru text-lg font-bold tracking-tight text-charcoal flex items-center gap-1">
+        Tabajoy<span class="text-berry text-xs">●</span>
+      </a>
+      
+      <div class="flex items-center gap-1 -mr-2">
+        <button class="w-10 h-10 flex items-center justify-center text-charcoal active:opacity-60 transition" aria-label="検索">
+          <span class="material-symbols-outlined text-[20px]">search</span>
+        </button>
+        <button class="w-10 h-10 flex items-center justify-center text-charcoal active:opacity-60 transition relative" aria-label="カート">
+          <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout (Fluid & Zoomable) -->
+  <main class="flex-grow px-4 pt-4 pb-12 w-full max-w-lg mx-auto">
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-1.5 text-xs text-stone mb-4 overflow-x-auto whitespace-nowrap py-1">
+      <a href="#" class="hover:text-charcoal transition">ホーム</a>
+      <span class="text-[10px] text-stone/60">/</span>
+      <span class="text-charcoal font-medium">よくあるご質問</span>
+    </nav>
+
+    <!-- Page Title Area -->
+    <div class="mb-6">
+      <div class="inline-flex items-center gap-1.5 font-medium tracking-wider uppercase text-berry bg-white border border-berry/20 px-2 py-0.5 rounded-full mb-2 text-xs">
+        <span class="w-1 h-1 rounded-full bg-berry"></span>
+        FAQ &amp; Help Center
+      </div>
+      <h1 class="text-2xl font-bold font-zen-maru text-charcoal tracking-tight">よくあるご質問</h1>
+      <p class="text-xs text-stone mt-2 leading-relaxed">
+        商品やご利用方法についてのご案内です。
+      </p>
+    </div>
+
+    <!-- Table of Contents Card -->
+    <div class="bg-white border border-subtle rounded-2xl p-4 mb-8 shadow-sm">
+      <div class="flex items-center justify-between pb-3 mb-2 border-b border-subtle/60">
+        <h2 class="text-xs font-bold text-charcoal font-zen-maru flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-stone text-sm">toc</span>
+          カテゴリー目次
+        </h2>
+        <span class="text-[10px] text-stone uppercase tracking-wider font-medium">INDEX</span>
+      </div>
+      
+      <ol class="space-y-1 text-xs">
+        <li class="">
+          <a href="#cat-m-product" class="flex items-center justify-between py-2 px-2 -mx-2 rounded-lg text-stone active:bg-mist active:text-charcoal transition">
+            <span class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-berry"></span>
+              <span class="">商品について</span>
+            </span>
+            <span class="material-symbols-outlined text-xs text-stone/50">chevron_right</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#cat-m-care" class="flex items-center justify-between py-2 px-2 -mx-2 rounded-lg text-stone active:bg-mist active:text-charcoal transition">
+            <span class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-berry"></span>
+              <span class="">ご使用・お手入れについて</span>
+            </span>
+            <span class="material-symbols-outlined text-xs text-stone/50">chevron_right</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#cat-m-order" class="flex items-center justify-between py-2 px-2 -mx-2 rounded-lg text-stone active:bg-mist active:text-charcoal transition">
+            <span class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-berry"></span>
+              <span class="">ご注文・お支払いについて</span>
+            </span>
+            <span class="material-symbols-outlined text-xs text-stone/50">chevron_right</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#cat-m-shipping" class="flex items-center justify-between py-2 px-2 -mx-2 rounded-lg text-stone active:bg-mist active:text-charcoal transition">
+            <span class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-berry"></span>
+              <span class="">配送・返品について</span>
+            </span>
+            <span class="material-symbols-outlined text-xs text-stone/50">chevron_right</span>
+          </a>
+        </li>
+      </ol>
+    </div>
+
+    <!-- FAQ Blocks Container -->
+    <div class="space-y-8">
+
+      <!-- 1. 商品について -->
+      <section id="cat-m-product" class="scroll-mt-20">
+        <div class="flex items-center gap-2 pb-2 mb-3 border-b border-subtle">
+          <span class="w-2 h-2 rounded-full bg-berry"></span>
+          <h2 class="text-sm font-bold font-zen-maru text-charcoal">商品について</h2>
+        </div>
+
+        <div class="space-y-3">
+          <!-- Q1 -->
+          <div class="bg-white border border-subtle rounded-2xl p-4 shadow-sm">
+            <h3 class="text-xs font-bold font-zen-maru text-charcoal flex items-start gap-2 mb-2">
+              <span class="text-[11px] font-mono text-berry font-bold shrink-0">Q.</span>
+              <span class="">どのような商品ですか？</span>
+            </h3>
+            <p class="text-xs text-stone leading-relaxed pl-4">
+              クロワッサン猫と、たまごおにぎりの2種類のスクイーズをご用意しています。商品ごとの写真と説明は、各商品詳細ページをご確認ください。
+            </p>
+          </div>
+
+          <!-- Q2 -->
+          <div class="bg-white border border-subtle rounded-2xl p-4 shadow-sm">
+            <h3 class="text-xs font-bold font-zen-maru text-charcoal flex items-start gap-2 mb-2">
+              <span class="text-[11px] font-mono text-berry font-bold shrink-0">Q.</span>
+              <span class="">香りはありますか？</span>
+            </h3>
+            <p class="text-xs text-stone leading-relaxed pl-4">
+              どちらの商品にも香りがあります。香りの種類や詳細は、確認後に掲載します。
+            </p>
+          </div>
+
+          <!-- Q3 -->
+          <div class="bg-white border border-subtle rounded-2xl p-4 shadow-sm">
+            <h3 class="text-xs font-bold font-zen-maru text-charcoal flex items-start gap-2 mb-2">
+              <span class="text-[11px] font-mono text-berry font-bold shrink-0">Q.</span>
+              <span class="">お菓子として食べられますか？</span>
+            </h3>
+            <div class="pl-4 space-y-2 text-xs text-stone leading-relaxed">
+              <p class="">いいえ。どちらも玩具です。食品ではありません。口に入れないでください。</p>
+              <div class="p-2.5 bg-mist border border-subtle rounded-xl text-stone font-medium text-[11px]">
+                ※ たまごおにぎりについて：実際のおにぎりではありません。
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4 (Unconfirmed: 素材) -->
+          <div class="bg-white border border-subtle rounded-2xl p-4 shadow-sm">
+            <h3 class="text-xs font-bold font-zen-maru text-charcoal flex items-start gap-2 mb-2">
+              <span class="text-[11px] font-mono text-berry font-bold shrink-0">Q.</span>
+              <span class="">素材は何ですか？</span>
+            </h3>
+            <div class="pl-4 flex items-center gap-2">
+              <span class="text-[10px] font-medium bg-mist border border-subtle px-1.5 py-0.5 rounded text-stone">確認中</span>
+              <p class="text-xs text-stone">素材の詳細は確認後に掲載します。</p>
+            </div>
+          </div>
+
+          <!-- Q5 (Unconfirmed: 対象年齢) -->
+          <div class="bg-white border border-subtle rounded-2xl p-4 shadow-sm">
+            <h3 class="text-xs font-bold font-zen-maru text-charcoal flex items-start gap-2 mb-2">
+              <span class="text-[11px] font-mono text-berry font-bold shrink-0">Q.</span>
+              <span class="">対象年齢は何歳ですか？</span>
+            </h3>
+            <div class="pl-4 flex items-center gap-2">
+              <span class="text-[10px] font-medium bg-mist border border-subtle px-1.5 py-0.5 rounded text-stone">確認中</span>
+              <p class="text-xs text-stone">対象年齢は確認後に掲載します。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. ご使用・お手入れについて -->
+      <section id="cat-m-care" class="scroll-mt-20">
+        <div class="flex items-center gap-2 pb-2 mb-3 border-b border-subtle">
+          <span class="w-2 h-2 rounded-full bg-berry"></span>
+          <h2 class="text-sm font-bold font-zen-maru text-charcoal">ご使用・お手入れについて</h2>
+        </div>
+
+        <div class="space-y-3">
+          <!-- Q1 -->
+          <div class="bg-white border border-subtle rounded-2xl p-4 shadow-sm">
+            <h3 class="text-xs font-bold font-zen-maru text-charcoal flex items-start gap-2 mb-2">
+              <span class="text-[11px] font-mono text-berry font-bold shrink-0">Q.</span>
+              <span class="">水洗いできますか？</span>
+            </h3>
+            <p class="text-xs text-stone leading-relaxed pl-4">
+              水洗いはできません。汚れた場合は乾いた布で軽く拭いてください。
+            </p>
+          </div>
+
+          <!-- Q2 -->
+          <div class="bg-white border border-subtle rounded-2xl p-4 shadow-sm">
+            <h3 class="text-xs font-bold font-zen-maru text-charcoal flex items-start gap-2 mb-2">
+              <span class="text-[11px] font-mono text-berry font-bold shrink-0">Q.</span>
+              <span class="">保管するときの注意点はありますか？</span>
+            </h3>
+            <p class="text-xs text-stone leading-relaxed pl-4">
+              髪の毛、カーペット、ソファ、衣類には触れさせないでください。紙や布に置くと油分が移る場合があります。ご使用後は密閉できる袋や容器で保管してください。
+            </p>
+          </div>
+
+          <!-- Q3 -->
+          <div class="bg-white border border-subtle rounded-2xl p-4 shadow-sm">
+            <h3 class="text-xs font-bold font-zen-maru text-charcoal flex items-start gap-2 mb-2">
+              <span class="text-[11px] font-mono text-berry font-bold shrink-0">Q.</span>
+              <span class="">手や肌に注意することはありますか？</span>
+            </h3>
+            <p class="text-xs text-stone leading-relaxed pl-4">
+              手に傷がある場合や、敏感肌の方はご使用をお控えください。
+            </p>
+          </div>
+
+          <!-- Q4 -->
+          <div class="bg-white border border-subtle rounded-2xl p-4 shadow-sm">
+            <h3 class="text-xs font-bold font-zen-maru text-charcoal flex items-start gap-2 mb-2">
+              <span class="text-[11px] font-mono text-berry font-bold shrink-0">Q.</span>
+              <span class="">気温によって硬さは変わりますか？</span>
+            </h3>
+            <p class="text-xs text-stone leading-relaxed pl-4">
+              気温により、かたさが変わることがあります。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. ご注文・お支払いについて -->
+      <section id="cat-m-order" class="scroll-mt-20">
+        <div class="flex items-center gap-2 pb-2 mb-3 border-b border-subtle">
+          <span class="w-2 h-2 rounded-full bg-berry"></span>
+          <h2 class="text-sm font-bold font-zen-maru text-charcoal">ご注文・お支払いについて</h2>
+        </div>
+
+        <div class="space-y-3">
+          <!-- Q1 (Unconfirmed: 価格) -->
+          <div class="bg-white border border-subtle rounded-2xl p-4 shadow-sm">
+            <h3 class="text-xs font-bold font-zen-maru text-charcoal flex items-start gap-2 mb-2">
+              <span class="text-[11px] font-mono text-berry font-bold shrink-0">Q.</span>
+              <span class="">価格はいくらですか？</span>
+            </h3>
+            <div class="pl-4 flex items-center gap-2">
+              <span class="text-[10px] font-medium bg-mist border border-subtle px-1.5 py-0.5 rounded text-stone">確認中</span>
+              <p class="text-xs text-stone">価格は現在確認中です。</p>
+            </div>
+          </div>
+
+          <!-- Q2 (Unconfirmed: 支払い方法) -->
+          <div class="bg-white border border-subtle rounded-2xl p-4 shadow-sm">
+            <h3 class="text-xs font-bold font-zen-maru text-charcoal flex items-start gap-2 mb-2">
+              <span class="text-[11px] font-mono text-berry font-bold shrink-0">Q.</span>
+              <span class="">支払い方法は何がありますか？</span>
+            </h3>
+            <div class="pl-4 flex items-center gap-2">
+              <span class="text-[10px] font-medium bg-mist border border-subtle px-1.5 py-0.5 rounded text-stone">確認中</span>
+              <p class="text-xs text-stone">お支払い方法は準備中です。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. 配送・返品について -->
+      <section id="cat-m-shipping" class="scroll-mt-20">
+        <div class="flex items-center gap-2 pb-2 mb-3 border-b border-subtle">
+          <span class="w-2 h-2 rounded-full bg-berry"></span>
+          <h2 class="text-sm font-bold font-zen-maru text-charcoal">配送・返品について</h2>
+        </div>
+
+        <div class="space-y-3">
+          <!-- Q1 (Unconfirmed: 送料・時期) -->
+          <div class="bg-white border border-subtle rounded-2xl p-4 shadow-sm">
+            <h3 class="text-xs font-bold font-zen-maru text-charcoal flex items-start gap-2 mb-2">
+              <span class="text-[11px] font-mono text-berry font-bold shrink-0">Q.</span>
+              <span class="">送料はいくらですか？ いつ届きますか？</span>
+            </h3>
+            <div class="pl-4 flex items-center gap-2">
+              <span class="text-[10px] font-medium bg-mist border border-subtle px-1.5 py-0.5 rounded text-stone">確認中</span>
+              <p class="text-xs text-stone">送料およびお届け時期は確認後に掲載します。</p>
+            </div>
+          </div>
+
+          <!-- Q2 (Unconfirmed: 返品・キャンセル) -->
+          <div class="bg-white border border-subtle rounded-2xl p-4 shadow-sm">
+            <h3 class="text-xs font-bold font-zen-maru text-charcoal flex items-start gap-2 mb-2">
+              <span class="text-[11px] font-mono text-berry font-bold shrink-0">Q.</span>
+              <span class="">返品・キャンセルはできますか？</span>
+            </h3>
+            <div class="pl-4 flex items-center gap-2">
+              <span class="text-[10px] font-medium bg-mist border border-subtle px-1.5 py-0.5 rounded text-stone">確認中</span>
+              <p class="text-xs text-stone">返品・交換・キャンセル条件は確認後に掲載します。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Calm Contact Note -->
+    <div class="mt-8 bg-white border border-subtle rounded-2xl p-5 text-center shadow-sm">
+      <span class="material-symbols-outlined text-stone text-xl mb-1.5">mail</span>
+      <h2 class="text-xs font-bold font-zen-maru text-charcoal mb-1.5">解決しない場合のお問い合わせ</h2>
+      <p class="text-[11px] text-stone leading-relaxed mb-4">
+        ご不明な点やお気づきの点がございましたら、お問い合わせページよりご連絡ください。
+      </p>
+      <a href="#" class="w-full h-11 bg-charcoal text-white rounded-xl font-medium text-xs flex items-center justify-center gap-1.5 active:bg-charcoal/90 transition shadow-sm">
+        <span class="">お問い合わせページへ</span>
+        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Standard Mobile Global Footer -->
+  <footer class="bg-white border-t border-subtle pt-8 pb-12 px-4 mt-auto">
+    <div class="max-w-lg mx-auto flex flex-col items-center text-center">
+      <a href="#" class="font-zen-maru text-base font-bold tracking-tight text-charcoal mb-1">
+        Tabajoy<span class="text-berry">●</span>
+      </a>
+      <p class="text-stone tracking-widest uppercase mb-6 font-medium text-xs">Tactile Art Gallery</p>
+
+      <!-- Required Footer Route Links -->
+      <nav class="flex flex-wrap justify-center gap-x-5 gap-y-2.5 text-xs text-stone mb-6 max-w-xs">
+        <a href="#" class="hover:text-charcoal transition py-1">コレクション</a>
+        <a href="#" class="hover:text-charcoal transition py-1">配送・送料・返品について</a>
+        <a href="#" class="hover:text-charcoal transition py-1">プライバシーポリシー</a>
+        <a href="#" class="hover:text-charcoal transition py-1">利用規約</a>
+        <a href="#" class="hover:text-charcoal transition py-1">特定商取引法に基づく表記</a>
+        <a href="#" class="hover:text-charcoal transition py-1">お問い合わせ</a>
+      </nav>
+
+      <!-- Toy safety notice -->
+      <div class="w-full py-2.5 px-4 bg-mist rounded-xl border border-subtle/80 mb-6 max-w-sm">
+        <p class="text-[11px] text-stone font-medium">
+          本製品は玩具です。食品ではありません。
+        </p>
+      </div>
+
+      <!-- Copyright -->
+      <p class="text-[10px] text-stone/70 tracking-wider">
+        © Tabajoy. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+
+
+
+
+</body></html>

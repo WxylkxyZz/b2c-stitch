@@ -1,0 +1,277 @@
+<!DOCTYPE html><html lang="ja" class="scroll-smooth" style=""><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>たまごおにぎり - 商品詳細 (Mobile) | Tabajoy たばじょい</title>
+  <!-- Google Fonts: Zen Kaku Gothic New & Zen Maru Gothic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Zen+Maru+Gothic:wght@500;700&amp;display=swap" rel="stylesheet">
+  <!-- Material Symbols Outlined -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#F7F8F7',
+              surface: '#FFFFFF',
+              charcoal: '#292827',
+              stone: '#716D6A',
+              border: '#E6E8E6',
+              borderLight: '#EFF0EF',
+              berry: '#B84F60',
+              berryLight: '#FDF2F4',
+              accentBg: '#F3F4F3',
+            }
+          },
+          fontFamily: {
+            sans: ["'Zen Kaku Gothic New'", "sans-serif"],
+            'body-md': ["'Zen Kaku Gothic New'", "sans-serif"],
+            'body-lg': ["'Zen Kaku Gothic New'", "sans-serif"],
+            'title-md': ["'Zen Kaku Gothic New'", "sans-serif"],
+            'label-md': ["'Zen Kaku Gothic New'", "sans-serif"],
+            'label-sm': ["'Zen Kaku Gothic New'", "sans-serif"],
+            'headline-md': ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            'headline-lg': ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"],
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #F7F8F7;
+      color: #292827;
+      font-family: 'Zen Kaku Gothic New', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-brand-bg text-brand-charcoal pb-24 selection:bg-brand-berryLight selection:text-brand-berry">
+
+  <!-- Mobile Top Bar -->
+  <header class="sticky top-0 z-40 bg-brand-bg/95 backdrop-blur-md border-b border-brand-border">
+    <div class="px-4 h-14 flex items-center justify-between max-w-md mx-auto">
+      <a href="#collection" class="flex items-center gap-1 text-xs text-brand-stone hover:text-brand-charcoal min-h-[44px] py-2">
+        <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+        <span class="">コレクション</span>
+      </a>
+      <a href="#store" class="text-base font-bold tracking-wider font-headline-md text-brand-charcoal">Tabajoy</a>
+      <button type="button" aria-label="買い物かご" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-brand-stone hover:text-brand-charcoal">
+        <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Main Content Container -->
+  <main class="w-full max-w-md mx-auto px-4 pt-4 flex-grow flex flex-col gap-5">
+
+    <!-- 1. Media Gallery (Gallery First Order) -->
+    <section class="flex flex-col gap-3">
+      <!-- Main Image Display -->
+      <div class="relative w-full aspect-square bg-white rounded-2xl border border-brand-border overflow-hidden flex items-center justify-center p-3">
+        <img id="mobile-main-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5F39SVBYPt8eVzwBBagJ2u5jMvS9R-54KRTI7U1aP-0HDadPKKb-Vs_TXcJ43qshFCq3S_8yczGYF_3wfGA75bmVDO8BE6G8sBzTGExp9A9sSxSZeOjmBT7mHS_z-5FTrF5lIbqkSwNQJini3hVN8Mc5wSwBUVNZ9MCttvL0oY7CVQHab2zT64my_pr_wQ4EAdzMakXNlIavg7lcc27TVI1cutFVNla-IjZInqFqTdIbXOpI32357dx-EjaRwhxoMolM" alt="たまごおにぎり スクイーズ パッケージ入り現物写真" class="w-full h-full object-contain transition-all duration-200">
+        <div class="absolute bottom-2.5 right-2.5 bg-white/90 backdrop-blur-sm px-2 py-0.5 rounded-full text-[10px] text-brand-stone border border-brand-borderLight shadow-sm">
+          未開封パッケージ現物撮影
+        </div>
+      </div>
+
+      <!-- Horizontal Thumbnails Strip (Scrollable/Wrap) -->
+      <div class="grid grid-cols-5 gap-2">
+        <button type="button" class="mobile-thumb min-h-[44px] aspect-square rounded-xl bg-white border-2 border-brand-charcoal overflow-hidden p-0.5 transition-all focus:outline-none" onclick="switchMobileImage('https://lh3.googleusercontent.com/aida-public/AB6AXuA5F39SVBYPt8eVzwBBagJ2u5jMvS9R-54KRTI7U1aP-0HDadPKKb-Vs_TXcJ43qshFCq3S_8yczGYF_3wfGA75bmVDO8BE6G8sBzTGExp9A9sSxSZeOjmBT7mHS_z-5FTrF5lIbqkSwNQJini3hVN8Mc5wSwBUVNZ9MCttvL0oY7CVQHab2zT64my_pr_wQ4EAdzMakXNlIavg7lcc27TVI1cutFVNla-IjZInqFqTdIbXOpI32357dx-EjaRwhxoMolM', this)" aria-label="画像1: パッケージ個別">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5F39SVBYPt8eVzwBBagJ2u5jMvS9R-54KRTI7U1aP-0HDadPKKb-Vs_TXcJ43qshFCq3S_8yczGYF_3wfGA75bmVDO8BE6G8sBzTGExp9A9sSxSZeOjmBT7mHS_z-5FTrF5lIbqkSwNQJini3hVN8Mc5wSwBUVNZ9MCttvL0oY7CVQHab2zT64my_pr_wQ4EAdzMakXNlIavg7lcc27TVI1cutFVNla-IjZInqFqTdIbXOpI32357dx-EjaRwhxoMolM" alt="たまごおにぎり パッケージ個別" class="w-full h-full object-contain">
+        </button>
+        <button type="button" class="mobile-thumb min-h-[44px] aspect-square rounded-xl bg-white border border-brand-border overflow-hidden p-0.5 transition-all focus:outline-none" onclick="switchMobileImage('https://lh3.googleusercontent.com/aida-public/AB6AXuB-zfX-eC2iBWk7fWx3Zozb36ysFUyYhpCyYdj1GkTsbQydrvr1ukoNbnfFQJciJ3Tv7MZqTeSiy6FU9jhcKwSULLvHqBncfFlzdJApg8LwineniCd-KAIUfK1AoRJ_354dwJ5aSsQ-uqFuGk_s-LSQPbNeQM_yiWDkj02C5CxbYK_-Od61ahxUFXa8OrRQi-sLJ7qrwkwLGyjYJc_ueQfKJtFoTLeNqjX8D3QQlY9PmG7V_Br8Gdsuc0wSoyeSN388sFk', this)" aria-label="画像2: パッケージ正面">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-zfX-eC2iBWk7fWx3Zozb36ysFUyYhpCyYdj1GkTsbQydrvr1ukoNbnfFQJciJ3Tv7MZqTeSiy6FU9jhcKwSULLvHqBncfFlzdJApg8LwineniCd-KAIUfK1AoRJ_354dwJ5aSsQ-uqFuGk_s-LSQPbNeQM_yiWDkj02C5CxbYK_-Od61ahxUFXa8OrRQi-sLJ7qrwkwLGyjYJc_ueQfKJtFoTLeNqjX8D3QQlY9PmG7V_Br8Gdsuc0wSoyeSN388sFk" alt="たまごおにぎり パッケージ正面" class="w-full h-full object-contain">
+        </button>
+        <button type="button" class="mobile-thumb min-h-[44px] aspect-square rounded-xl bg-white border border-brand-border overflow-hidden p-0.5 transition-all focus:outline-none" onclick="switchMobileImage('https://lh3.googleusercontent.com/aida-public/AB6AXuCydV6r-1ggR7TrtUDx8pkfHtMmnm_b3rv2bgx8-lkKBF9d6sm2gM7FPpBhOOo1L2aiq0LLFfdPCAxarrhvb5Hye-EmtqaFq3s6je3MULRJm5iAmnuWesmf8SIafi2N2pTd18fnawyFOW5Tqesbwl4KZb8VmzFF_cKkPDMDwAJL8KAXZdxufjHgDYRu4_8ft36VPX8S1keAMhjopb63zaKkGP7C_D0Yyl77qJ_szF0bm-fNtAlZD4boaWYa9hwSi8gt060', this)" aria-label="画像3: パッケージ集合">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCydV6r-1ggR7TrtUDx8pkfHtMmnm_b3rv2bgx8-lkKBF9d6sm2gM7FPpBhOOo1L2aiq0LLFfdPCAxarrhvb5Hye-EmtqaFq3s6je3MULRJm5iAmnuWesmf8SIafi2N2pTd18fnawyFOW5Tqesbwl4KZb8VmzFF_cKkPDMDwAJL8KAXZdxufjHgDYRu4_8ft36VPX8S1keAMhjopb63zaKkGP7C_D0Yyl77qJ_szF0bm-fNtAlZD4boaWYa9hwSi8gt060" alt="たまごおにぎり パッケージ集合" class="w-full h-full object-contain">
+        </button>
+        <button type="button" class="mobile-thumb min-h-[44px] aspect-square rounded-xl bg-white border border-brand-border overflow-hidden p-0.5 transition-all focus:outline-none" onclick="switchMobileImage('https://lh3.googleusercontent.com/aida-public/AB6AXuAxzz0dQZy12jr-dApsWQSJqn6E-DgC7wkgRhGO4-IAvoyajlWLFa-zHUDF2r2dDLYbpffzwkD_Xlbujgy-X378sS8S3qFXs-AHNbihF2wDFdVpTw1SO5VBQuBy-4mI4Hf2Cw3Iff4UNuCjNFC2UXOSAB1hFCb3rNsMKxfLqK92aTjIJEHbElX8N4B7m4gOIEjAlDrN-g8_K-ED74zTXLfNuSgfSCUH27O8iwPGHGSf-JmggcePn-Dh_QkGPa8QqycgN8Y', this)" aria-label="画像4: クローズアップ質感">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxzz0dQZy12jr-dApsWQSJqn6E-DgC7wkgRhGO4-IAvoyajlWLFa-zHUDF2r2dDLYbpffzwkD_Xlbujgy-X378sS8S3qFXs-AHNbihF2wDFdVpTw1SO5VBQuBy-4mI4Hf2Cw3Iff4UNuCjNFC2UXOSAB1hFCb3rNsMKxfLqK92aTjIJEHbElX8N4B7m4gOIEjAlDrN-g8_K-ED74zTXLfNuSgfSCUH27O8iwPGHGSf-JmggcePn-Dh_QkGPa8QqycgN8Y" alt="たまごおにぎり クローズアップ質感" class="w-full h-full object-contain">
+        </button>
+        <button type="button" class="mobile-thumb min-h-[44px] aspect-square rounded-xl bg-white border border-brand-border overflow-hidden p-0.5 transition-all focus:outline-none" onclick="switchMobileImage('https://lh3.googleusercontent.com/aida-public/AB6AXuDVFsFP_6ztfsuqF2d2_ZyeLe1C41UrJqEVPAPtVnxNhx-TqM6TRwneeug-8pPTXg22VXuZ8e6j4khdZxRrWQJtbk97cr51DlucZrVyNehd9zvCq9pCv0zrGdWk63bY8qXY9zvy7bD9R1SmGxokMK5rWHRH0YUILMgSdyzqGDN1u6y8u3X1YK_AuhRy8XIQDGfrBJfnvRJ_SkOuAVM8xua2t0wYoQ1y8o-P0pihKj629YBJ_Ek2MeqDnd5mxIOf0GwtgeY', this)" aria-label="画像5: スタジオ単体">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVFsFP_6ztfsuqF2d2_ZyeLe1C41UrJqEVPAPtVnxNhx-TqM6TRwneeug-8pPTXg22VXuZ8e6j4khdZxRrWQJtbk97cr51DlucZrVyNehd9zvCq9pCv0zrGdWk63bY8qXY9zvy7bD9R1SmGxokMK5rWHRH0YUILMgSdyzqGDN1u6y8u3X1YK_AuhRy8XIQDGfrBJfnvRJ_SkOuAVM8xua2t0wYoQ1y8o-P0pihKj629YBJ_Ek2MeqDnd5mxIOf0GwtgeY" alt="たまごおにぎり スタジオ単体" class="w-full h-full object-contain">
+        </button>
+      </div>
+    </section>
+
+    <!-- 2. Product Information Card -->
+    <section class="bg-white rounded-2xl border border-brand-border p-5 flex flex-col gap-4">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-brand-berryLight text-brand-berry border border-brand-berry/15">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-berry"></span> 香り付き
+        </span>
+        <span class="text-xs text-brand-stone">スクイーズ コレクション</span>
+      </div>
+
+      <h1 class="text-2xl font-bold font-headline-lg text-brand-charcoal tracking-wide">
+        たまごおにぎり
+      </h1>
+
+      <div class="flex items-baseline gap-2">
+        <span class="text-xl font-bold font-headline-md text-brand-charcoal">¥ 価格未定</span>
+        <span class="text-xs text-brand-stone">（発売準備中）</span>
+      </div>
+
+      <p class="text-xs text-brand-stone leading-relaxed">
+        三角のおにぎりに、まあるいたまご。見た目も楽しいスクイーズ。
+      </p>
+
+      <!-- Quantity Selector (Disabled) -->
+      <div class="flex items-center justify-between pt-2 border-t border-brand-borderLight text-xs text-brand-stone">
+        <span class="">数量</span>
+        <div class="flex items-center border border-brand-border rounded-lg bg-brand-accentBg opacity-50 pointer-events-none cursor-not-allowed">
+          <button type="button" disabled="" class="w-9 h-9 flex items-center justify-center text-brand-stone" aria-label="減少">−</button>
+          <span class="w-8 text-center text-brand-charcoal font-medium">1</span>
+          <button type="button" disabled="" class="w-9 h-9 flex items-center justify-center text-brand-stone" aria-label="増加">＋</button>
+        </div>
+      </div>
+
+      <!-- In-Page Action Button (Disabled) -->
+      <button type="button" disabled="" class="w-full min-h-[44px] h-12 rounded-xl bg-brand-border text-brand-stone font-medium text-xs flex items-center justify-center gap-2 cursor-not-allowed opacity-80">
+        <span class="material-symbols-outlined text-base">lock</span>
+        価格確認後に販売開始
+      </button>
+
+      <!-- Food-Safety Notice (Prominent near purchase area, readable ≥12px) -->
+      <div class="bg-rose-50/70 border border-rose-200/80 rounded-xl p-3.5 flex items-start gap-2.5 mt-1">
+        <span class="material-symbols-outlined text-rose-700 text-lg flex-shrink-0 mt-0.5">warning</span>
+        <div class="flex flex-col gap-1">
+          <span class="text-[11px] font-bold text-rose-900 tracking-wider">安全上の重要なお知らせ</span>
+          <p class="text-xs leading-relaxed text-rose-800 font-medium">
+            お菓子ではありません。食品ではありません。実際のおにぎりではありません。口に入れないでください。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Play & Tactile Section -->
+    <section class="bg-white rounded-2xl border border-brand-border p-5 flex flex-col gap-3">
+      <div class="flex items-center gap-2 text-brand-charcoal">
+        <span class="material-symbols-outlined text-lg text-brand-berry">pan_tool</span>
+        <h2 class="text-base font-bold font-headline-md">遊び方・感触</h2>
+      </div>
+      <p class="text-xs leading-relaxed text-brand-stone">
+        伸ばす、丸める、つまむ。思いつくままに形を変えて遊べます。
+      </p>
+    </section>
+
+    <!-- 4. Care Instructions -->
+    <section class="bg-white rounded-2xl border border-brand-border p-5 flex flex-col gap-3.5">
+      <div class="flex items-center gap-2 text-brand-charcoal">
+        <span class="material-symbols-outlined text-lg text-brand-berry">info</span>
+        <h2 class="text-base font-bold font-headline-md">お取り扱い上の注意</h2>
+      </div>
+      
+      <ul class="flex flex-col gap-2 text-xs text-brand-stone leading-relaxed">
+        <li class="flex items-start gap-1.5">
+          <span class="text-brand-berry mt-0.5">•</span>
+          <span class="">水洗いはできません。汚れた場合は乾いた布で軽く拭いてください。</span>
+        </li>
+        <li class="flex items-start gap-1.5">
+          <span class="text-brand-berry mt-0.5">•</span>
+          <span class="">髪の毛、カーペット、ソファ、衣類には触れさせないでください。</span>
+        </li>
+        <li class="flex items-start gap-1.5">
+          <span class="text-brand-berry mt-0.5">•</span>
+          <span class="">紙や布に置くと、油分が移る場合があります。</span>
+        </li>
+        <li class="flex items-start gap-1.5">
+          <span class="text-brand-berry mt-0.5">•</span>
+          <span class="">ご使用後は密閉できる袋や容器で保管してください。</span>
+        </li>
+        <li class="flex items-start gap-1.5">
+          <span class="text-brand-berry mt-0.5">•</span>
+          <span class="">気温により、かたさが変わることがあります。</span>
+        </li>
+        <li class="flex items-start gap-1.5">
+          <span class="text-brand-berry mt-0.5">•</span>
+          <span class="">手に傷がある場合や、敏感肌の方はご使用をお控えください。</span>
+        </li>
+        <li class="flex items-start gap-1.5">
+          <span class="text-brand-berry mt-0.5">•</span>
+          <span class="">口に入れないでください。※お菓子ではありません。</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 5. Product Specifications -->
+    <section class="bg-white rounded-2xl border border-brand-border p-5 flex flex-col gap-3">
+      <div class="flex items-center gap-2 text-brand-charcoal">
+        <span class="material-symbols-outlined text-lg text-brand-charcoal">tune</span>
+        <h2 class="text-base font-bold font-headline-md">製品仕様</h2>
+      </div>
+
+      <div class="divide-y divide-brand-borderLight text-xs">
+        <div class="py-2.5 flex justify-between items-center">
+          <span class="text-brand-stone">製品名</span>
+          <span class="font-medium text-brand-charcoal">たまごおにぎり</span>
+        </div>
+        <div class="py-2.5 flex justify-between items-center">
+          <span class="text-brand-stone">サイズ・重量</span>
+          <span class="text-brand-stone italic">サイズ・重量は確認後に掲載</span>
+        </div>
+        <div class="py-2.5 flex justify-between items-center">
+          <span class="text-brand-stone">材質</span>
+          <span class="text-brand-stone italic">材質は確認後に掲載</span>
+        </div>
+        <div class="py-2.5 flex justify-between items-center">
+          <span class="text-brand-stone">対象年齢</span>
+          <span class="text-brand-stone italic">対象年齢は確認後に掲載</span>
+        </div>
+        <div class="py-2.5 flex justify-between items-center">
+          <span class="text-brand-stone">原産国</span>
+          <span class="text-brand-stone italic">原産国は確認後に掲載</span>
+        </div>
+      </div>
+
+      <div class="mt-1 p-2.5 bg-brand-bg rounded-xl border border-brand-borderLight text-[10px] text-brand-stone leading-normal">
+        ※ すべての仕様・数値は社内品質確認完了後に確定・更新されます。
+      </div>
+    </section>
+
+    <!-- Footer Copyright -->
+    <footer class="py-6 text-center text-[11px] text-brand-stone">
+      <p class="">© Tabajoy. All rights reserved.</p>
+      <p class="mt-0.5">静謐な空間で愛でる、触覚の彫刻。</p>
+    </footer>
+
+  </main>
+
+  <!-- Sticky Mobile Bottom Purchase Bar (≥44px height, disabled state) -->
+  <aside class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-brand-border p-3">
+    <div class="max-w-md mx-auto flex items-center justify-between gap-3">
+      <div class="flex flex-col min-w-0">
+        <span class="text-[11px] text-brand-stone truncate">たまごおにぎり</span>
+        <span class="text-sm font-bold font-headline-md text-brand-charcoal">¥ 価格未定</span>
+      </div>
+      <button type="button" disabled="" class="min-h-[44px] h-11 px-5 rounded-xl bg-brand-border text-brand-stone font-medium text-xs flex items-center justify-center gap-1.5 cursor-not-allowed opacity-80 flex-shrink-0">
+        <span class="material-symbols-outlined text-base">lock</span>
+        <span class="">価格確認後に販売開始</span>
+      </button>
+    </div>
+  </aside>
+
+  <script>
+    function switchMobileImage(src, btn) {
+      document.getElementById('mobile-main-image').src = src;
+      document.querySelectorAll('.mobile-thumb').forEach(el => {
+        el.classList.remove('border-brand-charcoal', 'border-2');
+        el.classList.add('border-brand-border', 'border');
+      });
+      btn.classList.remove('border-brand-border', 'border');
+      btn.classList.add('border-brand-charcoal', 'border-2');
+    }
+  </script>
+
+
+
+</body></html>

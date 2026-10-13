@@ -1,0 +1,290 @@
+<!DOCTYPE html><html class="light" lang="ja"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>コレクション — Tabajoy</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Zen+Maru+Gothic:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary": "#161411",
+            "surface-variant": "#e1e3e2",
+            "surface-container-highest": "#e1e3e2",
+            "on-error-container": "#93000a",
+            "on-tertiary-container": "#938e8b",
+            "background": "#f9f9f8",
+            "on-secondary-container": "#771d30",
+            "secondary-fixed": "#ffd9dc",
+            "surface-tint": "#605e5d",
+            "on-tertiary": "#ffffff",
+            "primary": "#141413",
+            "primary-fixed": "#e6e2e0",
+            "error-container": "#ffdad6",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed-variant": "#494643",
+            "tertiary-fixed-dim": "#cbc5c2",
+            "on-tertiary-fixed": "#1d1b19",
+            "on-secondary-fixed-variant": "#812537",
+            "on-background": "#191c1c",
+            "secondary-container": "#ff8797",
+            "primary-container": "#292827",
+            "tertiary-container": "#2a2826",
+            "on-primary-container": "#918f8d",
+            "on-secondary": "#ffffff",
+            "inverse-surface": "#2e3131",
+            "outline": "#7a776f",
+            "on-surface-variant": "#494740",
+            "error": "#ba1a1a",
+            "surface-container-low": "#f3f4f3",
+            "on-secondary-fixed": "#400011",
+            "surface-container": "#edeeed",
+            "secondary": "#a03c4e",
+            "on-surface": "#191c1c",
+            "inverse-on-surface": "#f0f1f0",
+            "on-primary-fixed": "#1c1b1a",
+            "primary-fixed-dim": "#c9c6c4",
+            "surface-dim": "#d9dad9",
+            "inverse-primary": "#c9c6c4",
+            "surface-bright": "#f9f9f8",
+            "surface": "#f9f9f8",
+            "tertiary-fixed": "#e8e1dd",
+            "on-error": "#ffffff",
+            "secondary-fixed-dim": "#ffb2ba",
+            "on-primary-fixed-variant": "#484645",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#cbc6bd",
+            "surface-container-high": "#e7e8e7"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-xl": "3rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "margin-desktop": "4rem",
+            "space-sm": "0.5rem",
+            "margin": "1.25rem",
+            "gutter-desktop": "2.5rem"
+          },
+          "fontFamily": {
+            sans: ['"Zen Kaku Gothic New"', 'sans-serif'],
+            body: ['"Zen Kaku Gothic New"', 'sans-serif'],
+            heading: ['"Zen Maru Gothic"', '"Zen Kaku Gothic New"', 'sans-serif'],
+            'jp-heading': ['"Zen Maru Gothic"', '"Zen Kaku Gothic New"', 'sans-serif'],
+            'jp-body': ['"Zen Kaku Gothic New"', 'sans-serif']
+          },
+          "fontSize": {
+            "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.005em", "fontWeight": "500" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #f7f8f7;
+      color: #292827;
+      font-family: 'Zen Kaku Gothic New', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+    }
+    .diffused-card-shadow {
+      box-shadow: 0 12px 32px -8px rgba(41, 40, 39, 0.04);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Desktop & Tablet Header Shell -->
+<header class="sticky top-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md border-b border-surface-container">
+<div class="max-w-7xl mx-auto px-6 md:px-margin-desktop h-20 flex items-center justify-between">
+<!-- Brand & Navigation Group -->
+<div class="flex items-center gap-12">
+<a class="font-heading text-primary tracking-tight font-bold text-2xl hover:opacity-80 transition-opacity" href="/home/desktop/">
+          Tabajoy
+        </a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-8 text-sm">
+<a class="relative font-body font-medium text-primary py-2 transition-colors" href="/collection/desktop/">
+            コレクション
+            <span class="absolute bottom-0 left-0 w-full h-[1.5px] bg-[#B84F60]"></span>
+</a>
+<a class="font-body text-[#716D6A] hover:text-primary transition-colors py-2" href="#">
+            私たちについて
+          </a>
+<a class="font-body text-[#716D6A] hover:text-primary transition-colors py-2" href="#">
+            お知らせ
+          </a>
+</nav>
+</div>
+<!-- Right Utility Nav -->
+<div class="flex items-center gap-6">
+<div class="hidden sm:flex items-center gap-1.5 text-xs text-[#716D6A] font-body tracking-wider pl-2 pr-3 py-1 bg-surface-container-low rounded-lg">
+<span class="w-1.5 h-1.5 rounded-full bg-[#B84F60]"></span>
+<span class="">JPY / 日本円</span>
+</div>
+<div class="flex items-center gap-3">
+<button aria-label="検索" class="p-2 text-primary hover:text-secondary transition-colors duration-200 active:scale-[0.985]">
+<span class="material-symbols-outlined text-xl">search</span>
+</button>
+<button aria-label="カート" class="p-2 text-primary hover:text-secondary transition-colors duration-200 active:scale-[0.985] relative">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+<span class="absolute top-1.5 right-1.5 w-1.5 h-1.5 bg-[#B84F60] rounded-full"></span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 max-w-7xl mx-auto w-full px-6 md:px-margin-desktop pt-8 pb-24">
+<!-- Breadcrumb -->
+<nav aria-label="パンくずリスト" class="mb-10">
+<ol class="flex items-center gap-2 text-xs text-[#716D6A] font-body">
+<li class="">
+<a class="hover:text-primary transition-colors" href="/home/desktop/">ホーム</a>
+</li>
+<li class="text-[#CBC6BD]">/</li>
+<li aria-current="page" class="text-primary font-medium">コレクション</li>
+</ol>
+</nav>
+<!-- Page Header & Spatial Intro -->
+<section class="mb-16 md:mb-20">
+<div class="max-w-2xl">
+<h1 class="font-heading text-3xl md:text-4xl text-[#292827] tracking-tight font-medium mb-3">
+          コレクション
+        </h1>
+<p class="font-body text-base text-[#716D6A] leading-relaxed">
+          お気に入りの形を見つけてください。
+        </p>
+</div>
+<div class="mt-8 h-px w-full bg-surface-container"></div>
+</section>
+<!-- Product Listing: Two-Column Balanced Editorial Layout -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+<!-- Card 1: クロワッサン猫 -->
+<article class="bg-surface-container-lowest border border-[#EBECE8] rounded-lg p-6 lg:p-8 flex flex-col justify-between diffused-card-shadow transition-all duration-300 hover:border-[#CBC6BD]">
+<div>
+<!-- Pedestal Frame & Product Showcase -->
+<div class="relative w-full aspect-square bg-[#F7F8F7] rounded-lg overflow-hidden flex items-center justify-center p-6 border border-[#EBECE8]/60 group">
+<img alt="クロワッサン猫 スクイーズ" class="w-full h-full object-contain filter drop-shadow-sm transition-transform duration-500 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm04Yh-5DgSjcYdm37mCIGO3utiTeTWxPqg-W5ZBG829QIfU4WGdB2QRxtLshaZm4jaI5JsDN5-D7uuz305ykYk3Gon4RS002yIPputT5NWuQhW9kAruWufqyX51dRZNchJOHOkVKe6TQIcQdu162OZiU3RhvssQ6qmhgBf7k9fYi2x2b-gBlU7DRKc8ivYZbf7rK1xPrjy4wf0LdAz-903-_oxOmtDz-u5KUTpiIu9ltXyDjdoB3oTMq-RyUbG5aDxEY">
+<!-- Scent Tag Badge -->
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-sm border border-[#EBECE8] border-l-2 border-l-[#B84F60] text-xs font-body text-[#292827] rounded-sm">
+                香り付き
+              </span>
+</div>
+</div>
+<!-- Editorial Meta & Typography -->
+<div class="mt-6 space-y-3">
+<div class="flex items-baseline justify-between">
+<h2 class="font-heading text-xl md:text-2xl font-medium text-[#292827]">
+                クロワッサン猫
+              </h2>
+</div>
+<p class="font-body text-sm text-[#716D6A] leading-relaxed">
+              クロワッサンと猫を組み合わせた、思わず手に取りたくなるスクイーズ。
+            </p>
+<!-- Non-Food Safety Notice -->
+<div class="mt-4 p-3.5 bg-surface-container-low border border-[#EBECE8] rounded-lg flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-base flex-shrink-0 mt-0.5">info</span>
+<p class="font-body text-xs text-[#716D6A] leading-relaxed">お菓子ではありません。食品ではありません。口に入れないでください。</p>
+</div>
+</div>
+</div>
+<!-- Action Pedestal (Min-Height 44px) -->
+<div class="mt-8 pt-6 border-t border-[#EBECE8]/60">
+<a class="w-full min-h-[44px] inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#292827] hover:bg-[#B84F60] text-surface-container-lowest font-body text-sm font-medium rounded-lg transition-colors duration-200 active:scale-[0.985]" href="#">
+<span class="">商品詳細を見る</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 2: たまごおにぎり -->
+<article class="bg-surface-container-lowest border border-[#EBECE8] rounded-lg p-6 lg:p-8 flex flex-col justify-between diffused-card-shadow transition-all duration-300 hover:border-[#CBC6BD]">
+<div>
+<!-- Pedestal Frame & Product Showcase -->
+<div class="relative w-full aspect-square bg-[#F7F8F7] rounded-lg overflow-hidden flex items-center justify-center p-6 border border-[#EBECE8]/60 group">
+<img alt="たまごおにぎり スクイーズ" class="w-full h-full object-contain filter drop-shadow-sm transition-transform duration-500 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXeXxPL1O1TEJubgXnRiKE8ZZDjHJFOawvPVs3lhiq3YCeueb3o0cbVf7M04huULFkMgE6P3K4EtXFNSY4hfsSCS4Y8VHgY0lq64jr5tu_8Zl6_3k3yjpdUEfUbUVVvnmVsNyWgpdByllXZ7nImXKkW9c0EPiLn9w863KfycJwml_p291tFmE6ursR_moshk6wyZh0O3i5TmdWx2Uarad2Mj46ZsczxDXoWWZ1O5bh__zvA_T-wuauqHv57g4BmYFt_Ho">
+<!-- Scent Tag Badge -->
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-sm border border-[#EBECE8] border-l-2 border-l-[#B84F60] text-xs font-body text-[#292827] rounded-sm">
+                香り付き
+              </span>
+</div>
+</div>
+<!-- Editorial Meta & Typography -->
+<div class="mt-6 space-y-3">
+<div class="flex items-baseline justify-between">
+<h2 class="font-heading text-xl md:text-2xl font-medium text-[#292827]">
+                たまごおにぎり
+              </h2>
+</div>
+<p class="font-body text-sm text-[#716D6A] leading-relaxed">
+              三角のおにぎりに、まあるいたまご。見た目も楽しいスクイーズ。
+            </p>
+<!-- Non-Food Safety Notice -->
+<div class="mt-4 p-3.5 bg-surface-container-low border border-[#EBECE8] rounded-lg flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-base flex-shrink-0 mt-0.5">info</span>
+<p class="font-body text-xs text-[#716D6A] leading-relaxed">
+                お菓子ではありません。食品ではありません。実際のおにぎりではありません。口に入れないでください。
+              </p>
+</div>
+</div>
+</div>
+<!-- Action Pedestal (Min-Height 44px) -->
+<div class="mt-8 pt-6 border-t border-[#EBECE8]/60">
+<a class="w-full min-h-[44px] inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#292827] hover:bg-[#B84F60] text-surface-container-lowest font-body text-sm font-medium rounded-lg transition-colors duration-200 active:scale-[0.985]" href="#">
+<span class="">商品詳細を見る</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</article>
+</section>
+</main>
+<!-- Architectural Gallery Footer -->
+<footer class="mt-auto border-t border-surface-container bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6 md:px-margin-desktop py-12 md:py-16">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-8 pb-10 border-b border-surface-container">
+<!-- Brand Signature -->
+<div>
+<span class="font-heading text-primary tracking-tight font-bold text-xl block mb-2">Tabajoy</span>
+<p class="font-body text-xs text-[#716D6A]">静謐な空間で愛でる、触覚の彫刻。</p>
+</div>
+<!-- Store Navigation Links -->
+<nav class="flex flex-wrap items-center gap-6 md:gap-8 text-xs font-body text-[#716D6A]">
+<a class="hover:text-primary transition-colors" href="/legal/desktop/">特定商取引法に基づく表記</a>
+<a class="hover:text-primary transition-colors" href="/privacy/desktop/">プライバシーポリシー</a>
+<a class="hover:text-primary transition-colors" href="#">お問い合わせ</a>
+</nav>
+</div>
+<!-- Copyright & Brand Note -->
+<div class="pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-body text-[#716D6A]/80">
+<p class="">© Tabajoy. All rights reserved. 静謐な空間で愛でる、触覚の彫刻。</p>
+</div>
+</div>
+</footer>
+</body></html>

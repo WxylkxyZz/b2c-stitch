@@ -1,0 +1,421 @@
+<!DOCTYPE html><html lang="ja" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー | Tabajoy</title>
+  
+  <!-- Google Fonts: Zen Kaku Gothic New & Zen Maru Gothic Only -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Zen+Maru+Gothic:wght@500;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Material Symbols Outlined (Single Import) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["'Zen Kaku Gothic New'", "sans-serif"],
+            body: ["'Zen Kaku Gothic New'", "sans-serif"],
+            "body-md": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "body-lg": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "label-sm": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "label-md": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "jp-body": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "zen-kaku": ["'Zen Kaku Gothic New'", "sans-serif"],
+            mono: ["monospace"],
+            heading: ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "jp-heading": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "headline-md": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "headline-lg": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "title-md": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "zen-maru": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"]
+          },
+          colors: {
+            surface: {
+              DEFAULT: '#f9f9f8',
+              dim: '#d9dad9',
+              'container-lowest': '#ffffff',
+              'container-low': '#f3f4f3',
+              'container': '#edeeed',
+              'container-high': '#e7e8e7',
+              'container-highest': '#e1e3e2'
+            },
+            primary: {
+              DEFAULT: '#292827'
+            },
+            secondary: {
+              DEFAULT: '#716d6a'
+            },
+            accent: {
+              DEFAULT: '#b84f60'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-surface text-primary font-sans antialiased flex flex-col justify-between selection:bg-surface-dim">
+
+  <!-- Compact Mobile Header -->
+  <header class="sticky top-0 z-40 bg-surface/90 backdrop-blur-md border-b border-surface-container-highest">
+    <div class="max-w-md mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="#" class="inline-flex items-center gap-1.5 text-secondary hover:text-primary transition-colors text-xs font-medium py-2 min-h-[44px]">
+        <span class="material-symbols-outlined text-base">arrow_back</span>
+        <span class="font-heading font-bold text-base text-primary">Tabajoy</span>
+      </a>
+      <div class="flex items-center gap-1">
+        <a href="#" class="w-11 h-11 flex items-center justify-center text-secondary hover:text-primary transition-colors" aria-label="検索">
+          <span class="material-symbols-outlined text-lg">search</span>
+        </a>
+        <a href="#" class="w-11 h-11 flex items-center justify-center text-secondary hover:text-primary transition-colors" aria-label="カート">
+          <span class="material-symbols-outlined text-lg">shopping_bag</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-grow max-w-md mx-auto w-full px-4 py-6 space-y-6">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="パンくずリスト" class="flex items-center gap-1.5 text-[11px] text-secondary flex-wrap">
+      <a href="#" class="hover:text-primary transition-colors py-1">ホーム</a>
+      <span class="text-surface-dim material-symbols-outlined text-xs">chevron_right</span>
+      <span class="text-primary font-medium" aria-current="page">プライバシーポリシー</span>
+    </nav>
+
+    <!-- Page Title & Overview -->
+    <div class="space-y-2">
+      <div class="inline-flex items-center gap-1 text-xs font-mono text-secondary tracking-widest uppercase">
+        <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+        <span class="">PRIVACY POLICY</span>
+      </div>
+      <h1 class="font-heading text-xl font-bold text-primary">プライバシーポリシー</h1>
+      <p class="text-xs text-secondary leading-relaxed">
+        当サイトにおけるお客様の個人情報の取り扱い方針に関するご案内です。各方針の確定後に正式な内容を掲載いたします。
+      </p>
+    </div>
+
+    <!-- Prototype State Notice -->
+    <div class="bg-surface-container-lowest rounded-xl border border-surface-container-high p-4 flex items-start gap-2.5 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+      <span class="material-symbols-outlined text-accent text-base flex-shrink-0 mt-0.5">info</span>
+      <div class="text-xs text-secondary leading-relaxed space-y-1">
+        <strong class="text-primary font-medium block font-heading">プロトタイプ確認事項</strong>
+        <p class="">本画面はコンテンツおよびレイアウト確認用のプロトタイプ（ドラフト）です。法的助言や適合性保証を提供するものではありません。正式公開前に、実際の情報収集・管理体制に照らして正確な記載内容をご確認・確定してください。</p>
+      </div>
+    </div>
+
+    <!-- Table of Contents Navigation Card -->
+    <nav aria-label="目次ナビゲーション" class="bg-surface-container-lowest rounded-xl border border-surface-container-high overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+      <div class="px-4 py-3 bg-surface-container-low border-b border-surface-container-high flex items-center justify-between">
+        <div class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-secondary text-sm">format_list_bulleted</span>
+          <span class="text-xs font-bold text-primary font-heading">目次</span>
+        </div>
+        <span class="text-[10px] font-mono text-secondary">全12項目</span>
+      </div>
+      <ol class="divide-y divide-surface-container-low text-xs">
+        <li class="">
+          <a href="#operator-m" class="px-4 py-3 flex items-center justify-between text-secondary hover:text-primary transition-colors min-h-[44px]">
+            <span class="">1. 事業者情報</span>
+            <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#collected-info-m" class="px-4 py-3 flex items-center justify-between text-secondary hover:text-primary transition-colors min-h-[44px]">
+            <span class="">2. 取得する情報</span>
+            <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#purpose-m" class="px-4 py-3 flex items-center justify-between text-secondary hover:text-primary transition-colors min-h-[44px]">
+            <span class="">3. 個人情報の利用目的</span>
+            <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#cookies-m" class="px-4 py-3 flex items-center justify-between text-secondary hover:text-primary transition-colors min-h-[44px]">
+            <span class="">4. Cookie・アクセス解析等の利用</span>
+            <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#third-party-m" class="px-4 py-3 flex items-center justify-between text-secondary hover:text-primary transition-colors min-h-[44px]">
+            <span class="">5. 第三者提供</span>
+            <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#external-services-m" class="px-4 py-3 flex items-center justify-between text-secondary hover:text-primary transition-colors min-h-[44px]">
+            <span class="">6. 外部サービスの利用</span>
+            <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#storage-management-m" class="px-4 py-3 flex items-center justify-between text-secondary hover:text-primary transition-colors min-h-[44px]">
+            <span class="">7. 個人情報の保管・管理</span>
+            <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#retention-period-m" class="px-4 py-3 flex items-center justify-between text-secondary hover:text-primary transition-colors min-h-[44px]">
+            <span class="">8. 保存期間</span>
+            <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#user-requests-m" class="px-4 py-3 flex items-center justify-between text-secondary hover:text-primary transition-colors min-h-[44px]">
+            <span class="">9. 利用者による請求</span>
+            <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#minors-m" class="px-4 py-3 flex items-center justify-between text-secondary hover:text-primary transition-colors min-h-[44px]">
+            <span class="">10. 未成年者の個人情報</span>
+            <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#policy-changes-m" class="px-4 py-3 flex items-center justify-between text-secondary hover:text-primary transition-colors min-h-[44px]">
+            <span class="">11. ポリシーの変更</span>
+            <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#contact-m" class="px-4 py-3 flex items-center justify-between text-secondary hover:text-primary transition-colors min-h-[44px]">
+            <span class="">12. お問い合わせ窓口</span>
+            <span class="material-symbols-outlined text-xs text-surface-dim">arrow_forward</span>
+          </a>
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Vertically Stacked Policy Sections (12 Items) -->
+    <div class="space-y-4 pt-1">
+
+      <!-- 01: 事業者情報 -->
+      <section id="operator-m" class="scroll-mt-20 bg-surface-container-lowest rounded-xl border border-surface-container-high p-4 space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-sm font-bold text-primary">事業者情報</h2>
+          <span class="text-[10px] font-mono text-surface-dim">01</span>
+        </div>
+        <p class="text-xs text-secondary leading-relaxed">
+          当サイトを運営する事業者の名称、所在地、および連絡窓口に関する情報です。
+        </p>
+        <div class="bg-surface-container-low rounded-lg p-3 border border-surface-container-high">
+          <span class="text-[10px] text-secondary font-medium block mb-1">事業者概要</span>
+          <p class="text-xs font-mono font-medium text-primary break-words">【運営者・実際の運用内容を確認後に記載】</p>
+        </div>
+      </section>
+
+      <!-- 02: 取得する情報 -->
+      <section id="collected-info-m" class="scroll-mt-20 bg-surface-container-lowest rounded-xl border border-surface-container-high p-4 space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-sm font-bold text-primary">取得する情報</h2>
+          <span class="text-[10px] font-mono text-surface-dim">02</span>
+        </div>
+        <p class="text-xs text-secondary leading-relaxed">
+          当サイトの利用、ご注文手続き、またはお問い合わせ時に取得する個人情報および利用関連情報の項目です。
+        </p>
+        <div class="bg-surface-container-low rounded-lg p-3 border border-surface-container-high">
+          <span class="text-[10px] text-secondary font-medium block mb-1">取得項目</span>
+          <p class="text-xs font-mono font-medium text-primary break-words">【運営者・実際の運用内容を確認後に記載】</p>
+        </div>
+      </section>
+
+      <!-- 03: 個人情報の利用目的 -->
+      <section id="purpose-m" class="scroll-mt-20 bg-surface-container-lowest rounded-xl border border-surface-container-high p-4 space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-sm font-bold text-primary">個人情報の利用目的</h2>
+          <span class="text-[10px] font-mono text-surface-dim">03</span>
+        </div>
+        <p class="text-xs text-secondary leading-relaxed">本項には、個人情報の利用目的を実際の運用内容の確認後に記載します。</p>
+        <div class="bg-surface-container-low rounded-lg p-3 border border-surface-container-high">
+          <span class="text-[10px] text-secondary font-medium block mb-1">利用目的の詳細</span>
+          <p class="text-xs font-mono font-medium text-primary break-words">【運営者・実際の運用内容を確認後に記載】</p>
+        </div>
+      </section>
+
+      <!-- 04: Cookie・アクセス解析等の利用 -->
+      <section id="cookies-m" class="scroll-mt-20 bg-surface-container-lowest rounded-xl border border-surface-container-high p-4 space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-sm font-bold text-primary">Cookie・アクセス解析等の利用</h2>
+          <span class="text-[10px] font-mono text-surface-dim">04</span>
+        </div>
+        <p class="text-xs text-secondary leading-relaxed">
+          サイトの利便性向上や利用状況把握のために利用するCookie、アクセスログ等の取り扱いおよび無効化設定に関する規定です。
+        </p>
+        <div class="bg-surface-container-low rounded-lg p-3 border border-surface-container-high">
+          <span class="text-[10px] text-secondary font-medium block mb-1">Cookieおよび解析ツール運用</span>
+          <p class="text-xs font-mono font-medium text-primary break-words">【運営者・実際の運用内容を確認後に記載】</p>
+        </div>
+      </section>
+
+      <!-- 05: 第三者提供 -->
+      <section id="third-party-m" class="scroll-mt-20 bg-surface-container-lowest rounded-xl border border-surface-container-high p-4 space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-sm font-bold text-primary">第三者提供</h2>
+          <span class="text-[10px] font-mono text-surface-dim">05</span>
+        </div>
+        <p class="text-xs text-secondary leading-relaxed">本項には、第三者提供の有無および条件を実際の運用内容の確認後に記載します。</p>
+        <div class="bg-surface-container-low rounded-lg p-3 border border-surface-container-high">
+          <span class="text-[10px] text-secondary font-medium block mb-1">第三者提供の条件</span>
+          <p class="text-xs font-mono font-medium text-primary break-words">【運営者・実際の運用内容を確認後に記載】</p>
+        </div>
+      </section>
+
+      <!-- 06: 外部サービスの利用 -->
+      <section id="external-services-m" class="scroll-mt-20 bg-surface-container-lowest rounded-xl border border-surface-container-high p-4 space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-sm font-bold text-primary">外部サービスの利用</h2>
+          <span class="text-[10px] font-mono text-surface-dim">06</span>
+        </div>
+        <p class="text-xs text-secondary leading-relaxed">
+          業務委託先、配送連携、決済連携等の外部サービス事業者に委託する業務範囲および個人情報の安全管理に関する規定です。
+        </p>
+        <div class="bg-surface-container-low rounded-lg p-3 border border-surface-container-high">
+          <span class="text-[10px] text-secondary font-medium block mb-1">外部連携・委託体制</span>
+          <p class="text-xs font-mono font-medium text-primary break-words">【運営者・実際の運用内容を確認後に記載】</p>
+        </div>
+      </section>
+
+      <!-- 07: 個人情報の保管・管理 -->
+      <section id="storage-management-m" class="scroll-mt-20 bg-surface-container-lowest rounded-xl border border-surface-container-high p-4 space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-sm font-bold text-primary">個人情報の保管・管理</h2>
+          <span class="text-[10px] font-mono text-surface-dim">07</span>
+        </div>
+        <p class="text-xs text-secondary leading-relaxed">
+          個人情報の不正アクセス、紛失、改ざん等を防止するための安全管理措置に関する規定です。
+        </p>
+        <div class="bg-surface-container-low rounded-lg p-3 border border-surface-container-high">
+          <span class="text-[10px] text-secondary font-medium block mb-1">安全管理措置</span>
+          <p class="text-xs font-mono font-medium text-primary break-words">【運営者・実際の運用内容を確認後に記載】</p>
+        </div>
+      </section>
+
+      <!-- 08: 保存期間 -->
+      <section id="retention-period-m" class="scroll-mt-20 bg-surface-container-lowest rounded-xl border border-surface-container-high p-4 space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-sm font-bold text-primary">保存期間</h2>
+          <span class="text-[10px] font-mono text-surface-dim">08</span>
+        </div>
+        <p class="text-xs text-secondary leading-relaxed">
+          利用目的に必要な期間、および関連法令に定められた法定保存義務に基づく個人情報の保持・廃棄に関する基準です。
+        </p>
+        <div class="bg-surface-container-low rounded-lg p-3 border border-surface-container-high">
+          <span class="text-[10px] text-secondary font-medium block mb-1">保存期間基準</span>
+          <p class="text-xs font-mono font-medium text-primary break-words">【運営者・実際の運用内容を確認後に記載】</p>
+        </div>
+      </section>
+
+      <!-- 09: 利用者による開示・訂正・削除等の請求 -->
+      <section id="user-requests-m" class="scroll-mt-20 bg-surface-container-lowest rounded-xl border border-surface-container-high p-4 space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-sm font-bold text-primary">利用者による開示・訂正・削除等の請求</h2>
+          <span class="text-[10px] font-mono text-surface-dim">09</span>
+        </div>
+        <p class="text-xs text-secondary leading-relaxed">
+          お客様ご自身の個人情報に関する開示、訂正、利用停止、削除のご請求方法および対応手順に関する規定です。
+        </p>
+        <div class="bg-surface-container-low rounded-lg p-3 border border-surface-container-high">
+          <span class="text-[10px] text-secondary font-medium block mb-1">請求手続き・手順</span>
+          <p class="text-xs font-mono font-medium text-primary break-words">【運営者・実際の運用内容を確認後に記載】</p>
+        </div>
+      </section>
+
+      <!-- 10: 未成年者の個人情報 -->
+      <section id="minors-m" class="scroll-mt-20 bg-surface-container-lowest rounded-xl border border-surface-container-high p-4 space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-sm font-bold text-primary">未成年者の個人情報</h2>
+          <span class="text-[10px] font-mono text-surface-dim">10</span>
+        </div>
+        <p class="text-xs text-secondary leading-relaxed">
+          未成年のお客様が当サイトをご利用される際の情報入力および保護者様の同意に関する方針です。
+        </p>
+        <div class="bg-surface-container-low rounded-lg p-3 border border-surface-container-high">
+          <span class="text-[10px] text-secondary font-medium block mb-1">未成年者の利用規定</span>
+          <p class="text-xs font-mono font-medium text-primary break-words">【運営者・実際の運用内容を確認後に記載】</p>
+        </div>
+      </section>
+
+      <!-- 11: ポリシーの変更 -->
+      <section id="policy-changes-m" class="scroll-mt-20 bg-surface-container-lowest rounded-xl border border-surface-container-high p-4 space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-sm font-bold text-primary">ポリシーの変更</h2>
+          <span class="text-[10px] font-mono text-surface-dim">11</span>
+        </div>
+        <p class="text-xs text-secondary leading-relaxed">
+          法令の改正や事業運営の変更に伴うプライバシーポリシーの改定手続きおよび周知方法に関する規定です。
+        </p>
+        <div class="bg-surface-container-low rounded-lg p-3 border border-surface-container-high">
+          <span class="text-[10px] text-secondary font-medium block mb-1">改定手続き・告知方法</span>
+          <p class="text-xs font-mono font-medium text-primary break-words">【運営者・実際の運用内容を確認後に記載】</p>
+        </div>
+      </section>
+
+      <!-- 12: お問い合わせ窓口 -->
+      <section id="contact-m" class="scroll-mt-20 bg-surface-container-lowest rounded-xl border border-surface-container-high p-4 space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+        <div class="flex items-center justify-between">
+          <h2 class="font-heading text-sm font-bold text-primary">お問い合わせ窓口</h2>
+          <span class="text-[10px] font-mono text-surface-dim">12</span>
+        </div>
+        <p class="text-xs text-secondary leading-relaxed">
+          個人情報の取り扱いに関するご質問、苦情、およびご請求に関するお問い合わせ窓口です。
+        </p>
+        <div class="bg-surface-container-low rounded-lg p-3 border border-surface-container-high">
+          <span class="text-[10px] text-secondary font-medium block mb-1">個人情報お問い合わせ窓口</span>
+          <p class="text-xs font-mono font-medium text-primary break-words">【運営者・実際の運用内容を確認後に記載】</p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bottom Advisory Note -->
+    <div class="pt-2 text-center">
+      <p class="text-[11px] text-secondary leading-relaxed">
+        ※ 掲載内容は、運営者情報および実際のデータ取り扱い体制の確認後に確定してください。
+      </p>
+    </div>
+
+    <!-- Return to Store Link -->
+    <div class="pt-2">
+      <a href="#" class="w-full h-11 rounded-xl bg-surface-container-lowest border border-surface-container-high hover:border-secondary text-primary font-medium text-xs flex items-center justify-center gap-2 transition-colors">
+        <span class="material-symbols-outlined text-base">storefront</span>
+        <span class="">コレクションを見る</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Mobile Footer -->
+  <footer class="mt-8 border-t border-surface-container-high bg-surface-container-lowest py-8 text-center">
+    <div class="max-w-md mx-auto px-4 space-y-4">
+      <div class="space-y-1">
+        <p class="font-heading font-bold text-sm tracking-wider text-primary">Tabajoy</p>
+        <p class="text-xs font-mono text-secondary tracking-widest uppercase">Tactile Art Gallery</p>
+      </div>
+      <nav class="grid grid-cols-2 gap-2 text-xs text-secondary py-2 max-w-xs mx-auto">
+        <a href="#" class="py-2 hover:text-primary transition-colors min-h-[44px] flex items-center justify-center">コレクションを見る</a>
+        <a href="#" class="py-2 hover:text-primary transition-colors min-h-[44px] flex items-center justify-center">お問い合わせ</a>
+        <a href="#" class="py-2 hover:text-primary transition-colors min-h-[44px] flex items-center justify-center">特定商取引法に基づく表記</a>
+        <a href="#" class="text-accent font-medium py-2 min-h-[44px] flex items-center justify-center">プライバシーポリシー</a>
+        <a href="#" class="py-2 hover:text-primary transition-colors min-h-[44px] flex items-center justify-center col-span-2">利用規約</a>
+      </nav>
+      <div class="pt-2 border-t border-surface-container-low text-[10px] text-secondary/80 space-y-1">
+        <p class="">本製品は玩具です。食品ではありません。</p>
+        <p class="">© Tabajoy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+</body></html>

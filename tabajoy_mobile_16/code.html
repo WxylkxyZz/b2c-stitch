@@ -1,0 +1,296 @@
+<!DOCTYPE html><html lang="ja" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Tabajoy - ご注文完了 (Mobile)</title>
+<!-- Google Fonts: Zen Kaku Gothic New & Zen Maru Gothic -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Zen+Maru+Gothic:wght@500;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["'Zen Kaku Gothic New'", "sans-serif"],
+            body: ["'Zen Kaku Gothic New'", "sans-serif"],
+            "body-md": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "body-lg": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "title-md": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "label-md": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "label-sm": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "jp-body": ["'Zen Kaku Gothic New'", "sans-serif"],
+            mono: ["monospace"],
+            heading: ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "jp-heading": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "headline-md": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "headline-lg": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "headline-lg-mobile": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "display-lg": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "display-lg-mobile": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            "zen-maru": ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"]
+          },
+          colors: {
+            surface: {
+              DEFAULT: '#f9f9f8',
+              dim: '#d9dad9',
+              bright: '#f9f9f8',
+              'container-lowest': '#ffffff',
+              'container-low': '#f3f4f3',
+              'container': '#edeeed',
+              'container-high': '#e7e8e7',
+              'container-highest': '#e1e3e2',
+            },
+            primary: {
+              DEFAULT: '#292827',
+              dim: '#1e1d1d',
+              container: '#403f3e',
+            },
+            secondary: {
+              DEFAULT: '#716d6a',
+              container: '#8b8783',
+            },
+            accent: {
+              DEFAULT: '#b84f60',
+              container: '#d46b7c',
+            },
+            outline: {
+              DEFAULT: '#716d6a',
+              variant: '#c5c7c6',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface text-primary font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-surface-dim">
+<!-- Top Navigation Header -->
+<header class="sticky top-0 z-40 bg-surface/90 backdrop-blur-md border-b border-surface-container-highest">
+<div class="max-w-md mx-auto px-4 h-14 flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 text-secondary hover:text-primary transition-colors text-xs font-medium py-2" href="#">
+<span class="material-symbols-outlined text-base">storefront</span>
+<span class="">ストアトップ</span>
+</a>
+<a class="font-heading font-bold text-lg tracking-wider text-primary" href="#">
+        Tabajoy
+      </a>
+<div class="w-16"></div> <!-- Layout spacer -->
+</div>
+</header>
+<!-- Main Order Confirmation Container -->
+<main class="flex-grow max-w-md mx-auto w-full px-4 py-6 space-y-6">
+<!-- Step Progress Indicator -->
+<div class="space-y-3">
+<div class="flex items-baseline justify-between">
+<span class="text-xs text-secondary font-mono">ORDER CONFIRMATION</span>
+<span class="text-xs text-secondary tracking-widest font-mono">STEP 03 / 03</span>
+</div>
+<nav aria-label="注文ステップ" class="bg-surface-container-lowest rounded-xl p-3 border border-surface-container-high shadow-[0_1px_2px_rgba(0,0,0,0.03)] flex items-center justify-between text-xs">
+<div class="flex items-center gap-1 text-secondary opacity-70">
+<span class="w-4 h-4 rounded-full bg-surface-container text-secondary flex items-center justify-center text-[9px]">1</span>
+<span class="">お届け先</span>
+</div>
+<span class="text-surface-dim material-symbols-outlined text-sm">chevron_right</span>
+<div class="flex items-center gap-1 text-secondary opacity-70">
+<span class="w-4 h-4 rounded-full bg-surface-container text-secondary flex items-center justify-center text-[9px]">2</span>
+<span class="">お支払い</span>
+</div>
+<span class="text-surface-dim material-symbols-outlined text-sm">chevron_right</span>
+<div class="flex items-center gap-1.5 text-primary font-bold">
+<span class="w-5 h-5 rounded-full bg-primary text-surface flex items-center justify-center text-[10px]">3</span>
+<span class="">完了</span>
+</div>
+</nav>
+</div>
+<!-- Thank You Hero Card -->
+<section class="bg-surface-container-lowest rounded-2xl border border-surface-container-high p-5 text-center space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+<div class="w-12 h-12 mx-auto rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">check</span>
+</div>
+<h1 class="font-heading text-xl font-bold text-primary tracking-wide">
+        ご注文ありがとうございます
+      </h1>
+<p class="text-xs text-secondary leading-relaxed max-w-xs mx-auto">本画面は本番システム連携後の完了状態を示すデザインプロトタイプです。<br>
+注文後のご案内方法は、正式サービス開始時にお知らせいたします。</p>
+<!-- Order ID Placeholder Badge -->
+<div class="pt-2">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-low border border-surface-container-high text-xs text-secondary font-mono">
+<span class="material-symbols-outlined text-sm text-secondary">tag</span>
+<span class="">注文番号：システム連携後に表示</span>
+</div>
+</div>
+</section>
+<!-- Prototype State Notice -->
+<div class="p-3 bg-surface-container-low/70 rounded-xl border border-surface-container-high flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-base flex-shrink-0 mt-0.5">info</span>
+<p class="text-xs text-secondary leading-relaxed">
+<strong>【プロトタイプ表示】</strong><br>
+        現在Medusa・Stripe接続準備中のため、実際の決済や注文確定処理は行われておりません。下記の価格・配送・お客様情報は動的プレースホルダー表示です。
+      </p>
+</div>
+<!-- Order Items Summary Card -->
+<section class="bg-surface-container-lowest rounded-2xl border border-surface-container-high p-4 space-y-4 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">inventory_2</span>
+<h2 class="font-heading text-sm font-bold text-primary">ご注文商品</h2>
+</div>
+<span class="text-xs text-secondary">注文確定後に表示</span>
+</div>
+<div class="space-y-4 divide-y divide-surface-container-low">
+<!-- Item 1: クロワッサン猫 -->
+<div class="pt-2 first:pt-0 space-y-2">
+<div class="flex gap-3">
+<div class="w-16 h-16 rounded-xl overflow-hidden bg-surface-container flex-shrink-0 border border-surface-container-high">
+<img alt="クロワッサン猫" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvUKLHKIDMwhsu9oG2DDM1FY0zG0s8nx--uBfrqj9KFfPzqppw6ciiGoy9qNqlmTGiP5OAoiJcpSsbCqfEJns6Fe_rsvIFF_fJV0UtoiVYY_qY0PXO3eunprUreAvUzjk_rl34_ngpx9ViQl1kkzdnEaFtZ2NhbiX6HKDU5Tp5GtJzg2ndaNS5gybzl0lya1BK_VeyKbYLZ87szdxbQ_hHY3PQPMjIRVqjxeIGpLmaLsszYEL-3Hoc3rg__J1RzLl41Sw">
+</div>
+<div class="flex-grow min-w-0 flex flex-col justify-center">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-heading text-xs font-bold text-primary truncate">クロワッサン猫</h3>
+<span class="text-xs text-secondary font-mono flex-shrink-0">数量: システム連携後に表示</span>
+</div>
+<div class="mt-1 flex items-baseline justify-between">
+<span class="text-xs text-secondary">単価：確認後に表示</span>
+</div>
+</div>
+</div>
+<!-- Item 1 Safety Notice -->
+<div class="p-2.5 bg-surface-container-low/80 rounded-lg border border-surface-container-high flex items-start gap-2">
+<span class="material-symbols-outlined text-accent text-sm flex-shrink-0 mt-0.5">warning</span>
+<p class="text-xs text-secondary leading-relaxed break-words font-medium">お菓子ではありません。食品ではありません。口に入れないでください。</p>
+</div>
+</div>
+<!-- Item 2: たまごおにぎり -->
+<div class="pt-4 space-y-2">
+<div class="flex gap-3">
+<div class="w-16 h-16 rounded-xl overflow-hidden bg-surface-container flex-shrink-0 border border-surface-container-high">
+<img alt="たまごおにぎり" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDijQpGk8v632qXKOn93p2CGXt4R0SJ7t2Eur9j028ylQD3A4DB4zUGpr9pM3j4dlUi21a_9XO9FMdDxYcBI9TuXASJSryn3SdqsdV0bfqg55hl6CMNIonyJmKmwSPDqd559VY95KDyLOEV-1cptgLo__oZ7da49xr0A-WiX4Ri0adp4DeaMg0fEegpABDhgRE12bIqieUFAxnqzWj5cpz8K_o0u0PFuPKtn6Ta6oYPDfwKygNfybwW9NXjECg136aSXDU">
+</div>
+<div class="flex-grow min-w-0 flex flex-col justify-center">
+<div class="flex justify-between items-start gap-2">
+<h3 class="font-heading text-xs font-bold text-primary truncate">たまごおにぎり</h3>
+<span class="text-xs text-secondary font-mono flex-shrink-0">数量: システム連携後に表示</span>
+</div>
+<div class="mt-1 flex items-baseline justify-between">
+<span class="text-xs text-secondary">単価：確認後に表示</span>
+</div>
+</div>
+</div>
+<!-- Item 2 Safety Notice -->
+<div class="p-2.5 bg-surface-container-low/80 rounded-lg border border-surface-container-high flex items-start gap-2">
+<span class="material-symbols-outlined text-accent text-sm flex-shrink-0 mt-0.5">warning</span>
+<p class="text-xs text-secondary leading-relaxed break-words font-medium">お菓子ではありません。食品ではありません。実際のおにぎりではありません。口に入れないでください。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Summary Card -->
+<section class="bg-surface-container-lowest rounded-2xl border border-surface-container-high p-4 space-y-3.5 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+<div class="flex items-center gap-2 pb-2 border-b border-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-lg">receipt_long</span>
+<h2 class="font-heading text-sm font-bold text-primary">お支払い明細</h2>
+</div>
+<div class="space-y-2 text-xs">
+<div class="flex justify-between text-secondary">
+<span class="">商品合計</span>
+<span class="font-mono">確認後に表示</span>
+</div>
+<div class="flex justify-between text-secondary">
+<span class="">配送料</span>
+<span class="font-mono">確認後に計算</span>
+</div>
+<div class="pt-2 border-t border-surface-container-low flex justify-between items-baseline font-bold">
+<span class="text-sm font-heading text-primary">合計（税込）</span>
+<span class="text-sm font-heading text-primary font-mono">確認後に表示</span>
+</div>
+</div>
+</section>
+<!-- Delivery & Customer Information Details Card -->
+<section class="bg-surface-container-lowest rounded-2xl border border-surface-container-high p-4 space-y-4 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+<div class="flex items-center gap-2 pb-2 border-b border-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-lg">local_shipping</span>
+<h2 class="font-heading text-sm font-bold text-primary">お届け先・決済情報</h2>
+</div>
+<div class="space-y-3 text-xs">
+<div>
+<span class="text-secondary font-medium block mb-0.5">お届け先住所</span>
+<p class="text-primary font-mono">システム連携後に表示</p>
+</div>
+<div class="pt-2 border-t border-surface-container-low">
+<span class="text-secondary font-medium block mb-0.5">宛名</span>
+<p class="text-primary">システム連携後に表示</p>
+</div>
+<div class="pt-2 border-t border-surface-container-low">
+<span class="text-secondary font-medium block mb-0.5">お支払い方法・決済ステータス</span>
+<p class="text-primary">システム連携後に表示（準備中）</p>
+</div>
+</div>
+</section>
+<!-- Next Steps Section (Neutral, no unconfirmed promises) -->
+<section class="bg-surface-container-lowest rounded-2xl border border-surface-container-high p-4 space-y-3 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
+<div class="flex items-center gap-2 pb-2 border-b border-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-lg">schedule</span>
+<h2 class="font-heading text-sm font-bold text-primary">今後の流れについて</h2>
+</div>
+<ol class="space-y-3 text-xs text-secondary leading-relaxed list-none">
+<li class="flex items-start gap-2.5">
+<span class="w-5 h-5 rounded-full bg-surface-container text-primary font-bold flex items-center justify-center flex-shrink-0 text-[10px] mt-0.5">1</span>
+<div>
+<strong class="text-primary font-medium block">ご注文内容の確認</strong>
+<span class="">ご注文内容の確認方法は、正式サービス開始時にご案内いたします。</span>
+</div>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-5 h-5 rounded-full bg-surface-container text-primary font-bold flex items-center justify-center flex-shrink-0 text-[10px] mt-0.5">2</span>
+<div>
+<strong class="text-primary font-medium block">発送準備・配送手続き</strong>
+<span class="">発送手続きの詳細は、配送方法の確定後にご案内いたします。</span>
+</div>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-5 h-5 rounded-full bg-surface-container text-primary font-bold flex items-center justify-center flex-shrink-0 text-[10px] mt-0.5">3</span>
+<div>
+<strong class="text-primary font-medium block">商品のお届け</strong>
+<span class="">お届け時期は、配送条件の確認後にご案内いたします。</span>
+</div>
+</li>
+</ol>
+<p class="text-[11px] text-secondary/80 pt-1 leading-relaxed">
+        ※ 発送日時の確約や具体的な配送日数につきましては、正式サービス開始時の配送規約に基づき確定いたします。
+      </p>
+</section>
+<!-- Primary Action CTA -->
+<div class="pt-2">
+<a class="w-full h-12 min-h-[44px] rounded-xl bg-accent hover:bg-accent/90 text-white font-medium text-xs flex items-center justify-center gap-2 transition-colors shadow-sm" href="#">
+<span class="">コレクションを見る</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</main>
+<!-- Legal & Brand Footer -->
+<footer class="mt-8 border-t border-surface-container-high bg-surface-container-lowest py-8 text-center">
+<div class="max-w-md mx-auto px-4 space-y-4">
+<nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-[11px] text-secondary">
+<a class="hover:text-primary transition-colors" href="#">特定商取引法に基づく表記</a>
+<span class="text-surface-dim">|</span>
+<a class="hover:text-primary transition-colors" href="#">プライバシーポリシー</a>
+<span class="text-surface-dim">|</span>
+<a class="hover:text-primary transition-colors" href="#">利用規約</a>
+</nav>
+<div>
+<a class="text-[11px] text-secondary hover:text-primary transition-colors" href="#">お問い合わせ</a>
+</div>
+<div class="pt-2 text-[10px] text-secondary/80 space-y-1">
+<p class="">本製品は玩具です。食品ではありません。</p>
+<p class="">© Tabajoy. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+
+
+</body></html>

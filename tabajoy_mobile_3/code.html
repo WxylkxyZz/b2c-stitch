@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="light min-h-screen w-full" data-stitch-anim-opacity="true" lang="ja" style="opacity: 0;"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>クロワッサン猫 | Tabajoy</title>
+<!-- Google Fonts: Zen Kaku Gothic New & Zen Maru Gothic -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Zen+Maru+Gothic:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-fixed": "#1d1b19",
+            "secondary": "#B84F60",
+            "secondary-fixed": "#ffd9dc",
+            "on-background": "#292827",
+            "primary-fixed": "#e6e2e0",
+            "tertiary": "#161411",
+            "surface-container-high": "#e7e8e7",
+            "tertiary-container": "#2a2826",
+            "inverse-primary": "#c9c6c4",
+            "surface-bright": "#f9f9f8",
+            "on-primary-fixed-variant": "#484645",
+            "surface-container": "#edeeed",
+            "on-error-container": "#93000a",
+            "on-secondary-container": "#771d30",
+            "secondary-container": "#ff8797",
+            "inverse-on-surface": "#f0f1f0",
+            "outline-variant": "#EBECE8",
+            "on-tertiary-container": "#938e8b",
+            "error": "#ba1a1a",
+            "primary-container": "#292827",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#716D6A",
+            "background": "#F7F8F7",
+            "primary-fixed-dim": "#c9c6c4",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed": "#e8e1dd",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed-variant": "#494643",
+            "on-surface": "#292827",
+            "surface": "#FFFFFF",
+            "surface-tint": "#605e5d",
+            "on-error": "#ffffff",
+            "secondary-fixed-dim": "#ffb2ba",
+            "on-secondary-fixed": "#400011",
+            "on-secondary-fixed-variant": "#812537",
+            "on-primary-fixed": "#1c1b1a",
+            "surface-container-highest": "#e1e3e2",
+            "on-secondary": "#ffffff",
+            "surface-container-low": "#F7F8F7",
+            "outline": "#EBECE8",
+            "on-primary": "#ffffff",
+            "surface-dim": "#d9dad9",
+            "primary": "#292827",
+            "inverse-surface": "#2e3131",
+            "on-primary-container": "#918f8d",
+            "surface-variant": "#e1e3e2",
+            "tertiary-fixed-dim": "#cbc5c2"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "gutter-desktop": "2.5rem",
+            "space-sm": "0.5rem",
+            "margin": "1.25rem",
+            "margin-desktop": "4rem",
+            "space-xs": "0.25rem",
+            "space-xl": "3rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem"
+          },
+          fontFamily: {
+            sans: ["'Zen Kaku Gothic New'", "sans-serif"],
+            'body-md': ["'Zen Kaku Gothic New'", "sans-serif"],
+            'body-lg': ["'Zen Kaku Gothic New'", "sans-serif"],
+            'title-md': ["'Zen Kaku Gothic New'", "sans-serif"],
+            'label-md': ["'Zen Kaku Gothic New'", "sans-serif"],
+            'label-sm': ["'Zen Kaku Gothic New'", "sans-serif"],
+            'headline-lg': ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            'headline-md': ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            'headline-lg-mobile': ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            'display-lg': ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            'display-lg-mobile': ["'Zen Maru Gothic'", "'Zen Kaku Gothic New'", "sans-serif"],
+            mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"],
+          },
+          fontSize: {
+            "headline-lg-mobile": ["24px", { lineHeight: "34px", letterSpacing: "-0.01em", fontWeight: "700" }],
+            "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "500" }],
+            "label-sm": ["11px", { lineHeight: "15px", letterSpacing: "0.08em", fontWeight: "500" }],
+            "headline-md": ["22px", { lineHeight: "28px", fontWeight: "500" }],
+            "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "500" }],
+            "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "500" }],
+            "title-md": ["18px", { lineHeight: "26px", fontWeight: "700" }],
+            "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+            "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+            "display-lg-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Zen Kaku Gothic New', sans-serif;
+      background-color: #F7F8F7;
+      color: #292827;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      line-height: 1;
+      display: inline-block;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .gallery-ambient-shadow {
+      box-shadow: 0 12px 32px -8px rgba(41, 40, 39, 0.05);
+    }
+    .active-press:active {
+      transform: scale(0.985);
+      transition: transform 150ms ease;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen pb-32 selection:bg-secondary/15 selection:text-secondary w-full">
+<!-- Mobile Screen Constraint Wrapper (~390px, 100% fluid) -->
+<div class="w-full max-w-md mx-auto bg-background min-h-screen relative flex flex-col">
+<!-- Compact Mobile Header -->
+<header class="sticky top-0 z-40 bg-surface/90 backdrop-blur-md px-margin h-14 flex items-center justify-between border-b border-outline">
+<a class="flex items-center gap-1.5 text-on-surface-variant hover:text-secondary transition-colors duration-200 active-press" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span class="font-label-sm text-label-sm tracking-normal">コレクション</span>
+</a>
+<!-- Brand Wordmark -->
+<a class="font-headline-md text-[18px] tracking-[0.16em] font-medium text-primary text-center" href="#">
+        TABAJOY
+      </a>
+<!-- Cart Icon Action -->
+<div class="relative flex items-center justify-end">
+<button aria-label="買い物かご" class="p-1.5 text-primary hover:text-secondary transition-colors duration-200 active-press" type="button">
+<span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas (Media-First PDP Flow) -->
+<main class="w-full flex-1 flex flex-col">
+<!-- 1. Gallery First Section -->
+<section class="w-full pt-space-sm px-margin">
+<!-- Main Pedestal Display Viewport -->
+<div class="w-full bg-surface rounded-lg p-space-sm border border-outline gallery-ambient-shadow">
+<div class="relative w-full aspect-[4/3] rounded overflow-hidden bg-surface-container-low flex items-center justify-center">
+<img alt="クロワッサン猫 スクイーズ メイン写真" class="w-full h-full object-contain transition-opacity duration-300" id="main-gallery-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBLahqa1gg2jf4nI868KPJsj4V87H5-PfkCU7PUFYAsFe8A0LOva7inyuIiDJELyie8UqGOBrByV7iFbGdTTPS8vxrRBJCxsr2pIhrFW6wgRyomoNNSCQEsirOLtbOcMZhLQzhhvpjg2YolK2lNX6ZfcUFJt7LJo5pupJKaiWH2dzHNCYJMsOt88YeR5F27S_P4QVDldfrMHHLoFaV1gqf7IBbZKDJGjHXGbUhaPEsK5tz1jUlIr04WE-2FLWbXMQt7so"/>
+<!-- Category Badge / Rare Marker -->
+</div>
+</div>
+<!-- 4-Thumbnail Strip Carousel -->
+<div class="mt-space-sm">
+<div class="flex gap-2 overflow-x-auto no-scrollbar py-1 px-0.5" id="thumbnail-strip">
+<button aria-label="写真 1" class="thumb-btn flex-shrink-0 w-16 h-16 rounded bg-surface border-2 border-primary overflow-hidden p-0.5 active-press transition-all duration-200 focus:outline-none" onclick="switchImage('https://lh3.googleusercontent.com/aida-public/AB6AXuDBLahqa1gg2jf4nI868KPJsj4V87H5-PfkCU7PUFYAsFe8A0LOva7inyuIiDJELyie8UqGOBrByV7iFbGdTTPS8vxrRBJCxsr2pIhrFW6wgRyomoNNSCQEsirOLtbOcMZhLQzhhvpjg2YolK2lNX6ZfcUFJt7LJo5pupJKaiWH2dzHNCYJMsOt88YeR5F27S_P4QVDldfrMHHLoFaV1gqf7IBbZKDJGjHXGbUhaPEsK5tz1jUlIr04WE-2FLWbXMQt7so', this)" type="button">
+<img alt="サムネイル 1" class="w-full h-full object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBLahqa1gg2jf4nI868KPJsj4V87H5-PfkCU7PUFYAsFe8A0LOva7inyuIiDJELyie8UqGOBrByV7iFbGdTTPS8vxrRBJCxsr2pIhrFW6wgRyomoNNSCQEsirOLtbOcMZhLQzhhvpjg2YolK2lNX6ZfcUFJt7LJo5pupJKaiWH2dzHNCYJMsOt88YeR5F27S_P4QVDldfrMHHLoFaV1gqf7IBbZKDJGjHXGbUhaPEsK5tz1jUlIr04WE-2FLWbXMQt7so"/>
+</button>
+<button aria-label="写真 2" class="thumb-btn flex-shrink-0 w-16 h-16 rounded bg-surface border border-outline overflow-hidden p-0.5 active-press transition-all duration-200 opacity-70 hover:opacity-100 focus:outline-none" onclick="switchImage('https://lh3.googleusercontent.com/aida-public/AB6AXuAoYfrHiXmVJQ5FVFNKZwNGlB5mfVS-jBQ1mhVOfuRcSJ-TwQOXxUN9s-SRmL6La0ZWgcVuCJgIs8bXUd__cl-fNZoW7KFR3lMpWALPES4zS607IXeGu7cuXA3ZeI5WjAmhEAImcAbriqJ9ziEHi5vWVrcnH7fRWHAXBmKf72dQWjm9oWOogPMmMNMqysPYvB__RC9twzbhTrt3psCue2jUYkiA1Kh_Shewv4rxffv_ozdl7xEW-_P6l2NyF3Wk5dGR9NA', this)" type="button">
+<img alt="サムネイル 2" class="w-full h-full object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoYfrHiXmVJQ5FVFNKZwNGlB5mfVS-jBQ1mhVOfuRcSJ-TwQOXxUN9s-SRmL6La0ZWgcVuCJgIs8bXUd__cl-fNZoW7KFR3lMpWALPES4zS607IXeGu7cuXA3ZeI5WjAmhEAImcAbriqJ9ziEHi5vWVrcnH7fRWHAXBmKf72dQWjm9oWOogPMmMNMqysPYvB__RC9twzbhTrt3psCue2jUYkiA1Kh_Shewv4rxffv_ozdl7xEW-_P6l2NyF3Wk5dGR9NA"/>
+</button>
+<button aria-label="写真 3" class="thumb-btn flex-shrink-0 w-16 h-16 rounded bg-surface border border-outline overflow-hidden p-0.5 active-press transition-all duration-200 opacity-70 hover:opacity-100 focus:outline-none" onclick="switchImage('https://lh3.googleusercontent.com/aida-public/AB6AXuAZWI_uVL8gEVbpRXjd1WWtRcWzdHeb4mYGvBBMcCbwjqc2FuQfoye65L5_ed5u908G8GT_0JjK_txgJsRVWzWBL3JlnF82GfMVxGoKIkOowU0-i9klmO2ShNi_UeUMCj9QAC291POiTRnBLAX0FjN--RMemL7w2WsxJ6znRYMn7PNyW1NA6d4SN4hwbwOpESeef6toe9AYhsWWmMa3dipgVaGQpc3iiIGwS6cPBmp0KAJvlILZrG1eouMyotsMjWIX61I', this)" type="button">
+<img alt="サムネイル 3" class="w-full h-full object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZWI_uVL8gEVbpRXjd1WWtRcWzdHeb4mYGvBBMcCbwjqc2FuQfoye65L5_ed5u908G8GT_0JjK_txgJsRVWzWBL3JlnF82GfMVxGoKIkOowU0-i9klmO2ShNi_UeUMCj9QAC291POiTRnBLAX0FjN--RMemL7w2WsxJ6znRYMn7PNyW1NA6d4SN4hwbwOpESeef6toe9AYhsWWmMa3dipgVaGQpc3iiIGwS6cPBmp0KAJvlILZrG1eouMyotsMjWIX61I"/>
+</button>
+<button aria-label="写真 4" class="thumb-btn flex-shrink-0 w-16 h-16 rounded bg-surface border border-outline overflow-hidden p-0.5 active-press transition-all duration-200 opacity-70 hover:opacity-100 focus:outline-none" onclick="switchImage('https://lh3.googleusercontent.com/aida-public/AB6AXuB2iXs8zxzyiaEdY5LVN2Tg5z2qGVkccn_BIxwqi1Yj6xfE9hplmXG7oxOUwAbBkuDZTlSk31rjTFLU-d0qi58FvuMtDB8Iq7RGQNMFm5pBgZpdDQjA1Mp7hP0RijZOOFTFaCcavedA1-ISeRUP-J-0gyArCJcGsV_K91T1GUPSCLvMNN8cfxC5cuGjb2amGdq7pwgFXl1whRc4AvjHWqMdIbRKqkjhf5G8P1sQGCpJq0b4280fC6t5XeLB20w5bO2hwaY', this)" type="button">
+<img alt="サムネイル 4" class="w-full h-full object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2iXs8zxzyiaEdY5LVN2Tg5z2qGVkccn_BIxwqi1Yj6xfE9hplmXG7oxOUwAbBkuDZTlSk31rjTFLU-d0qi58FvuMtDB8Iq7RGQNMFm5pBgZpdDQjA1Mp7hP0RijZOOFTFaCcavedA1-ISeRUP-J-0gyArCJcGsV_K91T1GUPSCLvMNN8cfxC5cuGjb2amGdq7pwgFXl1whRc4AvjHWqMdIbRKqkjhf5G8P1sQGCpJq0b4280fC6t5XeLB20w5bO2hwaY"/>
+</button>
+<button aria-label="写真 5" class="thumb-btn flex-shrink-0 w-16 h-16 rounded bg-surface border border-outline overflow-hidden p-0.5 active-press transition-all duration-200 opacity-70 hover:opacity-100 focus:outline-none" onclick="switchImage('https://lh3.googleusercontent.com/aida-public/AB6AXuDZMXpw3OVfr5icOpL0fb1TiHo3MBZiFoOO8ePoI8xGrcZc4x_qAUgqvRk7S1a0pFcfUHJZGHQeFVWutAp9ZvOz8GYYhosDOuwBTK31Cc2SqeYuetW_ZzhMX3eHAI-DUimUJCxpSDDxxrJ5SFdyV8Rv6qgJusoIftxPv7HT_myXp6YDEMaH9J1ECWffsEfUWqualUTjAUlyqu-raeEHEPQLwCm2eEcCSgoknYXy_Kok7s0iiSB2bzWMd-5B_ufWiDAPFts', this)" type="button">
+<img alt="サムネイル 5" class="w-full h-full object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZMXpw3OVfr5icOpL0fb1TiHo3MBZiFoOO8ePoI8xGrcZc4x_qAUgqvRk7S1a0pFcfUHJZGHQeFVWutAp9ZvOz8GYYhosDOuwBTK31Cc2SqeYuetW_ZzhMX3eHAI-DUimUJCxpSDDxxrJ5SFdyV8Rv6qgJusoIftxPv7HT_myXp6YDEMaH9J1ECWffsEfUWqualUTjAUlyqu-raeEHEPQLwCm2eEcCSgoknYXy_Kok7s0iiSB2bzWMd-5B_ufWiDAPFts"/>
+</button>
+</div>
+</div>
+</section>
+<!-- 2. Product Info & Purchase Area -->
+<section class="w-full px-margin pt-space-lg">
+<div class="bg-surface rounded-lg p-space-md border border-outline gallery-ambient-shadow">
+<!-- Category & Scent Attribute Row -->
+<div class="flex items-center justify-between gap-2 pb-2">
+<!-- Attribute Pill: 香り付き -->
+<span class="inline-flex items-center gap-1 bg-surface-container-low border border-outline px-2.5 py-0.5 rounded text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              香り付き
+            </span>
+</div>
+<!-- Product Title: whitespace-nowrap and rhythm -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary whitespace-nowrap overflow-x-auto no-scrollbar py-0.5">
+            クロワッサン猫
+          </h1>
+<!-- Price Placeholder -->
+<div class="mt-2.5 flex items-baseline gap-2"><span class="font-headline-md text-headline-md font-medium text-primary">¥ 価格未定</span></div>
+<!-- Short Description -->
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+            クロワッサンと猫を組み合わせた、思わず手に取りたくなるスクイーズ。
+          </p>
+<div class="h-px bg-outline my-space-md"></div>
+<!-- Quantity Selector & Action Controls -->
+<div class="space-y-3"><div class="flex items-center justify-between opacity-50"><span class="font-label-sm text-label-sm text-on-surface-variant">数量</span><div class="flex items-center border border-outline rounded bg-surface-container-low h-10 px-1"><button aria-label="減らす" class="w-8 h-8 flex items-center justify-center text-primary/40 cursor-not-allowed rounded" disabled="" type="button"><span class="material-symbols-outlined text-[18px]">remove</span></button><span class="w-10 text-center font-label-md text-label-md font-medium text-primary/60" id="qty-val">1</span><button aria-label="増やす" class="w-8 h-8 flex items-center justify-center text-primary/40 cursor-not-allowed rounded" disabled="" type="button"><span class="material-symbols-outlined text-[18px]">add</span></button></div></div><button aria-disabled="true" class="w-full h-12 bg-surface-container-high text-on-surface-variant/60 cursor-not-allowed border border-surface-container-highest rounded font-label-md text-[13px] tracking-wider font-medium flex items-center justify-center gap-2 select-none" disabled="" type="button"><span class="material-symbols-outlined text-[19px]">shopping_bag</span><span class="">価格確認後に販売開始</span></button></div>
+<!-- Non-food Safety Notice Box (Placed immediately near purchase controls) -->
+<div class="mt-space-md bg-surface-container-low border border-outline rounded p-3 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0 mt-0.5">warning</span>
+<div class="flex-1">
+<p class="font-body-md text-[12px] leading-relaxed text-primary font-medium">
+                お菓子ではありません。食品ではありません。口に入れないでください。
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Content & Care Sections -->
+<section class="w-full px-margin pt-space-lg space-y-space-md">
+<!-- How to Play Card -->
+<div class="bg-surface rounded-lg p-space-md border border-outline gallery-ambient-shadow">
+<div class="flex items-center gap-2 mb-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">pan_tool</span>
+<h2 class="font-title-md text-[15px] font-bold text-primary">遊び方・感触</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            伸ばす、丸める、つまむ。思いつくままに形を変えて遊べます。
+          </p>
+</div>
+<!-- お取り扱い上の注意 (Care Instructions) -->
+<div class="bg-surface rounded-lg p-space-md border border-outline gallery-ambient-shadow">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">info</span>
+<h2 class="font-title-md text-[15px] font-bold text-primary">お取り扱い上の注意</h2>
+</div>
+<ul class="space-y-2.5 text-on-surface-variant">
+<li class="flex items-start gap-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0 mt-2"></span>
+<p class="font-body-md text-[13px] leading-relaxed text-on-surface">水洗いはできません。汚れた場合は乾いた布で軽く拭いてください。</p>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0 mt-2"></span>
+<p class="font-body-md text-[13px] leading-relaxed text-on-surface">髪の毛、カーペット、ソファ、衣類には触れさせないでください。</p>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0 mt-2"></span>
+<p class="font-body-md text-[13px] leading-relaxed text-on-surface">紙や布に置くと、油分が移る場合があります。</p>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0 mt-2"></span>
+<p class="font-body-md text-[13px] leading-relaxed text-on-surface">ご使用後は密閉できる袋や容器で保管してください。</p>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0 mt-2"></span>
+<p class="font-body-md text-[13px] leading-relaxed text-on-surface">気温により、かたさが変わることがあります。</p>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0 mt-2"></span>
+<p class="font-body-md text-[13px] leading-relaxed text-on-surface">手に傷がある場合や、敏感肌の方はご使用をお控えください。</p>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0 mt-2"></span>
+<p class="font-body-md text-[13px] leading-relaxed text-primary font-medium">口に入れないでください。※お菓子ではありません。</p>
+</li>
+</ul>
+</div>
+<!-- Specifications & Internal Placeholders -->
+<div class="bg-surface rounded-lg p-space-md border border-outline gallery-ambient-shadow">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<h2 class="font-title-md text-[15px] font-bold text-primary">製品仕様</h2>
+</div>
+<dl class="divide-y divide-outline">
+<div class="py-2.5 flex justify-between items-center text-[13px]">
+<dt class="text-on-surface-variant font-label-sm">サイズ・重量</dt>
+<dd class="text-primary font-body-md text-right">サイズ・重量は確認後に掲載</dd>
+</div>
+<div class="py-2.5 flex justify-between items-center text-[13px]">
+<dt class="text-on-surface-variant font-label-sm">材質</dt>
+<dd class="text-primary font-body-md text-right">材質は確認後に掲載</dd>
+</div>
+<div class="py-2.5 flex justify-between items-center text-[13px]">
+<dt class="text-on-surface-variant font-label-sm">対象年齢</dt>
+<dd class="text-primary font-body-md text-right">対象年齢は確認後に掲載</dd>
+</div>
+<div class="py-2.5 flex justify-between items-center text-[13px]">
+<dt class="text-on-surface-variant font-label-sm">原産国</dt>
+<dd class="text-primary font-body-md text-right">原産国は確認後に掲載</dd>
+</div>
+</dl>
+</div>
+<!-- Brand Ethos Micro-Banner -->
+<div class="py-4 text-center">
+<p class="font-label-sm text-[11px] tracking-widest text-on-surface-variant uppercase">© Tabajoy. All rights reserved.</p>
+<p class="font-label-sm text-[10px] text-on-surface-variant mt-1">
+            静謐な空間で愛でる、触覚の彫刻。
+          </p>
+</div>
+</section>
+</main>
+<!-- Sticky Bottom Purchase Bar (Mobile Navigation Safe & Non-Occluding) -->
+<aside class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-md border-t border-outline"><div class="max-w-md mx-auto px-margin py-2.5 flex items-center justify-between gap-3"><div class="flex flex-col min-w-0"><span class="font-label-sm text-[11px] text-on-surface-variant truncate">クロワッサン猫</span><span class="font-headline-md text-[17px] font-bold text-primary tracking-tight">¥ 価格未定</span></div><button aria-disabled="true" class="h-12 px-6 flex-shrink-0 bg-surface-container-high text-on-surface-variant/60 border border-surface-container-highest rounded font-label-md text-[13px] tracking-wider font-medium flex items-center justify-center gap-2 cursor-not-allowed select-none" disabled="" type="button"><span class="material-symbols-outlined text-[18px]">shopping_bag</span><span class="">価格確認後に販売開始</span></button></div></aside>
+</div>
+<script>
+    // Gallery Image Switcher
+    function switchImage(src, btn) {
+      const mainImg = document.getElementById('main-gallery-image');
+      if (mainImg) {
+        mainImg.style.opacity = '0.3';
+        setTimeout(() => {
+          mainImg.src = src;
+          mainImg.style.opacity = '1';
+        }, 120);
+      }
+
+      // Reset thumbnail styling
+      document.querySelectorAll('.thumb-btn').forEach(el => {
+        el.classList.remove('border-primary', 'opacity-100');
+        el.classList.add('border-outline', 'opacity-70');
+      });
+
+      // Highlight active button
+      btn.classList.remove('border-outline', 'opacity-70');
+      btn.classList.add('border-primary', 'opacity-100');
+    }
+
+    // Micro Quantity Stepper
+    let currentQty = 1;
+    function updateQty(delta) {
+      currentQty = Math.max(1, currentQty + delta);
+      const qtyLabel = document.getElementById('qty-val');
+      if (qtyLabel) {
+        qtyLabel.textContent = currentQty;
+      }
+    }
+  </script>
+</body></html>

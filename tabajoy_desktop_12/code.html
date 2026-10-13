@@ -1,0 +1,433 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="ja" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>クロワッサン猫 | Tabajoy (たばじょい) 公式オンラインストア</title>
+<!-- Google Fonts: Zen Kaku Gothic New & Zen Maru Gothic & Plus Jakarta Sans & Space Grotesk -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&amp;family=Zen+Maru+Gothic:wght@400;500;700&amp;display=swap" rel="stylesheet" class="">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-fixed": "#1d1b19",
+            "secondary": "#a03c4e",
+            "secondary-fixed": "#ffd9dc",
+            "on-background": "#191c1c",
+            "primary-fixed": "#e6e2e0",
+            "tertiary": "#161411",
+            "surface-container-high": "#e7e8e7",
+            "tertiary-container": "#2a2826",
+            "inverse-primary": "#c9c6c4",
+            "surface-bright": "#f9f9f8",
+            "on-primary-fixed-variant": "#484645",
+            "surface-container": "#edeeed",
+            "on-error-container": "#93000a",
+            "on-secondary-container": "#771d30",
+            "secondary-container": "#ff8797",
+            "inverse-on-surface": "#f0f1f0",
+            "outline-variant": "#cbc6bd",
+            "on-tertiary-container": "#938e8b",
+            "error": "#ba1a1a",
+            "primary-container": "#292827",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#494740",
+            "background": "#f9f9f8",
+            "primary-fixed-dim": "#c9c6c4",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed": "#e8e1dd",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-fixed-variant": "#494643",
+            "on-surface": "#191c1c",
+            "surface": "#f9f9f8",
+            "surface-tint": "#605e5d",
+            "on-error": "#ffffff",
+            "secondary-fixed-dim": "#ffb2ba",
+            "on-secondary-fixed": "#400011",
+            "on-secondary-fixed-variant": "#812537",
+            "on-primary-fixed": "#1c1b1a",
+            "surface-container-highest": "#e1e3e2",
+            "on-secondary": "#ffffff",
+            "surface-container-low": "#f3f4f3",
+            "outline": "#7a776f",
+            "on-primary": "#ffffff",
+            "surface-dim": "#d9dad9",
+            "primary": "#141413",
+            "inverse-surface": "#2e3131",
+            "on-primary-container": "#918f8d",
+            "surface-variant": "#e1e3e2",
+            "tertiary-fixed-dim": "#cbc5c2"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter-desktop": "2.5rem",
+            "space-sm": "0.5rem",
+            "margin": "1.25rem",
+            "margin-desktop": "4rem",
+            "space-xs": "0.25rem",
+            "space-xl": "3rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "label-md": ["Space Grotesk"],
+            "label-sm": ["Space Grotesk"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "title-md": ["Manrope"],
+            "body-md": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "display-lg-mobile": ["Plus Jakarta Sans"],
+            "zen-kaku": ["'Zen Kaku Gothic New'", "sans-serif"],
+            "zen-maru": ["'Zen Maru Gothic'", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.005em", "fontWeight": "500" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+            "title-md": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    body {
+      background-color: #F7F8F7;
+      color: #292827;
+      font-family: 'Zen Kaku Gothic New', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .thumb-active {
+      border-color: #292827 !important;
+      opacity: 1 !important;
+    }
+  </style>
+</head>
+<body class="bg-[#F7F8F7] text-[#292827] min-h-screen flex flex-col selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- Compact Tabajoy Header -->
+<header class="sticky top-0 z-50 bg-[#FFFFFF]/90 backdrop-blur-md border-b border-[#EBECE8] transition-colors">
+<div class="max-w-7xl mx-auto px-6 lg:px-16 h-16 flex items-center justify-between">
+<!-- Brand & Japanese Subtext -->
+<div class="flex items-center gap-6">
+<a class="flex items-baseline gap-2 group active:scale-[0.985] transition-transform" href="#">
+<span class="font-zen-maru text-xl font-bold tracking-tight text-[#292827] group-hover:text-secondary transition-colors">Tabajoy</span>
+<span class="text-xs text-[#716D6A] tracking-wider font-zen-kaku">たばじょい</span>
+</a>
+<!-- Minimalist Japanese Nav -->
+<nav class="hidden md:flex items-center gap-8 ml-4 text-xs tracking-wider text-[#716D6A] font-medium font-zen-kaku">
+<a class="text-[#292827] hover:text-secondary transition-colors" href="#">コレクション</a>
+<a class="hover:text-secondary transition-colors" href="#">私たちについて</a>
+<a class="hover:text-secondary transition-colors" href="#">お知らせ</a>
+</nav>
+</div>
+<!-- Right Controls: Currency indicator + Icons -->
+<div class="flex items-center gap-5 text-[#292827]">
+<div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#F7F8F7] border border-[#EBECE8] text-[11px] font-label-sm text-[#716D6A]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#B84F60]/70"></span>
+<span class="">JPY / 日本円</span>
+</div>
+<button aria-label="検索" class="p-1.5 hover:text-secondary transition-colors active:scale-[0.985]">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+<a aria-label="カート" class="p-1.5 relative hover:text-secondary transition-colors active:scale-[0.985]" href="#">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span class="absolute top-1 right-0.5 w-1.5 h-1.5 rounded-full bg-[#B84F60]"></span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow max-w-7xl w-full mx-auto px-6 lg:px-16 pt-6 pb-24">
+<!-- Breadcrumb Navigation -->
+<nav aria-label="パンくずリスト" class="mb-8">
+<ol class="flex items-center gap-2 text-xs tracking-wide text-[#716D6A] font-zen-kaku">
+<li class="">
+<a class="hover:text-[#292827] transition-colors" href="#">ホーム</a>
+</li>
+<li class="text-[#CBC6BD]">/</li>
+<li class="">
+<a class="hover:text-[#292827] transition-colors" href="#">コレクション</a>
+</li>
+<li class="text-[#CBC6BD]">/</li>
+<li aria-current="page" class="text-[#292827] font-medium">クロワッサン猫</li>
+</ol>
+</nav>
+<!-- Two-Column Product Detail Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+<!-- LEFT COLUMN: 5-Photo Gallery (lg:col-span-7) -->
+<section aria-label="商品写真ギャラリー" class="lg:col-span-7 flex flex-col gap-4">
+<!-- Main Featured Viewport -->
+<div class="relative w-full aspect-[4/3] bg-[#FFFFFF] rounded border border-[#EBECE8] overflow-hidden flex items-center justify-center shadow-[0_12px_32px_-8px_rgba(41,40,39,0.04)]">
+
+<img alt="クロワッサン猫のスクイーズのメインビュー写真" class="w-full h-full object-contain p-4 transition-all duration-300 ease-out select-none" id="featured-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBLahqa1gg2jf4nI868KPJsj4V87H5-PfkCU7PUFYAsFe8A0LOva7inyuIiDJELyie8UqGOBrByV7iFbGdTTPS8vxrRBJCxsr2pIhrFW6wgRyomoNNSCQEsirOLtbOcMZhLQzhhvpjg2YolK2lNX6ZfcUFJt7LJo5pupJKaiWH2dzHNCYJMsOt88YeR5F27S_P4QVDldfrMHHLoFaV1gqf7IBbZKDJGjHXGbUhaPEsK5tz1jUlIr04WE-2FLWbXMQt7so">
+</div>
+<!-- 4 Selectable Thumbnails -->
+<div class="grid grid-cols-4 gap-3">
+<button aria-label="画像 1 を表示" class="thumb-btn thumb-active relative aspect-[4/3] bg-[#FFFFFF] rounded border border-[#292827] overflow-hidden p-1 transition-all active:scale-[0.985] group" onclick="updateGallery('https://lh3.googleusercontent.com/aida-public/AB6AXuDBLahqa1gg2jf4nI868KPJsj4V87H5-PfkCU7PUFYAsFe8A0LOva7inyuIiDJELyie8UqGOBrByV7iFbGdTTPS8vxrRBJCxsr2pIhrFW6wgRyomoNNSCQEsirOLtbOcMZhLQzhhvpjg2YolK2lNX6ZfcUFJt7LJo5pupJKaiWH2dzHNCYJMsOt88YeR5F27S_P4QVDldfrMHHLoFaV1gqf7IBbZKDJGjHXGbUhaPEsK5tz1jUlIr04WE-2FLWbXMQt7so', this)" type="button">
+<img alt="サムネイル 1" class="w-full h-full object-contain pointer-events-none group-hover:scale-105 transition-transform duration-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBLahqa1gg2jf4nI868KPJsj4V87H5-PfkCU7PUFYAsFe8A0LOva7inyuIiDJELyie8UqGOBrByV7iFbGdTTPS8vxrRBJCxsr2pIhrFW6wgRyomoNNSCQEsirOLtbOcMZhLQzhhvpjg2YolK2lNX6ZfcUFJt7LJo5pupJKaiWH2dzHNCYJMsOt88YeR5F27S_P4QVDldfrMHHLoFaV1gqf7IBbZKDJGjHXGbUhaPEsK5tz1jUlIr04WE-2FLWbXMQt7so">
+</button>
+<button aria-label="画像 2 を表示" class="thumb-btn opacity-70 hover:opacity-100 relative aspect-[4/3] bg-[#FFFFFF] rounded border border-[#EBECE8] overflow-hidden p-1 transition-all active:scale-[0.985] group" onclick="updateGallery('https://lh3.googleusercontent.com/aida-public/AB6AXuAoYfrHiXmVJQ5FVFNKZwNGlB5mfVS-jBQ1mhVOfuRcSJ-TwQOXxUN9s-SRmL6La0ZWgcVuCJgIs8bXUd__cl-fNZoW7KFR3lMpWALPES4zS607IXeGu7cuXA3ZeI5WjAmhEAImcAbriqJ9ziEHi5vWVrcnH7fRWHAXBmKf72dQWjm9oWOogPMmMNMqysPYvB__RC9twzbhTrt3psCue2jUYkiA1Kh_Shewv4rxffv_ozdl7xEW-_P6l2NyF3Wk5dGR9NA', this)" type="button">
+<img alt="サムネイル 2" class="w-full h-full object-contain pointer-events-none group-hover:scale-105 transition-transform duration-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoYfrHiXmVJQ5FVFNKZwNGlB5mfVS-jBQ1mhVOfuRcSJ-TwQOXxUN9s-SRmL6La0ZWgcVuCJgIs8bXUd__cl-fNZoW7KFR3lMpWALPES4zS607IXeGu7cuXA3ZeI5WjAmhEAImcAbriqJ9ziEHi5vWVrcnH7fRWHAXBmKf72dQWjm9oWOogPMmMNMqysPYvB__RC9twzbhTrt3psCue2jUYkiA1Kh_Shewv4rxffv_ozdl7xEW-_P6l2NyF3Wk5dGR9NA">
+</button>
+<button aria-label="画像 3 を表示" class="thumb-btn opacity-70 hover:opacity-100 relative aspect-[4/3] bg-[#FFFFFF] rounded border border-[#EBECE8] overflow-hidden p-1 transition-all active:scale-[0.985] group" onclick="updateGallery('https://lh3.googleusercontent.com/aida-public/AB6AXuAZWI_uVL8gEVbpRXjd1WWtRcWzdHeb4mYGvBBMcCbwjqc2FuQfoye65L5_ed5u908G8GT_0JjK_txgJsRVWzWBL3JlnF82GfMVxGoKIkOowU0-i9klmO2ShNi_UeUMCj9QAC291POiTRnBLAX0FjN--RMemL7w2WsxJ6znRYMn7PNyW1NA6d4SN4hwbwOpESeef6toe9AYhsWWmMa3dipgVaGQpc3iiIGwS6cPBmp0KAJvlILZrG1eouMyotsMjWIX61I', this)" type="button">
+<img alt="サムネイル 3" class="w-full h-full object-contain pointer-events-none group-hover:scale-105 transition-transform duration-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZWI_uVL8gEVbpRXjd1WWtRcWzdHeb4mYGvBBMcCbwjqc2FuQfoye65L5_ed5u908G8GT_0JjK_txgJsRVWzWBL3JlnF82GfMVxGoKIkOowU0-i9klmO2ShNi_UeUMCj9QAC291POiTRnBLAX0FjN--RMemL7w2WsxJ6znRYMn7PNyW1NA6d4SN4hwbwOpESeef6toe9AYhsWWmMa3dipgVaGQpc3iiIGwS6cPBmp0KAJvlILZrG1eouMyotsMjWIX61I">
+</button>
+<button aria-label="画像 4 を表示" class="thumb-btn opacity-70 hover:opacity-100 relative aspect-[4/3] bg-[#FFFFFF] rounded border border-[#EBECE8] overflow-hidden p-1 transition-all active:scale-[0.985] group" onclick="updateGallery('https://lh3.googleusercontent.com/aida-public/AB6AXuB2iXs8zxzyiaEdY5LVN2Tg5z2qGVkccn_BIxwqi1Yj6xfE9hplmXG7oxOUwAbBkuDZTlSk31rjTFLU-d0qi58FvuMtDB8Iq7RGQNMFm5pBgZpdDQjA1Mp7hP0RijZOOFTFaCcavedA1-ISeRUP-J-0gyArCJcGsV_K91T1GUPSCLvMNN8cfxC5cuGjb2amGdq7pwgFXl1whRc4AvjHWqMdIbRKqkjhf5G8P1sQGCpJq0b4280fC6t5XeLB20w5bO2hwaY', this)" type="button">
+<img alt="サムネイル 4" class="w-full h-full object-contain pointer-events-none group-hover:scale-105 transition-transform duration-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2iXs8zxzyiaEdY5LVN2Tg5z2qGVkccn_BIxwqi1Yj6xfE9hplmXG7oxOUwAbBkuDZTlSk31rjTFLU-d0qi58FvuMtDB8Iq7RGQNMFm5pBgZpdDQjA1Mp7hP0RijZOOFTFaCcavedA1-ISeRUP-J-0gyArCJcGsV_K91T1GUPSCLvMNN8cfxC5cuGjb2amGdq7pwgFXl1whRc4AvjHWqMdIbRKqkjhf5G8P1sQGCpJq0b4280fC6t5XeLB20w5bO2hwaY">
+</button>
+</div>
+
+</section>
+<!-- RIGHT COLUMN: Purchase Information & Core Controls (lg:col-span-5) -->
+<section aria-label="購入情報とアクション" class="lg:col-span-5 flex flex-col pt-1 lg:sticky lg:top-24">
+<!-- Category Badge & Scent Attribute -->
+<div class="flex items-center gap-2 mb-3">
+
+<span class="px-2 py-0.5 rounded bg-[#F7F8F7] border-l-2 border-[#B84F60] border-t border-r border-b border-[#EBECE8] text-[11px] font-zen-kaku font-medium text-[#292827] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-[#B84F60]">spa</span>
+            香り付き
+          </span>
+</div>
+<!-- Product Name (Zen Maru Gothic) -->
+<h1 class="text-3xl font-medium text-[#292827] tracking-tight font-zen-maru leading-snug mb-3">
+          クロワッサン猫
+        </h1>
+<!-- Short Description -->
+<p class="text-[#716D6A] text-sm leading-relaxed font-zen-kaku mb-6">
+          クロワッサンと猫を組み合わせた、思わず手に取りたくなるスクイーズ。
+        </p>
+<!-- Price Display -->
+<div class="py-4 border-y border-[#EBECE8] mb-6 flex items-baseline justify-between"><div class="flex items-baseline gap-2"><span class="text-2xl font-medium text-[#292827] font-zen-maru">¥ 価格未定</span></div></div>
+<!-- Purchase Interaction Controls -->
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<!-- Quantity Selector with min 44px touch target -->
+<div class="flex items-center border border-[#EBECE8] rounded h-12 opacity-50 pointer-events-none select-none cursor-not-allowed bg-[#F7F8F7]" aria-disabled="true"><button aria-label="数量を減らす" class="w-11 h-11 flex items-center justify-center text-[#716D6A] cursor-not-allowed" disabled="" type="button"><span class="material-symbols-outlined text-[18px]">remove</span></button><span class="w-10 text-center font-label-md text-sm text-[#716D6A] select-none font-medium" id="qty-val">1</span><button aria-label="数量を増やす" class="w-11 h-11 flex items-center justify-center text-[#716D6A] cursor-not-allowed" disabled="" type="button"><span class="material-symbols-outlined text-[18px]">add</span></button></div>
+<!-- Primary CTA Button (Restrained Berry #B84F60) -->
+<button class="flex-1 h-12 bg-stone-300 text-stone-500 cursor-not-allowed pointer-events-none rounded font-zen-kaku text-sm font-medium tracking-wider flex items-center justify-center gap-2" disabled="" type="button"><span class="material-symbols-outlined text-[19px]">shopping_bag</span><span class="">価格確認後に販売開始</span></button>
+</div>
+<!-- Non-Food Safety Notice Alert Box (Directly adjacent to purchase controls) -->
+<div class="p-3.5 rounded bg-[#FFFFFF] border border-[#EBECE8] flex items-start gap-3">
+<span class="material-symbols-outlined text-[#B84F60] text-[18px] shrink-0 mt-0.5">warning</span>
+<div class="text-xs leading-relaxed text-[#292827] font-zen-kaku">
+<span class="font-bold text-[#B84F60]">安全上のご注意：</span>
+              お菓子ではありません。食品ではありません。口に入れないでください。
+            </div>
+</div>
+<!-- Subtle Trust Attributes -->
+
+</div>
+</section>
+</div>
+<!-- Below the Fold Divider -->
+<hr class="my-20 border-[#EBECE8]">
+<!-- SECTION 1: 遊び方・感触の特徴 -->
+<section aria-labelledby="section-how-to-play" class="mb-20">
+<div class="max-w-2xl mb-8">
+<span class="text-xs font-label-sm uppercase tracking-widest text-[#716D6A] block mb-1">TACTILE DYNAMICS</span>
+<h2 class="text-2xl font-medium text-[#292827] font-zen-maru tracking-tight mb-2" id="section-how-to-play">
+          遊び方・感触の特徴
+        </h2>
+<p class="text-sm text-[#716D6A] font-zen-kaku">
+          伸ばす、丸める、つまむ。思いつくままに形を変えて遊べます。
+        </p>
+</div>
+<!-- Explanatory Cards Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"><div class="p-6 bg-[#FFFFFF] rounded border border-[#EBECE8] flex flex-col justify-between hover:border-[#CBC6BD] transition-colors"><div><div class="w-8 h-8 rounded bg-[#F7F8F7] border border-[#EBECE8] flex items-center justify-center text-[#292827] mb-4"><span class="material-symbols-outlined text-[18px]">compress</span></div><h3 class="text-base font-medium text-[#292827] font-zen-maru mb-2">つぶす (Squeeze)</h3><p class="text-xs text-[#716D6A] leading-relaxed font-zen-kaku">手のひらでやさしく押し込んで、やわらかな感触を確かめます。</p></div></div><div class="p-6 bg-[#FFFFFF] rounded border border-[#EBECE8] flex flex-col justify-between hover:border-[#CBC6BD] transition-colors"><div><div class="w-8 h-8 rounded bg-[#F7F8F7] border border-[#EBECE8] flex items-center justify-center text-[#292827] mb-4"><span class="material-symbols-outlined text-[18px]">open_in_full</span></div><h3 class="text-base font-medium text-[#292827] font-zen-maru mb-2">伸ばす (Stretch)</h3><p class="text-xs text-[#716D6A] leading-relaxed font-zen-kaku">ゆっくりと引っ張って、形が変わる様子を楽しみます。</p></div></div><div class="p-6 bg-[#FFFFFF] rounded border border-[#EBECE8] flex flex-col justify-between hover:border-[#CBC6BD] transition-colors"><div><div class="w-8 h-8 rounded bg-[#F7F8F7] border border-[#EBECE8] flex items-center justify-center text-[#292827] mb-4"><span class="material-symbols-outlined text-[18px]">pinch</span></div><h3 class="text-base font-medium text-[#292827] font-zen-maru mb-2">つまむ (Pinch)</h3><p class="text-xs text-[#716D6A] leading-relaxed font-zen-kaku">指先で軽くつまんで、細かな感触を味わいます。</p></div></div><div class="p-6 bg-[#FFFFFF] rounded border border-[#EBECE8] flex flex-col justify-between hover:border-[#CBC6BD] transition-colors"><div><div class="w-8 h-8 rounded bg-[#F7F8F7] border border-[#EBECE8] flex items-center justify-center text-[#292827] mb-4"><span class="material-symbols-outlined text-[18px]">sync</span></div><h3 class="text-base font-medium text-[#292827] font-zen-maru mb-2">整える (Reshape)</h3><p class="text-xs text-[#716D6A] leading-relaxed font-zen-kaku">つぶしたり伸ばしたりした後は、手でやさしく形を整えることができます。</p></div></div></div>
+</section>
+<!-- SECTION 2: お取り扱い上の注意 (Care instructions) -->
+<section aria-labelledby="section-care" class="mb-20">
+<div class="max-w-3xl bg-[#FFFFFF] rounded border border-[#EBECE8] p-8 lg:p-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="w-2.5 h-2.5 rounded-full bg-[#B84F60]"></span>
+<h2 class="text-xl font-medium text-[#292827] font-zen-maru tracking-tight" id="section-care">
+            お取り扱い上の注意
+          </h2>
+<span class="text-xs text-[#716D6A] font-label-sm uppercase ml-auto">CARE GUIDELINE</span>
+</div>
+<p class="text-xs text-[#716D6A] font-zen-kaku leading-relaxed mb-6">
+          長く清潔にお楽しみいただくため、以下の点にご留意のうえ保管・ご鑑賞ください。
+        </p>
+<!-- Structured List with calm bullet icons -->
+<ul class="space-y-3.5 text-xs text-[#292827] font-zen-kaku leading-relaxed">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#716D6A] text-[16px] shrink-0 mt-0.5">water_drop</span>
+<span class="">水洗いはできません。汚れた場合は乾いた布で軽く拭いてください。</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#716D6A] text-[16px] shrink-0 mt-0.5">block</span>
+<span class="">髪の毛、カーペット、ソファ、衣類には触れさせないでください。</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#716D6A] text-[16px] shrink-0 mt-0.5">texture</span>
+<span class="">紙や布に置くと、油分が移る場合があります。</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#716D6A] text-[16px] shrink-0 mt-0.5">archive</span>
+<span class="">ご使用後は密閉できる袋や容器で保管してください。</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#716D6A] text-[16px] shrink-0 mt-0.5">thermostat</span>
+<span class="">気温により、かたさが変わることがあります。</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[#716D6A] text-[16px] shrink-0 mt-0.5">healing</span>
+<span class="">手に傷がある場合や、敏感肌の方はご使用をお控えください。</span>
+</li>
+<li class="flex items-start gap-3 text-[#B84F60] font-medium pt-2 border-t border-[#F7F8F7]">
+<span class="material-symbols-outlined text-[#B84F60] text-[16px] shrink-0 mt-0.5">no_food</span>
+<span class="">口に入れないでください。※お菓子ではありません。</span>
+</li>
+</ul>
+</div>
+</section>
+<!-- SECTION 3: 仕様・製品情報 (Product specifications table) -->
+<section aria-labelledby="section-specs">
+<div class="max-w-3xl">
+<div class="flex items-baseline justify-between mb-4">
+<h2 class="text-xl font-medium text-[#292827] font-zen-maru tracking-tight" id="section-specs">
+            仕様・製品情報
+          </h2>
+<span class="text-[11px] text-[#716D6A] font-zen-kaku">※ 発売準備段階のデータです</span>
+</div>
+<div class="bg-[#FFFFFF] rounded border border-[#EBECE8] overflow-hidden">
+<table class="w-full text-left text-xs font-zen-kaku border-collapse">
+<tbody>
+<tr class="border-b border-[#EBECE8]">
+<th class="py-3.5 px-5 font-medium text-[#716D6A] bg-[#F7F8F7]/60 w-1/3" scope="row">
+                  製品名
+                </th>
+<td class="py-3.5 px-5 text-[#292827]">
+                  クロワッサン猫
+                </td>
+</tr>
+<tr class="border-b border-[#EBECE8]">
+<th class="py-3.5 px-5 font-medium text-[#716D6A] bg-[#F7F8F7]/60" scope="row">
+                  サイズ・重量
+                </th>
+<td class="py-3.5 px-5 text-[#716D6A]">
+                  サイズ・重量は確認後に掲載
+                </td>
+</tr>
+<tr class="border-b border-[#EBECE8]">
+<th class="py-3.5 px-5 font-medium text-[#716D6A] bg-[#F7F8F7]/60" scope="row">
+                  材質
+                </th>
+<td class="py-3.5 px-5 text-[#716D6A]">
+                  材質は確認後に掲載
+                </td>
+</tr>
+<tr class="border-b border-[#EBECE8]">
+<th class="py-3.5 px-5 font-medium text-[#716D6A] bg-[#F7F8F7]/60" scope="row">
+                  対象年齢
+                </th>
+<td class="py-3.5 px-5 text-[#716D6A]">
+                  対象年齢は確認後に掲載
+                </td>
+</tr>
+<tr class="border-b border-[#EBECE8]">
+<th class="py-3.5 px-5 font-medium text-[#716D6A] bg-[#F7F8F7]/60" scope="row">
+                  原産国
+                </th>
+<td class="py-3.5 px-5 text-[#716D6A]">
+                  確認後に掲載
+                </td>
+</tr>
+<tr>
+<th class="py-3.5 px-5 font-medium text-[#716D6A] bg-[#F7F8F7]/60" scope="row">
+                  パッケージ
+                </th>
+<td class="py-3.5 px-5 text-[#716D6A]">確認後に掲載</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-4 px-2 flex items-center gap-2 text-[11px] text-[#716D6A]">
+<span class="material-symbols-outlined text-[14px]">info</span>
+<span class="">すべての数値および仕様は社内品質試験完了後に確定更新されます。</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Compact Tabajoy Footer -->
+<footer class="bg-[#FFFFFF] border-t border-[#EBECE8] py-10 mt-auto">
+<div class="max-w-7xl mx-auto px-6 lg:px-16 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<span class="font-zen-maru text-lg font-bold text-[#292827]">Tabajoy</span>
+<span class="text-xs text-[#716D6A] font-zen-kaku">たばじょい</span>
+</div>
+<div class="flex items-center gap-6 text-xs text-[#716D6A] font-zen-kaku">
+<a class="hover:text-[#292827] transition-colors" href="#">特定商取引法に基づく表記</a>
+<a class="hover:text-[#292827] transition-colors" href="#">プライバシーポリシー</a>
+<a class="hover:text-[#292827] transition-colors" href="#">お問い合わせ</a>
+</div>
+<div class="text-[11px] text-[#CBC6BD] font-label-sm">© Tabajoy. All rights reserved.</div>
+</div>
+</footer>
+<!-- Interactive Logic for Gallery and Quantity Counter -->
+<script>
+    function updateGallery(imgSrc, element) {
+      const mainImg = document.getElementById('featured-image');
+      if (mainImg) {
+        mainImg.style.opacity = '0.4';
+        setTimeout(() => {
+          mainImg.src = imgSrc;
+          mainImg.style.opacity = '1';
+        }, 120);
+      }
+      
+      const thumbs = document.querySelectorAll('.thumb-btn');
+      thumbs.forEach(btn => {
+        btn.classList.remove('thumb-active');
+        btn.classList.remove('border-[#292827]');
+        btn.classList.add('border-[#EBECE8]', 'opacity-70');
+      });
+
+      element.classList.add('thumb-active', 'border-[#292827]');
+      element.classList.remove('opacity-70');
+    }
+
+    let currentQty = 1;
+    function incrementQty() {
+      currentQty++;
+      document.getElementById('qty-val').innerText = currentQty;
+    }
+
+    function decrementQty() {
+      if (currentQty > 1) {
+        currentQty--;
+        document.getElementById('qty-val').innerText = currentQty;
+      }
+    }
+  </script>
+
+
+</body></html>

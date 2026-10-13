@@ -1,0 +1,298 @@
+<!DOCTYPE html><html lang="ja"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>00 — Sitemap / サイトマップ | Tabajoy</title>
+  
+  <!-- Google Fonts: Zen Kaku Gothic New & Zen Maru Gothic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Zen+Maru+Gothic:wght@500;700&amp;display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols Outlined -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mist: '#F7F8F7',
+            charcoal: '#292827',
+            stone: '#716D6A',
+            berry: '#B84F60',
+            subtle: '#EBECE8',
+            surface: '#F7F8F7',
+            'surface-bright': '#FFFFFF',
+            'surface-container-low': '#F3F4F3',
+            'surface-container': '#EBECE8'
+          },
+          fontFamily: {
+            'zen-maru': ['"Zen Maru Gothic"', '"Zen Kaku Gothic New"', 'sans-serif'],
+            'zen-kaku': ['"Zen Kaku Gothic New"', 'sans-serif'],
+            sans: ['"Zen Kaku Gothic New"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-mist text-charcoal font-zen-kaku antialiased min-h-screen flex flex-col selection:bg-berry selection:text-white">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-mist/95 backdrop-blur-md border-b border-subtle">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <div class="font-zen-maru text-xl font-bold tracking-tight text-charcoal flex items-center gap-1.5">
+          Tabajoy<span class="text-berry text-sm">●</span>
+        </div>
+        <span class="text-xs bg-white border border-subtle px-2.5 py-1 rounded-full text-stone font-medium">
+          情報アーキテクチャ &amp; プロトタイプ整理 (IA / Sitemap)
+        </span>
+      </div>
+      <div class="flex items-center gap-3 text-xs text-stone font-mono"><span class="bg-white px-2.5 py-0.5 rounded border border-subtle">実在画面: 合計26画面 (00〜13)</span><span class="bg-white px-2.5 py-0.5 rounded border border-subtle">14 Contact: 計画中(未作成)</span><span class="text-berry font-medium">● 画布実態盤点済</span></div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-7xl mx-auto px-6 pt-8 pb-20 w-full space-y-10">
+
+    <!-- Intro Banner -->
+    <div class="bg-white border border-subtle rounded-3xl p-6 md:p-8 shadow-sm">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 border-b border-subtle">
+        <div>
+          <div class="inline-flex items-center gap-1.5 text-xs font-medium tracking-wider uppercase text-berry bg-mist border border-berry/20 px-2.5 py-1 rounded-full mb-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-berry"></span>
+            INFORMATION ARCHITECTURE &amp; PROTOTYPE AUDIT
+          </div>
+          <h1 class="text-2xl md:text-3xl font-bold font-zen-maru text-charcoal tracking-tight">
+            00 — サイトマップ / 画面構造一覧 (Sitemap)
+          </h1>
+          <p class="text-xs md:text-sm text-stone mt-2 leading-relaxed max-w-3xl">
+            Tabajoy 独立站プロトタイプの全画面を整理・インベントリ化。各画面は共通の「Desktop版」と「Mobile版」を1対のレスポンシブ単位として管理し、コマース主要動線および法的・ヘルプ導線を体系化しています。
+          </p>
+        </div>
+        <div class="bg-mist p-4 rounded-2xl border border-subtle shrink-0 flex flex-col gap-1.5 text-xs"><div class="flex items-center justify-between gap-4 pb-1 mb-1 border-b border-subtle"><span class="text-stone font-bold">実在画面合計:</span><span class="font-bold text-charcoal font-mono">26画面 (00〜13)</span></div><div class="flex items-center justify-between gap-4"><span class="text-stone">有効レスポンシブペア:</span><span class="font-bold text-charcoal font-mono">12組 (24画面)</span></div><div class="flex items-center justify-between gap-4"><span class="text-stone">独立Sitemap画面:</span><span class="font-bold text-charcoal font-mono">1画面 (00)</span></div><div class="flex items-center justify-between gap-4"><span class="text-stone">独立空カート状態画面:</span><span class="font-bold text-charcoal font-mono">1画面 (05)</span></div><div class="flex items-center justify-between gap-4 pt-1 mt-1 border-t border-subtle"><span class="text-stone">14 お問い合わせ:</span><span class="font-bold text-berry font-mono">計画中 (実在画面なし)</span></div></div>
+      </div>
+
+      <!-- Compliance Notice -->
+      <div class="mt-6 p-4 bg-mist/60 border border-subtle rounded-2xl flex items-start gap-3">
+        <span class="material-symbols-outlined text-berry text-lg shrink-0 mt-0.5">verified_user</span>
+        <div class="text-xs text-stone leading-relaxed space-y-1">
+          <p class="font-bold text-charcoal">プロトタイプ制約と安全基準の遵守事項：</p>
+          <p class="">・価格、材質、硬度、対象年齢、送料、返品規定、Medusa/Stripe連携等はすべて<strong>「確認中 / 準備中」</strong>を維持し、架空の確約を行っていません。</p>
+          <p class="">・たまごおにぎり商品の非食品表示<strong>「本製品は玩具です。食品ではありません。実際のおにぎりではありません。口に入れないでください。」</strong>を全画面で厳格保持。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1. Primary Commerce User Flow Diagram -->
+    <div class="bg-white border border-subtle rounded-3xl p-6 md:p-8 shadow-sm">
+      <div class="flex items-center justify-between mb-6 pb-3 border-b border-subtle">
+        <div class="flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-berry"></span>
+          <h2 class="text-lg font-bold font-zen-maru text-charcoal">主要コマース購入導線 (E-Commerce Journey)</h2>
+        </div>
+        <span class="text-xs text-stone font-mono">概念的購入フロー (コード上: 未接続 / 実注文処理なし)</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-6 gap-3 items-stretch relative"><!-- Step 1: 01 Home -->
+<div class="p-4 rounded-2xl bg-mist border border-subtle flex flex-col justify-between hover:border-charcoal/40 transition">
+  <div>
+    <div class="flex items-center justify-between mb-1">
+      <span class="text-[10px] font-mono text-berry font-bold tracking-wider">01 — HOME</span>
+      <span class="text-[10px] font-mono bg-white px-1.5 py-0.5 rounded border border-subtle text-stone">ペア</span>
+    </div>
+    <h4 class="text-xs font-bold text-charcoal font-zen-maru mb-1">ストアフロント (首頁)</h4>
+    <p class="text-[11px] text-stone leading-relaxed">ヒーロー・「好きな形から選ぶ」商品選択セクション</p>
+  </div>
+  <div class="pt-3 mt-3 border-t border-subtle flex items-center justify-between text-[10px] text-stone font-mono">
+    <span class="">Desktop / Mobile</span>
+    <span class="text-berry font-medium">未接続 (href="#")</span>
+  </div>
+</div>
+
+<!-- Step 2: 02 Collection -->
+<div class="p-4 rounded-2xl bg-mist border border-subtle flex flex-col justify-between hover:border-charcoal/40 transition">
+  <div>
+    <div class="flex items-center justify-between mb-1">
+      <span class="text-[10px] font-mono text-berry font-bold tracking-wider">02 — COLLECTION</span>
+      <span class="text-[10px] font-mono bg-white px-1.5 py-0.5 rounded border border-subtle text-stone">ペア</span>
+    </div>
+    <h4 class="text-xs font-bold text-charcoal font-zen-maru mb-1">商品一覧 (コレクション)</h4>
+    <p class="text-[11px] text-stone leading-relaxed">全2商品（クロワッサン猫・たまごおにぎり）グリッド</p>
+  </div>
+  <div class="pt-3 mt-3 border-t border-subtle flex items-center justify-between text-[10px] text-stone font-mono">
+    <span class="">Desktop / Mobile</span>
+    <span class="text-berry font-medium">未接続 (href="#")</span>
+  </div>
+</div>
+
+<!-- Step 3: 03/04 Product -->
+<div class="p-4 rounded-2xl bg-mist border border-subtle flex flex-col justify-between hover:border-charcoal/40 transition">
+  <div>
+    <div class="flex items-center justify-between mb-1">
+      <span class="text-[10px] font-mono text-berry font-bold tracking-wider">03 / 04 — PRODUCT</span>
+      <span class="text-[10px] font-mono bg-white px-1.5 py-0.5 rounded border border-subtle text-stone">2組</span>
+    </div>
+    <h4 class="text-xs font-bold text-charcoal font-zen-maru mb-1">商品詳細 (2型)</h4>
+    <p class="text-[11px] text-stone leading-relaxed">ギャラリー写真、玩具安全警告、取扱注意7項目</p>
+  </div>
+  <div class="pt-3 mt-3 border-t border-subtle flex items-center justify-between text-[10px] text-stone font-mono">
+    <span class="">各Desktop / Mobile</span>
+    <span class="text-berry font-medium">未接続 (href="#")</span>
+  </div>
+</div>
+
+<!-- Step 4: 05/06 Cart -->
+<div class="p-4 rounded-2xl bg-mist border border-subtle flex flex-col justify-between hover:border-charcoal/40 transition">
+  <div>
+    <div class="flex items-center justify-between mb-1">
+      <span class="text-[10px] font-mono text-berry font-bold tracking-wider">05 / 06 — CART</span>
+      <span class="text-[10px] font-mono bg-white px-1.5 py-0.5 rounded border border-subtle text-stone">独立+ペア</span>
+    </div>
+    <h4 class="text-xs font-bold text-charcoal font-zen-maru mb-1">ショッピングカート</h4>
+    <p class="text-[11px] text-stone leading-relaxed">空状態(05) &amp; 商品投入状態(06)、未確定価格表記</p>
+  </div>
+  <div class="pt-3 mt-3 border-t border-subtle flex items-center justify-between text-[10px] text-stone font-mono">
+    <span class="">Desktop / Mobile</span>
+    <span class="text-berry font-medium">未接続 (href="#")</span>
+  </div>
+</div>
+
+<!-- Step 5: 07 Checkout -->
+<div class="p-4 rounded-2xl bg-mist border border-subtle flex flex-col justify-between hover:border-charcoal/40 transition">
+  <div>
+    <div class="flex items-center justify-between mb-1">
+      <span class="text-[10px] font-mono text-berry font-bold tracking-wider">07 — CHECKOUT</span>
+      <span class="text-[10px] font-mono bg-white px-1.5 py-0.5 rounded border border-subtle text-stone">ペア</span>
+    </div>
+    <h4 class="text-xs font-bold text-charcoal font-zen-maru mb-1">ご注文手続き (結帳)</h4>
+    <p class="text-[11px] text-stone leading-relaxed">47都道府県、決済準備中・注文確定Disabled</p>
+  </div>
+  <div class="pt-3 mt-3 border-t border-subtle flex items-center justify-between text-[10px] text-stone font-mono">
+    <span class="">Desktop / Mobile</span>
+    <span class="text-berry font-medium font-bold">確定ボタン無効</span>
+  </div>
+</div>
+
+<!-- Step 6: 08 Order Complete -->
+<div class="p-4 rounded-2xl bg-mist border border-subtle flex flex-col justify-between hover:border-charcoal/40 transition">
+  <div>
+    <div class="flex items-center justify-between mb-1">
+      <span class="text-[10px] font-mono text-berry font-bold tracking-wider">08 — COMPLETE</span>
+      <span class="text-[10px] font-mono bg-white px-1.5 py-0.5 rounded border border-subtle text-stone">ペア</span>
+    </div>
+    <h4 class="text-xs font-bold text-charcoal font-zen-maru mb-1">ご注文完了 (サンクス)</h4>
+    <p class="text-[11px] text-stone leading-relaxed">概念的プロトタイプ画面、実注文未処理・非食品再掲</p>
+  </div>
+  <div class="pt-3 mt-3 border-t border-subtle flex items-center justify-between text-[10px] text-stone font-mono">
+    <span class="">Desktop / Mobile</span>
+    <span class="text-berry font-medium">実注文処理なし</span>
+  </div>
+</div></div>
+    </div>
+
+    <!-- 2. Detailed IA Inventory & Pairing Table -->
+    <div class="bg-white border border-subtle rounded-3xl p-6 md:p-8 shadow-sm">
+      <div class="flex items-center justify-between mb-6 pb-3 border-b border-subtle">
+        <div class="flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-berry"></span>
+          <h2 class="text-lg font-bold font-zen-maru text-charcoal">全画面体系・ナンバリング一覧 (00〜14)</h2>
+        </div>
+        <span class="text-xs text-stone">ステータス: 画布実在画面名記載 / Stitch未表示ID / 画面間リンク未接続</span>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead>
+            <tr class="border-b border-subtle bg-mist/60 text-stone">
+              <th class="py-3 px-3 font-mono">番号</th>
+              <th class="py-3 px-3">ページ名称</th>
+              <th class="py-3 px-3">Desktop版 (最新採用)</th>
+              <th class="py-3 px-3">Mobile版 (最新採用)</th>
+              <th class="py-3 px-3">動線接続先 (Prototype Links)</th>
+              <th class="py-3 px-3">備考 / 旧稿状態</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-subtle"><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">00</td><td class="py-3 px-3 font-bold text-charcoal">Sitemap / サイトマップ</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - サイトマップ</div><div class="font-mono text-[10px] text-stone">[未表示ID] (本画面)</div></td><td class="py-3 px-3 text-stone">なし (独立画面)</td><td class="py-3 px-3 text-stone">一覧インデックス参照 / 実装: 独立ハブ</td><td class="py-3 px-3 text-stone"><span class="px-2 py-0.5 rounded bg-mist text-stone font-mono text-[10px]">独立画面</span> 画面構成整理済</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">01</td><td class="py-3 px-3 font-medium text-charcoal">Home / トップページ</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy DTC Storefront - Desktop with Product Selection</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy DTC Storefront - Mobile with Product Selection</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3 text-stone">計画: 02, 03/04, 06 / 実装: <span class="text-berry font-mono">未接続 (href="#")</span></td><td class="py-3 px-3 text-stone">レスポンシブペア (1/12)</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">02</td><td class="py-3 px-3 font-medium text-charcoal">Collection / コレクション一覧</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - コレクション (Desktop) Cleaned</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - コレクション (Mobile) Cleaned</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3 text-stone">計画: 01(ロゴ), 03/04, 06 / 実装: <span class="text-berry font-mono">未接続 (href="#")</span></td><td class="py-3 px-3 text-stone">レスポンシブペア (2/12)</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">03</td><td class="py-3 px-3 font-medium text-charcoal">Product / クロワッサン猫</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - クロワッサン猫 商品詳細 (Desktop)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - クロワッサン猫 商品詳細 (Mobile)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3 text-stone">計画: 01, 02, 06 / 実装: <span class="text-berry font-mono">未接続 (href="#")</span></td><td class="py-3 px-3 text-stone">レスポンシブペア (3/12)</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">04</td><td class="py-3 px-3 font-medium text-charcoal">Product / たまごおにぎり</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - たまごおにぎり 商品詳細 (Desktop)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - たまごおにぎり 商品詳細 (Mobile)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3 text-stone">計画: 01, 02, 06 / 実装: <span class="text-berry font-mono">未接続 (href="#")</span></td><td class="py-3 px-3 text-stone">非食品玩具安全警告を厳格保持</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">05</td><td class="py-3 px-3 font-medium text-charcoal">Cart / 空のカート</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - カート (空の状態)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3 text-stone">なし (単独状態画面)</td><td class="py-3 px-3 text-stone">計画: 02(コレクション) / 実装: <span class="text-berry font-mono">未接続 (href="#")</span></td><td class="py-3 px-3 text-stone"><span class="px-2 py-0.5 rounded bg-mist text-stone font-mono text-[10px]">独立画面</span> 単独状態画面</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">06</td><td class="py-3 px-3 font-medium text-charcoal">Cart / 商品投入カート</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - ショッピングカート (Desktop)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - ショッピングカート (Mobile)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3 text-stone">計画: 01, 02, 07 / 実装: <span class="text-berry font-mono">未接続 (href="#")</span></td><td class="py-3 px-3 text-stone">レスポンシブペア (4/12)</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">07</td><td class="py-3 px-3 font-medium text-charcoal">Checkout / ご注文手続き</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - ご注文手続き (Desktop) Cleaned</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - ご注文手続き (Mobile)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3 text-stone">計画: 08(概念的) / 注文確定ボタンDisabled・<span class="text-berry font-mono">実注文処理なし(未接続)</span></td><td class="py-3 px-3 text-stone">Medusa/Stripe決済未連携</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">08</td><td class="py-3 px-3 font-medium text-charcoal">Order Complete / ご注文完了</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - ご注文完了 (Desktop)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - ご注文完了 (Mobile)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3 text-stone">計画: 02へ復帰 / 実装: <span class="text-berry font-mono">未接続 (href="#")</span></td><td class="py-3 px-3 text-stone">静的プロトタイプ (実注文未処理)</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">09</td><td class="py-3 px-3 font-medium text-charcoal">Legal / 特定商取引法に基づく表記</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - 特定商取引法に基づく表記 (Desktop)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - 特定商取引法に基づく表記 (Mobile)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3 text-stone">計画: フッター連動 / 実装: <span class="text-berry font-mono">未接続 (href="#")</span></td><td class="py-3 px-3 text-stone">レスポンシブペア (7/12)</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">10</td><td class="py-3 px-3 font-medium text-charcoal">Shipping &amp; Returns / 配送・送料・返品について</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - 配送・送料・返品について (Desktop)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - 配送・送料・返品について (Mobile)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3 text-stone">計画: ヘッダー・フッター連動 / 実装: <span class="text-berry font-mono">未接続 (href="#")</span></td><td class="py-3 px-3 text-stone">送料・日数は確認中扱い</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">11</td><td class="py-3 px-3 font-medium text-charcoal">Privacy / プライバシーポリシー</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - プライバシーポリシー (Desktop)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - プライバシーポリシー (Mobile)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3 text-stone">計画: フッター連動 / 実装: <span class="text-berry font-mono">未接続 (href="#")</span></td><td class="py-3 px-3 text-stone">全12条ドラフト文案</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">12</td><td class="py-3 px-3 font-medium text-charcoal">Terms / 利用規約</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - 利用規約 (Desktop)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - 利用規約 (Mobile)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3 text-stone">画面間: <span class="text-berry font-mono">未接続 (href="#")</span> / <span class="text-charcoal font-medium">ページ内13条目次アンカー接続済</span></td><td class="py-3 px-3 text-stone">レスポンシブペア (11/12)</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">13</td><td class="py-3 px-3 font-medium text-charcoal">FAQ / よくあるご質問</td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - よくあるご質問 (Desktop)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3"><div class="font-medium text-charcoal">Tabajoy - よくあるご質問 (Mobile)</div><div class="font-mono text-[10px] text-stone">[未表示ID]</div></td><td class="py-3 px-3 text-stone">画面間: <span class="text-berry font-mono">未接続 (href="#")</span> / <span class="text-charcoal font-medium">ページ内4大カテゴリ目次接続済</span></td><td class="py-3 px-3 text-stone">アコーディオン表示</td></tr><tr class="hover:bg-mist/30 transition"><td class="py-3 px-3 font-mono font-bold text-berry">14</td><td class="py-3 px-3 font-bold text-berry">Contact / お問い合わせ</td><td class="py-3 px-3 text-stone font-medium" colspan="2">未作成［計画中／実在画面なし］（現行画面数26画面に含めない）</td><td class="py-3 px-3 text-stone">フッター・FAQ内入口: 未作成画面へのプレースホルダー</td><td class="py-3 px-3 text-stone"><span class="px-2 py-0.5 rounded bg-berry/10 text-berry font-medium text-[10px]">未作成</span> 架空連絡先捏造防止</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 3. Prototype Navigation Connection Map (Wire Linkage Rules) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Global Navigation Rules -->
+      <div class="bg-white border border-subtle rounded-3xl p-6 md:p-8 shadow-sm space-y-4"><div class="flex items-center justify-between pb-2 border-b border-subtle"><h3 class="text-base font-bold font-zen-maru text-charcoal flex items-center gap-2"><span class="material-symbols-outlined text-berry text-lg">link</span>原型連線仕様 (Navigation Linkages)</h3><span class="text-[11px] bg-mist text-stone px-2 py-0.5 rounded border border-subtle font-mono">計画導線 vs 実装状態</span></div><div class="p-3 bg-mist/60 border border-subtle rounded-xl text-[11px] text-stone leading-relaxed"><span class="font-bold text-charcoal">⚠️ 実装状態の厳格な注記：</span>現プロトタイプの全画面間遷移（ヘッダーロゴ、商品カード、カート、結帳、フッター等）はコード上で<strong>未接続（href="#" / ルートプレースホルダー）</strong>です。以下は設計上の「計画導線」と実装実態の対照です。</div><ul class="space-y-2.5 text-xs text-stone leading-relaxed"><li class="flex items-start gap-2"><span class="font-bold text-charcoal shrink-0 font-mono">1.</span><span class=""><strong>Header Tabajoy ロゴ：</strong>計画上は <strong class="text-charcoal font-mono">01 — Home</strong> へ遷移想定。コード上は <code class="font-mono text-berry">href="#"</code> （未接続）。</span></li><li class="flex items-start gap-2"><span class="font-bold text-charcoal shrink-0 font-mono">2.</span><span class=""><strong>「コレクション」リンク：</strong>ヘッダーおよびフッターより <strong class="text-charcoal font-mono">02 — Collection</strong> を想定。コード上は未接続。</span></li><li class="flex items-start gap-2"><span class="font-bold text-charcoal shrink-0 font-mono">3.</span><span class=""><strong>商品カードリンク：</strong>「クロワッサン猫」は <strong class="text-charcoal font-mono">03</strong>、「たまごおにぎり」は <strong class="text-charcoal font-mono">04</strong> へ個別接続設計。コード上は未接続。</span></li><li class="flex items-start gap-2"><span class="font-bold text-charcoal shrink-0 font-mono">4.</span><span class=""><strong>カートアイコン / CTA：</strong>カート追加およびヘッダーバッグは <strong class="text-charcoal font-mono">06 — Cart</strong> (空の場合は05) へ対応想定。コード上は未接続。</span></li><li class="flex items-start gap-2"><span class="font-bold text-charcoal shrink-0 font-mono">5.</span><span class=""><strong>チェックアウト遷移：</strong>カートの「ご注文手続きへ」より <strong class="text-charcoal font-mono">07 — Checkout</strong> へ設計。コード上は未接続。</span></li><li class="flex items-start gap-2"><span class="font-bold text-charcoal shrink-0 font-mono">6.</span><span class=""><strong>結帳・注文確定 (Disabled)：</strong>結帳ページの「注文を確定する」ボタンは Disabled。Medusa/Stripe決済未連携のため、動作するフローではなく<strong>「概念的フロー／実注文処理なし（未接続）」</strong>です。</span></li><li class="flex items-start gap-2"><span class="font-bold text-charcoal shrink-0 font-mono">7.</span><span class=""><strong>空状態および完了後CTA：</strong>空カート(05)および完了(08)のボタンは <strong class="text-charcoal font-mono">02 — Collection</strong> への復帰導線設計。コード上は未接続。</span></li></ul></div>
+
+      <!-- Legal & Footer Linkages -->
+      <div class="bg-white border border-subtle rounded-3xl p-6 md:p-8 shadow-sm space-y-4"><div class="flex items-center justify-between pb-2 border-b border-subtle"><h3 class="text-base font-bold font-zen-maru text-charcoal flex items-center gap-2"><span class="material-symbols-outlined text-stone text-lg">policy</span>フッター・法的導線・目次アンカー仕様</h3><span class="text-[11px] bg-mist text-stone px-2 py-0.5 rounded border border-subtle font-mono">アンカー接続 vs 未作成</span></div><ul class="space-y-2.5 text-xs text-stone leading-relaxed"><li class="flex items-start gap-2"><span class="font-bold text-charcoal shrink-0 font-mono">8.</span><span class=""><strong>特定商取引法表示：</strong>フッターリンクから <strong class="text-charcoal font-mono">09 — Legal</strong> へ遷移設計。コード上は未接続。</span></li><li class="flex items-start gap-2"><span class="font-bold text-charcoal shrink-0 font-mono">9.</span><span class=""><strong>配送・送料・返品：</strong>ヘッダーおよびフッターから <strong class="text-charcoal font-mono">10 — Shipping &amp; Returns</strong> へ遷移設計（送料等は「確認中」維持）。画面間は未接続。</span></li><li class="flex items-start gap-2"><span class="font-bold text-charcoal shrink-0 font-mono">10.</span><span class=""><strong>プライバシーポリシー：</strong>フッターから <strong class="text-charcoal font-mono">11 — Privacy</strong> (12条ドラフト文案) へ遷移設計。画面間は未接続。</span></li><li class="flex items-start gap-2"><span class="font-bold text-charcoal shrink-0 font-mono">11.</span><span class=""><strong>利用規約（目次アンカー）：</strong>フッターから <strong class="text-charcoal font-mono">12 — Terms</strong> へ遷移設計。画面内において<strong>「利用規約 全13条目次ジャンプアンカー」はページ内接続済み</strong>です。</span></li><li class="flex items-start gap-2"><span class="font-bold text-charcoal shrink-0 font-mono">12.</span><span class=""><strong>よくあるご質問（目次アンカー）：</strong>フッターから <strong class="text-charcoal font-mono">13 — FAQ</strong> へ遷移設計。画面内において<strong>「4大カテゴリ目次ジャンプアンカー」はページ内接続済み</strong>です。</span></li><li class="flex items-start gap-2"><span class="font-bold text-berry shrink-0 font-mono">14.</span><span class=""><strong>お問い合わせ (Contact)：</strong>現プロジェクトには画面が一切存在せず <strong class="text-berry font-bold">「14 — 計画中／未作成（実在画面なし）」</strong> です。フッターやFAQ内の連絡先リンクは未作成画面へのプレースホルダーであり、接続済みではありません。実在画面数（合計26画面）には含めません。</span></li></ul></div>
+
+    </div>
+
+    <!-- 4. Design System Consistency Audit Notes -->
+    <div class="bg-white border border-subtle rounded-3xl p-6 md:p-8 shadow-sm">
+      <h3 class="text-base font-bold font-zen-maru text-charcoal flex items-center gap-2 mb-4">
+        <span class="material-symbols-outlined text-stone text-lg">design_services</span>
+        デザインシステム監査結果 (Tactile Sanctuary &amp; Typography)
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs leading-relaxed text-stone"><!-- Note 1: Color Palette -->
+<div class="bg-mist p-4 rounded-2xl border border-subtle space-y-2">
+  <div class="flex items-center gap-2 pb-1 border-b border-subtle">
+    <span class="w-2 h-2 rounded-full bg-berry"></span>
+    <span class="font-bold text-charcoal font-zen-maru text-xs">カラーパレットの統一性</span>
+  </div>
+  <p class="text-[11px] text-stone leading-relaxed">
+    全画面で <code class="font-mono text-charcoal">#F7F8F7</code> (Mist), <code class="font-mono text-charcoal">#292827</code> (Charcoal), <code class="font-mono text-charcoal">#716D6A</code> (Stone), <code class="font-mono text-berry">#B84F60</code> (Berry) が一貫して適用され、不適切なネオン・キャンディカラーは混入していません。
+  </p>
+</div>
+
+<!-- Note 2: Typography -->
+<div class="bg-mist p-4 rounded-2xl border border-subtle space-y-2">
+  <div class="flex items-center gap-2 pb-1 border-b border-subtle">
+    <span class="w-2 h-2 rounded-full bg-charcoal"></span>
+    <span class="font-bold text-charcoal font-zen-maru text-xs">タイポグラフィの統一性</span>
+  </div>
+  <p class="text-[11px] text-stone leading-relaxed">
+    見出しは <strong class="text-charcoal">Zen Maru Gothic</strong>、本文・UIは <strong class="text-charcoal">Zen Kaku Gothic New</strong> のみを採用。欧文フォント (Plus Jakarta Sans / Space Grotesk) の不要な混用は排除され、統一された和文主体の品位を保持しています。
+  </p>
+</div>
+
+<!-- Note 3: Screen Inventory Management -->
+<div class="bg-mist p-4 rounded-2xl border border-subtle space-y-2">
+  <div class="flex items-center gap-2 pb-1 border-b border-subtle">
+    <span class="w-2 h-2 rounded-full bg-stone"></span>
+    <span class="font-bold text-charcoal font-zen-maru text-xs">実在画面数・状態管理</span>
+  </div>
+  <p class="text-[11px] text-stone leading-relaxed">
+    現在の画布上実在画面は計26画面 (12組24画面 + 独立Sitemap 1画面 + 独立空カート 1画面)。「14 お問い合わせ」は計画中／未作成画面として計上外とし、旧スクリーン番号(SCREEN_xx)への依存を排除して整理しています。
+  </p>
+</div></div>
+    </div>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-white border-t border-subtle pt-8 pb-12 px-6 mt-auto">
+    <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+      <div class="font-zen-maru text-base font-bold tracking-tight text-charcoal mb-1">
+        Tabajoy<span class="text-berry">●</span>
+      </div>
+      <p class="text-[11px] text-stone tracking-widest uppercase mb-4 font-medium">TACTILE ART GALLERY — SITEMAP ARCHITECTURE</p>
+      <p class="text-[10px] text-stone/70">
+        © Tabajoy. All rights reserved. Prototype Information Architecture.
+      </p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+</body></html>

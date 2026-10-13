@@ -1,0 +1,277 @@
+<!DOCTYPE html><html lang="ja" class="h-full" style=""><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabajoy - ショッピングカート (Desktop)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Zen+Maru+Gothic:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#F7F8F7',
+              surface: '#FFFFFF',
+              primary: '#292827',
+              secondary: '#716D6A',
+              accent: '#B84F60',
+              border: '#E8EAE8',
+              surfaceSubtle: '#F0F2F0'
+            }
+          },
+          fontFamily: {
+            heading: ['"Zen Maru Gothic"', '"Zen Kaku Gothic New"', 'sans-serif'],
+            body: ['"Zen Kaku Gothic New"', 'sans-serif'],
+            'jp-heading': ['"Zen Maru Gothic"', '"Zen Kaku Gothic New"', 'sans-serif'],
+            'jp-body': ['"Zen Kaku Gothic New"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Zen Kaku Gothic New', sans-serif;
+      background-color: #F7F8F7;
+      color: #292827;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, .font-heading {
+      font-family: 'Zen Maru Gothic', 'Zen Kaku Gothic New', sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-full flex flex-col justify-between selection:bg-brand-accent/10 selection:text-brand-accent">
+  <!-- Header -->
+  <header class="bg-brand-surface border-b border-brand-border sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-10">
+        <a href="#home" class="font-heading text-2xl font-bold tracking-tight text-brand-primary">Tabajoy</a>
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-secondary">
+          <a href="#collection" class="hover:text-brand-primary transition-colors">コレクション</a>
+          <a href="#about" class="hover:text-brand-primary transition-colors">私たちについて</a>
+          <a href="#news" class="hover:text-brand-primary transition-colors">お知らせ</a>
+        </nav>
+      </div>
+      <div class="flex items-center space-x-6 text-brand-primary">
+        <div class="flex items-center text-xs text-brand-secondary border border-brand-border rounded-full px-3 py-1 bg-brand-bg">
+          <span class="inline-block w-1.5 h-1.5 rounded-full bg-brand-accent mr-1.5"></span>
+          JPY / 日本円
+        </div>
+        <button type="button" aria-label="検索" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-brand-bg transition-colors text-brand-primary">
+          <span class="text-xl material-symbols-outlined">search</span>
+        </button>
+        <a href="#cart" aria-label="ショッピングカート (2点)" class="w-11 h-11 flex items-center justify-center rounded-full bg-brand-bg transition-colors text-brand-primary relative">
+          <span class="text-xl material-symbols-outlined">shopping_bag</span>
+          <span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-brand-accent"></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-6xl mx-auto px-6 py-10 w-full">
+    <!-- Breadcrumb -->
+    <nav aria-label="パンくずリスト" class="text-xs text-brand-secondary mb-8">
+      <ol class="flex items-center space-x-2">
+        <li class=""><a href="#home" class="hover:text-brand-primary transition-colors">ホーム</a></li>
+        <li class=""><span class="">/</span></li>
+        <li class="text-brand-primary font-medium" aria-current="page">ショッピングカート</li>
+      </ol>
+    </nav>
+
+    <div class="mb-8">
+      <h1 class="font-heading text-3xl font-bold text-brand-primary tracking-tight">ショッピングカート</h1>
+      <p class="text-sm text-brand-secondary mt-2">ご希望の数量をご確認いただけます。</p>
+    </div>
+
+    <!-- Cart Layout: 2 Columns on Desktop -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      <!-- Items Area (8 cols) -->
+      <section class="lg:col-span-8 space-y-6" aria-label="カート内の商品">
+        <div class="bg-brand-surface rounded-2xl border border-brand-border p-6 shadow-sm divide-y divide-brand-border">
+          
+          <!-- Item 1: クロワッサン猫 -->
+          <article class="pt-2 pb-8 first:pt-0">
+            <div class="flex flex-col sm:flex-row gap-6 items-start">
+              <a href="#product-croissant-cat" class="w-32 h-32 flex-shrink-0 bg-brand-bg rounded-xl overflow-hidden border border-brand-border group block">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPSPbmEF5_sxH9Wjyc8rf5VHDvDYkl8C7R9P0TR4QwWaQRrPPgg1eq5qwCPD_BbdwAMTOPlFeXK5g3X0Dg4pdJ96Uj-nZdlCzNTqamg5Xq10w0jqM2S_XKbgETioGlX_na9AAFuIn8bNcVuiEN1mCX7AqOOP-zQRGqAnj5za31C_PxC0i-Ccsy3_bN9cCMho09GzuOvm5VvRWo1it8X8l_SR5EUmqP4_mlaAqEDWtahgiHJHj-KuezZ-eMJpNWtGbcHD8" alt="クロワッサン猫 スクイーズ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              </a>
+              <div class="flex-grow flex flex-col justify-between w-full min-h-[8rem]">
+                <div>
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      
+                      <h2 class="font-heading text-xl font-bold text-brand-primary mt-0.5">
+                        <a href="#product-croissant-cat" class="hover:text-brand-accent transition-colors">クロワッサン猫</a>
+                      </h2>
+                    </div>
+                    <div class="text-right">
+                      <span class="inline-block text-xs font-medium px-2.5 py-1 rounded bg-brand-bg border border-brand-border text-brand-secondary">価格未定</span>
+                    </div>
+                  </div>
+                  <p class="text-xs text-brand-secondary mt-1.5 line-clamp-1">クロワッサンと猫を組み合わせた、思わず手に取りたくなるスクイーズ。</p>
+                </div>
+
+                <!-- Non-food Notice for クロワッサン猫 -->
+                <div class="my-3.5 p-3 rounded-lg bg-brand-bg border border-brand-border/80 flex items-start gap-2.5">
+                  <span class="text-brand-accent text-base flex-shrink-0 mt-0.5 material-symbols-outlined">warning</span>
+                  <div class="text-xs text-brand-secondary leading-relaxed">
+                    <span class="font-medium text-brand-primary">【ご注意】</span>
+                    <span class="">お菓子ではありません。食品ではありません。口に入れないでください。</span>
+                  </div>
+                </div>
+
+                <!-- Controls: Quantity & Remove -->
+                <div class="flex items-center justify-between pt-1">
+                  <div class="flex items-center space-x-3">
+                    <span class="text-xs text-brand-secondary font-medium">数量</span>
+                    <div class="inline-flex items-center border border-brand-border rounded-lg bg-brand-surface overflow-hidden">
+                      <button type="button" aria-label="クロワッサン猫の数量を減らす" class="w-11 h-11 flex items-center justify-center text-brand-primary hover:bg-brand-bg active:bg-brand-surfaceSubtle transition-colors">
+                        <span class="text-base material-symbols-outlined">remove</span>
+                      </button>
+                      <span class="w-10 text-center text-sm font-medium text-brand-primary" aria-live="polite">1</span>
+                      <button type="button" aria-label="クロワッサン猫の数量を増やす" class="w-11 h-11 flex items-center justify-center text-brand-primary hover:bg-brand-bg active:bg-brand-surfaceSubtle transition-colors">
+                        <span class="text-base material-symbols-outlined">add</span>
+                      </button>
+                    </div>
+                  </div>
+                  <button type="button" class="min-h-[44px] px-3 inline-flex items-center gap-1.5 text-xs text-brand-secondary hover:text-brand-accent transition-colors">
+                    <span class="text-base material-symbols-outlined">delete</span>
+                    <span class="">削除</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: たまごおにぎり -->
+          <article class="pt-8 pb-2">
+            <div class="flex flex-col sm:flex-row gap-6 items-start">
+              <a href="#product-egg-onigiri" class="w-32 h-32 flex-shrink-0 bg-brand-bg rounded-xl overflow-hidden border border-brand-border group block">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRU7r5Yug0GHu1ExwOTM-J95jwN3AoFzt5uPS-XE_h7jkhqdUnAQi95ZdwaMP11S0xVFOirjwvtyFlQ64UPONBQ74VXgxwiDYe6xNRhv91jSD2QZw5OCfWnk2qC6nXvYwPpd7TLhNeEEHjYn1XCT-uPqXZbvrPtUxrZ5egNOAPyYC09-8561s0Mt2UYKsTqG9scWdofn5opNLCh338dgBAnkkXkowCtw81YtKcePFVdvh0Y_Hg4IqJH_napIRWMP29UUU" alt="たまごおにぎり スクイーズ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              </a>
+              <div class="flex-grow flex flex-col justify-between w-full min-h-[8rem]">
+                <div>
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      
+                      <h2 class="font-heading text-xl font-bold text-brand-primary mt-0.5">
+                        <a href="#product-egg-onigiri" class="hover:text-brand-accent transition-colors">たまごおにぎり</a>
+                      </h2>
+                    </div>
+                    <div class="text-right">
+                      <span class="inline-block text-xs font-medium px-2.5 py-1 rounded bg-brand-bg border border-brand-border text-brand-secondary">価格未定</span>
+                    </div>
+                  </div>
+                  <p class="text-xs text-brand-secondary mt-1.5 line-clamp-1">三角のおにぎりに、まあるいたまご。見た目も楽しいスクイーズ。</p>
+                </div>
+
+                <!-- Non-food Notice for たまごおにぎり -->
+                <div class="my-3.5 p-3 rounded-lg bg-brand-bg border border-brand-border/80 flex items-start gap-2.5">
+                  <span class="text-brand-accent text-base flex-shrink-0 mt-0.5 material-symbols-outlined">warning</span>
+                  <div class="text-xs text-brand-secondary leading-relaxed">
+                    <span class="font-medium text-brand-primary">【ご注意】</span>
+                    <span class="">お菓子ではありません。食品ではありません。実際のおにぎりではありません。口に入れないでください。</span>
+                  </div>
+                </div>
+
+                <!-- Controls: Quantity & Remove -->
+                <div class="flex items-center justify-between pt-1">
+                  <div class="flex items-center space-x-3">
+                    <span class="text-xs text-brand-secondary font-medium">数量</span>
+                    <div class="inline-flex items-center border border-brand-border rounded-lg bg-brand-surface overflow-hidden">
+                      <button type="button" aria-label="たまごおにぎりの数量を減らす" class="w-11 h-11 flex items-center justify-center text-brand-primary hover:bg-brand-bg active:bg-brand-surfaceSubtle transition-colors">
+                        <span class="text-base material-symbols-outlined">remove</span>
+                      </button>
+                      <span class="w-10 text-center text-sm font-medium text-brand-primary" aria-live="polite">1</span>
+                      <button type="button" aria-label="たまごおにぎりの数量を増やす" class="w-11 h-11 flex items-center justify-center text-brand-primary hover:bg-brand-bg active:bg-brand-surfaceSubtle transition-colors">
+                        <span class="text-base material-symbols-outlined">add</span>
+                      </button>
+                    </div>
+                  </div>
+                  <button type="button" class="min-h-[44px] px-3 inline-flex items-center gap-1.5 text-xs text-brand-secondary hover:text-brand-accent transition-colors">
+                    <span class="text-base material-symbols-outlined">delete</span>
+                    <span class="">削除</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="flex justify-between items-center px-1">
+          <a href="#collection" class="inline-flex items-center gap-2 text-xs font-medium text-brand-secondary hover:text-brand-primary transition-colors py-2">
+            <span class="text-base material-symbols-outlined">arrow_back</span>
+            <span class="">コレクションへ戻る</span>
+          </a>
+          <span class="text-xs text-brand-secondary">計 2点</span>
+        </div>
+      </section>
+
+      <!-- Order Summary Area (4 cols) -->
+      <aside class="lg:col-span-4" aria-label="注文内容の概要">
+        <div class="bg-brand-surface rounded-2xl border border-brand-border p-6 shadow-sm sticky top-28 space-y-6">
+          <h2 class="font-heading text-lg font-bold text-brand-primary pb-3 border-b border-brand-border">ご注文の概要</h2>
+          
+          <div class="space-y-4 text-xs">
+            <div class="flex justify-between items-center text-brand-secondary">
+              <span class="">商品小計 (2点)</span>
+              <span class="font-medium text-brand-primary">価格未定</span>
+            </div>
+            <div class="flex justify-between items-center text-brand-secondary">
+              <span class="">配送料</span>
+              <span class="">価格確認後に計算</span>
+            </div>
+            <div class="pt-4 border-t border-brand-border flex flex-col gap-1">
+              <div class="flex justify-between items-baseline">
+                <span class="font-heading font-bold text-sm text-brand-primary">合計金額</span>
+                <span class="font-medium text-brand-secondary text-xs">価格確認後に表示</span>
+              </div>
+              <p class="text-[11px] text-brand-secondary leading-normal mt-1">※ 現在製品の価格設定および確認を行っております。</p>
+            </div>
+          </div>
+
+          <!-- Disabled Checkout Action -->
+          <div class="pt-2">
+            <button type="button" disabled="" aria-disabled="true" class="w-full min-h-[52px] px-6 rounded-xl bg-brand-surfaceSubtle border border-brand-border text-brand-secondary font-medium text-sm flex items-center justify-center gap-2 cursor-not-allowed opacity-80 select-none">
+              <span class="text-base text-brand-secondary material-symbols-outlined">lock</span>
+              <span class="">価格確認後に購入手続きへ</span>
+            </button>
+            <p class="text-[11px] text-center text-brand-secondary mt-3">注文受付の開始まで今しばらくお待ちください。</p>
+          </div>
+
+          
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-brand-surface border-t border-brand-border mt-16 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-brand-border">
+        <div>
+          <span class="font-heading text-xl font-bold text-brand-primary tracking-tight">Tabajoy</span>
+          <p class="text-xs text-brand-secondary mt-1">静謐な空間で愛でる、触覚の彫刻。</p>
+        </div>
+        <div class="flex flex-wrap gap-6 text-xs text-brand-secondary">
+          <a href="#tokushoho" class="hover:text-brand-primary transition-colors">特定商取引法に基づく表記</a>
+          <a href="#privacy" class="hover:text-brand-primary transition-colors">プライバシーポリシー</a>
+          <a href="#contact" class="hover:text-brand-primary transition-colors">お問い合わせ</a>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-brand-secondary gap-4">
+        <p class="">© Tabajoy. All rights reserved.</p>
+        <p class="text-[11px]">本製品は玩具です。食品ではありません。</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body></html>
